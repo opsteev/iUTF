@@ -1,0 +1,3 @@
+nose-html-reporting
+pexpect
+logging

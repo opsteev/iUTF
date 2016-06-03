@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: iutf
+Version: 0.1
+Summary: iUTF allows easy control of networking devices
+Home-page: UNKNOWN
+Author: Feng Ding
+Author-email: feng.ding2@hpe.com
+License: UNKNOWN
+Description: 
+        iUTF is a Unit Test framework for networking devices like switch, router, controller, ap.
+        And also it can remote control linux and mac via telnet or ssh.
+        
+        It converts the prompt of devices to nodes and combines the nodes to a graph, then use the 
+        shortest path algorithm to find the path switching between nodes.
+        
+        iUTF requires pexpect, nose, logging.
+        
+Platform: UNKNOWN

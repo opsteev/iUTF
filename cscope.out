@@ -1,0 +1,21250 @@
+cscope 15 $HOME/Desktop/fding/iutf -q 0000001141 0000108232
+	@build/lib/iut/__init__.py
+
+	@build/lib/iut/cli.py
+
+1 
+äom
+ 
+³x³ù
+ 
+impÜt
+ *
+
+3 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+5 
+	g__®l__
+ = ['ExceptionSSH', 'ExceptionTelnet', 'SSH', 'Telnet']
+
+7 
+şass
+ 
+	$Exû±iÚSSH
+(
+Exû±iÚPex³ù
+):
+
+11 
+şass
+ 
+	$Exû±iÚT–Ãt
+(
+Exû±iÚPex³ù
+):
+
+15 
+şass
+ 
+	$SSH
+(
+¥awn
+):
+
+16 
+def
+ 
+	`__š™__
+ (
+£lf
+, 
+timeout
+=30, 
+max»ad
+=2000, 
+£¬chwšdowsize
+=
+NÚe
+,
+
+17 
+logfe
+=
+NÚe
+, 
+cwd
+=NÚe, 
+’v
+=NÚe, 
+ignÜe_sighup
+=
+True
+, 
+echo
+=True,
+
+18 
+’codšg
+=
+NÚe
+, 
+codec_”rÜs
+='strict',
+
+19 
+ho¡
+='', 
+pÜt
+='22', 
+u£ºame
+='', 
+·sswÜd
+='', 
+İtiÚs
+='', 
+´om±
+='[#$]', 
+logg”
+=
+NÚe
+):
+
+21 
+£lf
+.
+logfe
+ = 
+	$FeAd­‹r
+(
+logg”
+)
+
+23 
+¥awn
+.
+	$__š™__
+(
+£lf
+, 
+NÚe
+, 
+timeout
+ñimeout, 
+max»ad
+=maxread,
+
+24 
+£¬chwšdowsize
+=£¬chwšdowsize, 
+logfe
+=
+£lf
+.logfile,
+
+25 
+cwd
+=cwd, 
+’v
+ónv, 
+ignÜe_sighup
+=ignÜe_sighup, 
+echo
+=echo,
+
+26 
+’codšg
+óncodšg, 
+codec_”rÜs
+=codec_errors)
+
+28 
+£lf
+.
+ho¡
+ = host
+
+29 
+£lf
+.
+pÜt
+ =…ort
+
+30 
+£lf
+.
+u£ºame
+ = username
+
+31 
+£lf
+.
+·sswÜd
+ =…assword
+
+32 
+£lf
+.
+ssh_İts
+ = 
+İtiÚs
+ 
+Ü
+ "-o 'StrictHostKeyChecking=no' -o 'UserKnownHostsFile /dev/null'"
+
+33 
+£lf
+.
+´om±
+ =…rompt
+
+34 
+£lf
+.
+logg”
+ =†ogger
+
+35 
+£lf
+.
+cÚÃùed
+ = 
+F®£
+
+
+36 
+def
+ 
+	$cÚÃù
+(
+£lf
+):
+
+37 
+cmd
+ = "ssh % -°% %s@%s" % (
+£lf
+.
+ssh_İts
+, s–f.
+pÜt
+, s–f.
+u£ºame
+, s–f.
+ho¡
+)
+
+38 
+¥awn
+.
+	$_¥awn
+(
+£lf
+, 
+cmd
+)
+
+39 
+True
+:
+
+40 
+idx
+ = 
+£lf
+.
+	`ex³ù
+([£lf.
+´om±
+, "No„outeo host", "timed out", "refused", "assword:",
+
+41 "\(yes/no\)", "\(y/n\)", 
+EOF
+, 
+TIMEOUT
+])
+
+42 
+idx
+ == 0:
+
+43 
+£lf
+.
+cÚÃùed
+ = 
+True
+
+
+45 
+–if
+ 
+idx
+ 
+	$š
+ (1, 2, 3):
+
+46 
+£lf
+.
+	$şo£
+()
+
+48 
+–if
+ 
+idx
+ == 4:
+
+49 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+·sswÜd
+)
+
+50 
+–if
+ 
+idx
+ == 5:
+
+51 
+£lf
+.
+	`£ndlše
+('yes')
+
+52 
+–if
+ 
+idx
+ == 6:
+
+53 
+£lf
+.
+	`£ndlše
+('y')
+
+55 
+£lf
+.
+	$şo£
+()
+
+57  
+£lf
+.
+cÚÃùed
+
+
+58 
+def
+ 
+	$discÚÃù
+(
+£lf
+):
+
+59 
+£lf
+.
+	$şo£
+()
+
+60 
+£lf
+.
+cÚÃùed
+ = 0
+
+61 
+def
+ 
+	$is_cÚÃùed
+(
+£lf
+):
+
+62  
+£lf
+.
+cÚÃùed
+
+
+64 
+şass
+ 
+	$T–Ãt
+(
+¥awn
+):
+
+65 
+def
+ 
+	`__š™__
+ (
+£lf
+, 
+timeout
+=30, 
+max»ad
+=2000, 
+£¬chwšdowsize
+=
+NÚe
+,
+
+66 
+logfe
+=
+NÚe
+, 
+cwd
+=NÚe, 
+’v
+=NÚe, 
+ignÜe_sighup
+=
+True
+, 
+echo
+=True,
+
+67 
+’codšg
+=
+NÚe
+, 
+codec_”rÜs
+='strict',
+
+68 
+ho¡
+='', 
+pÜt
+='23', 
+u£ºame
+='', 
+·sswÜd
+='', 
+´om±
+='[#$>]', 
+logg”
+=
+NÚe
+):
+
+70 
+¥awn
+.
+	$__š™__
+(
+£lf
+, 
+NÚe
+, 
+timeout
+ñimeout, 
+max»ad
+=maxread,
+
+71 
+£¬chwšdowsize
+=£¬chwšdowsize, 
+logfe
+=logfile,
+
+72 
+cwd
+=cwd, 
+’v
+ónv, 
+ignÜe_sighup
+=ignÜe_sighup, 
+echo
+=echo,
+
+73 
+’codšg
+óncodšg, 
+codec_”rÜs
+=codec_errors)
+
+75 
+£lf
+.
+ho¡
+ = host
+
+76 
+£lf
+.
+pÜt
+ =…ort
+
+77 
+£lf
+.
+u£ºame
+ = username
+
+78 
+£lf
+.
+·sswÜd
+ =…assword
+
+79 
+£lf
+.
+´om±
+ =…rompt
+
+80 
+£lf
+.
+logg”
+ =†ogger
+
+81 
+£lf
+.
+cÚÃùed
+ = 
+F®£
+
+
+82 
+def
+ 
+	$cÚÃù
+(
+£lf
+):
+
+83 
+cmd
+ = "‹Ê‘ % %s" % (
+£lf
+.
+ho¡
+, s–f.
+pÜt
+)
+
+84 
+¥awn
+.
+	$_¥awn
+(
+£lf
+, 
+cmd
+)
+
+85 
+True
+:
+
+86 
+idx
+ = 
+£lf
+.
+	`ex³ù
+([£lf.
+´om±
+, "No„outeo host", "timed out", "closed by foreign host", "assword:",
+
+87 "ogš:", "U£r:", 
+EOF
+, 
+TIMEOUT
+])
+
+88 
+idx
+ == 0:
+
+89 
+£lf
+.
+cÚÃùed
+ = 
+True
+
+
+91 
+–if
+ 
+idx
+ 
+	$š
+ (1, 2, 3):
+
+92 
+£lf
+.
+	$şo£
+()
+
+94 
+–if
+ 
+idx
+ == 4:
+
+95 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+·sswÜd
+)
+
+96 
+–if
+ 
+idx
+ == 5:
+
+97 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+u£ºame
+)
+
+98 
+–if
+ 
+idx
+ == 6:
+
+99 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+u£ºame
+)
+
+101 
+£lf
+.
+	$şo£
+()
+
+103  
+£lf
+.
+cÚÃùed
+
+
+104 
+def
+ 
+	$discÚÃù
+(
+£lf
+):
+
+105 
+£lf
+.
+	$şo£
+()
+
+106 
+£lf
+.
+cÚÃùed
+ = 0
+
+107 
+def
+ 
+	$is_cÚÃùed
+(
+£lf
+):
+
+108  
+£lf
+.
+cÚÃùed
+
+
+	@build/lib/iut/dev.py
+
+1 
+äom
+ 
+şi
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+og
+ 
+impÜt
+ 
+	glog
+, 
+Ilogg”
+
+
+3 
+äom
+ 
+dijk¡¿
+ 
+impÜt
+ 
+shÜ‹¡P©h
+
+
+5 
+äom
+ 
+³x³ù
+ 
+impÜt
+ 
+	gEOF
+, 
+TIMEOUT
+
+
+7 
+	g__®l__
+ = ['ExceptionDevice', 'Device']
+
+9 
+şass
+ 
+	$Exû±iÚDeviû
+(
+Exû±iÚ
+):
+
+13 
+şass
+ 
+	$Deviû
+(
+SSH
+, 
+T–Ãt
+):
+
+14 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+):
+
+15 
+£lf
+.
+deviû_Çme
+ = device_name
+
+16 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+18 
+£lf
+.
+modes
+ = {
+	}
+}
+
+20 
+£lf
+.
+g¿ph
+ = {}
+
+21 
+£lf
+.
+·th_cmd
+ = {}
+
+23 
+£lf
+.
+auto_»¥Ú£
+ = {}
+
+25 
+£lf
+.
+max_timeout
+ = 30
+
+27 
+kw¬gs
+['logg”'] = 
+	$Ilogg”
+(
+deviû_Çme
+)
+
+28 
+£lf
+.
+logg”
+ = 
+kw¬gs
+['logger']
+
+30 
+£lf
+.
+´om±
+ = 
+kw¬gs
+.
+	`g‘
+('prompt', '[#$>]')
+
+32 
+nÙ
+ 
+£lf
+.
+deviû_Çme
+:
+
+33 
+¿i£
+ 
+	`Exû±iÚDeviû
+('Unknown device NAME')
+
+34 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'ssh':
+
+35 #SSH.
+	`__š™__
+(
+£lf
+, 
+timeout
+=
+kw¬gs
+.
+	`g‘
+('timeout', 30), 
+max»ad
+=kwargs.get('maxread', 2000),
+
+36 #£¬chwšdowsize=
+kw¬gs
+.
+	`g‘
+('£¬chwšdowsize', 
+NÚe
+), 
+logfe
+=kwargs.get('logfile', None),
+
+37 #cwd=
+kw¬gs
+.
+	`g‘
+('cwd', 
+NÚe
+), 
+’v
+=kw¬gs.g‘('’v', NÚe), 
+ignÜe_sighup
+=kwargs.get('ignore_sighup', None),
+
+38 #echo=
+kw¬gs
+.
+	`g‘
+('echo', 
+NÚe
+), 
+’codšg
+=kwargs.get('encoding', None),
+
+39 #codec_”rÜs=
+kw¬gs
+.
+	`g‘
+('codec_errors', 'strict'),
+
+40 #ho¡=
+kw¬gs
+.
+	`g‘
+('ho¡', ''), 
+pÜt
+=kwargs.get('port', '22'),
+
+41 #u£ºame=
+kw¬gs
+.
+	`g‘
+('u£ºame', ''), 
+·sswÜd
+=kwargs.get('password', ''),
+
+42 #İtiÚs=
+kw¬gs
+.
+	`g‘
+('İtiÚs', ''), 
+´om±
+=kw¬gs.g‘('´om±', '[#$]'), 
+logg”
+=kw¬gs.g‘('logg”', 
+NÚe
+))
+
+43 
+SSH
+.
+	$__š™__
+(
+£lf
+, *
+¬gs
+, **
+kw¬gs
+)
+
+44 
+–if
+ 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'telnet':
+
+45 #T–Ãt.
+	`__š™__
+(
+£lf
+, 
+timeout
+=
+kw¬gs
+.
+	`g‘
+('timeout', 30), 
+max»ad
+=kwargs.get('maxread', 2000),
+
+46 #£¬chwšdowsize=
+kw¬gs
+.
+	`g‘
+('£¬chwšdowsize', 
+NÚe
+), 
+logfe
+=kwargs.get('logfile', None),
+
+47 #cwd=
+kw¬gs
+.
+	`g‘
+('cwd', 
+NÚe
+), 
+’v
+=kw¬gs.g‘('’v', NÚe), 
+ignÜe_sighup
+=kwargs.get('ignore_sighup', None),
+
+48 #echo=
+kw¬gs
+.
+	`g‘
+('echo', 
+NÚe
+), 
+’codšg
+=kwargs.get('encoding', None),
+
+49 #codec_”rÜs=
+kw¬gs
+.
+	`g‘
+('codec_errors', 'strict'),
+
+50 #ho¡=
+kw¬gs
+.
+	`g‘
+('ho¡', ''), 
+pÜt
+=kwargs.get('port', '23'),
+
+51 #u£ºame=
+kw¬gs
+.
+	`g‘
+('u£ºame', ''), 
+·sswÜd
+=kwargs.get('password', ''),
+
+52 #´om±=
+kw¬gs
+.
+	`g‘
+('´om±', '[#$>]'), 
+logg”
+=kw¬gs.g‘('logg”', 
+NÚe
+))
+
+53 
+T–Ãt
+.
+	$__š™__
+(
+£lf
+, *
+¬gs
+, **
+kw¬gs
+)
+
+55 
+¿i£
+ 
+	`Exû±iÚDeviû
+('UnknowÀMGT-METHOD fÜ %s' % 
+£lf
+.
+deviû_Çme
+)
+
+57 
+def
+ 
+	$add_mode
+(
+£lf
+, 
+mode
+, 
+·‰”n
+):
+
+59 
+Add
+ 
+mode
+ 
+deviû
+, 
+·‰”n
+ 
+is
+ 
+the
+ 
+´om±
+ 
+of
+he mode.
+
+61 
+£lf
+.
+modes
+[
+·‰”n
+] = 
+mode
+
+
+63 
+def
+ 
+	$add_·th
+(
+£lf
+, 
+sourû
+, 
+de¡š©iÚ
+, 
+cmd
+,
+timeout
+ = 30):
+
+65 
+Provide
+ 
+the
+ 
+·th
+ 
+äom
+ 
+sourû
+ 
+mode
+ 
+to
+ 
+de¡š©iÚ
+ mode.
+
+66 
+sourû
+: sourû 
+mode
+
+
+67 
+de¡š©iÚ
+: de¡š©iÚ 
+mode
+
+
+68 
+timeout
+: 
+the
+ 
+ex³ù
+imeouˆth
+·th
+
+
+70 
+£lf
+.
+max_timeout
+ = 
+	$max
+(
+£lf
+.
+max_timeout
+, 
+timeout
+)
+
+71 
+£lf
+.
+g¿ph
+.
+	$has_key
+(
+sourû
+):
+
+72 
+£lf
+.
+g¿ph
+[
+sourû
+].
+	`upd©e
+({
+de¡š©iÚ
+: 
+timeout
+})
+
+74 
+£lf
+.
+g¿ph
+[
+sourû
+] = {
+de¡š©iÚ
+: 
+timeout
+}
+
+75 
+£lf
+.
+·th_cmd
+[(
+sourû
+, 
+de¡š©iÚ
+)] = 
+cmd
+
+
+77 
+def
+ 
+	$add_auto_»¥Ú£
+(
+£lf
+, 
+·‰”n
+, 
+cmd
+):
+
+79 
+ex³ù
+ 
+the
+ 
+·‰”n
+, 
+cmd
+ 
+wl
+ 
+be
+ 
+£Á
+ 
+autom©iÿÎy
+.
+
+81 
+£lf
+.
+auto_»¥Ú£
+[
+·‰”n
+] = 
+cmd
+
+
+83 
+def
+ 
+	$cmd
+(
+£lf
+, 
+cmds
+, *
+¬gs
+, **
+kw¬gs
+):
+
+85 
+£nd
+ 
+commªds
+ 
+š
+ 
+this
+ 
+¥awn
+ 
+£ssiÚ
+.
+
+87 
+tmp_cmd_li¡
+ = 
+cmds
+.
+	$¥l™lšes
+()
+
+88 
+g‘_mode
+ = 
+kw¬gs
+.
+	`g‘
+('g‘_mode', 
+F®£
+)
+
+89 
+´om±
+ = 
+kw¬gs
+.
+	`g‘
+('´om±', 
+NÚe
+)
+
+90 
+aùiÚ
+ = 
+kw¬gs
+.
+	`g‘
+('aùiÚ', 
+NÚe
+)
+
+91 
+p_a_key·œ
+ = 
+	`diù
+(
+	$z
+(
+´om±
+, 
+aùiÚ
+)è´om± 
+NÚe
+
+
+92 
+cur_mode
+ = 
+NÚe
+
+
+93 
+cur_bufãr
+ = ''
+
+94 
+cmd_li¡
+ = [
+cmd
+.
+	$¡r
+(è
+cmd
+ 
+š
+ 
+tmp_cmd_li¡
+ 
+	`Ën
+(cmd.
+	`¡r
+()è!ğ0 
+ªd
+ cmd.¡r()[0] !ğ'#'] 
+nÙ
+ 
+g‘_mode
+ ['',]
+
+95 
+log
+.
+	`debug
+('cmd_li¡ %r' % 
+cmd_li¡
+)
+
+96 
+exps
+ = 
+£lf
+.
+auto_»¥Ú£
+.
+	`keys
+(è+ s–f.
+modes
+.keys(è+ [
+EOF
+, 
+TIMEOUT
+] 
+nÙ
+ 
+´om±
+ self.auto_response.keys() +…rompt + [EOF, TIMEOUT]
+
+97 
+cmd
+ 
+š
+ 
+cmd_li¡
+:
+
+98 
+£lf
+.
+	$£ndlše
+(
+cmd
+)
+
+99 
+True
+:
+
+100 
+idx
+ = 
+£lf
+.
+	`ex³ù
+(
+exps
+, 
+timeout
+ = 
+kw¬gs
+.
+	`g‘
+('timeout', s–f.
+max_timeout
+))
+
+101 
+idx
+ < 
+	$Ën
+(
+£lf
+.
+auto_»¥Ú£
+):
+
+102 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+103 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+auto_»¥Ú£
+[
+exps
+[
+idx
+]])
+
+104 
+–if
+ 
+´om±
+ 
+ªd
+ 
+idx
+ < 
+	`Ën
+(
+£lf
+.
+auto_»¥Ú£
+è+ 
+	$Ën
+(
+´om±
+):
+
+105 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+106 
+p_a_key·œ
+[
+exps
+[
+idx
+]]:
+
+107 
+£lf
+.
+	$£ndlše
+(
+p_a_key·œ
+[
+exps
+[
+idx
+]])
+
+110 
+–if
+ 
+´om±
+ 
+is
+ 
+NÚe
+ 
+ªd
+ 
+idx
+ < 
+	`Ën
+(
+£lf
+.
+auto_»¥Ú£
+è+ 
+	$Ën
+(
+£lf
+.
+modes
+):
+
+111 
+cur_mode
+ = 
+£lf
+.
+modes
+[
+exps
+[
+idx
+]]
+
+112 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+114 
+–if
+ 
+idx
+ =ğ
+	`Ën
+(
+exps
+) - 1:
+
+115 
+¿i£
+ 
+	`Exû±iÚDeviû
+('Timeouto hit‡ny…rompt.')
+
+117 
+¿i£
+ 
+	`Exû±iÚDeviû
+('EOF')
+
+118  
+cur_mode
+ 
+g‘_mode
+ 
+cur_bufãr
+
+
+120 
+def
+ 
+	$g‘_cur_mode
+(
+£lf
+):
+
+122 
+R‘uº
+ 
+the
+ 
+cu¼’t
+ 
+mode
+.
+
+124  
+£lf
+.
+	`cmd
+('', 
+g‘_mode
+=
+True
+)
+
+126 
+def
+ 
+	$to_mode
+(
+£lf
+, 
+mode
+):
+
+128 
+G‘
+ 
+to
+ 
+the
+ 
+mode
+ 
+which
+ 
+you
+ 
+wªt
+Ø
+¬ive
+, 
+u£
+h
+dijk¡¿
+ 
+®gÜ™hm
+Ø
+fšd
+
+
+129 
+the
+ 
+shÜ‹¡
+ 
+·th
+.
+
+131 
+cur_mode
+ = 
+£lf
+.
+	$g‘_cur_mode
+()
+
+132 
+·th
+ = 
+	$shÜ‹¡P©h
+(
+£lf
+.
+g¿ph
+, 
+cur_mode
+, 
+mode
+)
+
+133 
+	`Ën
+(
+·th
+) != 1:
+
+134 
+cur
+ = 
+·th
+.
+	$pİ
+(0)
+
+135 
+	`Ën
+(
+·th
+) != 0:
+
+136 
+Ãxt
+ = 
+·th
+.
+	$pİ
+(0)
+
+137 
+£lf
+.
+	`cmd
+(£lf.
+·th_cmd
+[(
+cur
+, 
+Ãxt
+)])
+
+138 
+cur
+ = 
+Ãxt
+
+
+139 
+cur_mode
+ = 
+cur
+
+
+140  
+cur_mode
+
+
+	@build/lib/iut/dijkstra.py
+
+2 #David 
+Eµ¡eš
+, 
+UC
+ 
+Irvše
+, 4 
+A´
+ 2002
+
+5 
+äom
+ 
+´iodiù
+ 
+impÜt
+ 
+´iÜ™yDiùiÚ¬y
+
+
+7 
+def
+ 
+	$Dijk¡¿
+(
+G
+,
+¡¬t
+,
+’d
+=
+NÚe
+):
+
+9 
+Fšd
+ 
+shÜ‹¡
+ 
+·ths
+ 
+äom
+ 
+the
+ 
+¡¬t
+ 
+v”‹x
+ 
+to
+ 
+®l
+ 
+v”tiûs
+ 
+Ã¬”
+ 
+thª
+ 
+Ü
+ 
+equ®
+Øth
+’d
+.
+
+11 
+The
+ 
+šput
+ 
+g¿ph
+ 
+G
+ 
+is
+ 
+assumed
+ 
+to
+ 
+have
+ 
+the
+ 
+fŞlowšg
+ 
+»´e£Á©iÚ
+:
+
+12 
+A
+ 
+v”‹x
+ 
+ÿn
+ 
+be
+ 
+ªy
+ 
+objeù
+ 
+th©
+ cª b
+u£d
+ 
+as
+ 
+ª
+ 
+šdex
+ 
+što
+ 
+a
+ 
+diùiÚ¬y
+.
+
+13 
+G
+ 
+is
+ 
+a
+ 
+diùiÚ¬y
+, 
+šdexed
+ 
+by
+ 
+v”tiûs
+. 
+FÜ
+ 
+ªy
+ 
+v”‹x
+ 
+v
+, G[v] i 
+™£lf
+‡ dictionary,
+
+14 
+šdexed
+ 
+by
+ 
+the
+ 
+ÃighbÜs
+ 
+of
+ 
+v
+. 
+FÜ
+ 
+ªy
+ 
+edge
+ v->
+w
+, 
+G
+[v][w] 
+is
+h
+Ëngth
+ ofheƒdge.
+
+15 
+This
+ 
+is
+ 
+»Ï‹d
+ 
+to
+ 
+the
+ 
+»´e£Á©iÚ
+ 
+š
+ <
+h‰p
+:
+
+16 
+wh”e
+ 
+Guido
+ 
+vª
+ 
+Rossum
+ 
+sugge¡s
+ 
+»´e£Ášg
+ 
+g¿phs
+ 
+as
+ 
+diùiÚ¬›s
+ 
+m­pšg
+ 
+v”tiûs
+
+
+17 
+to
+ 
+li¡s
+ 
+of
+ 
+outgošg
+ 
+edges
+, 
+howev”
+ 
+diùiÚ¬›s
+ oàedge 
+have
+ 
+mªy
+ 
+advªges
+ 
+ov”
+†ists:
+
+18 
+they
+ 
+ÿn
+ 
+¡Üe
+ 
+exŒa
+ 
+	`šfÜm©iÚ
+ (
+h”e
+, 
+the
+ 
+Ëngths
+),hey 
+suµÜt
+ 
+ç¡
+ 
+exi¡’û
+ 
+‹¡s
+,
+
+19 
+ªd
+ 
+they
+ 
+®low
+ 
+—sy
+ 
+modifiÿtiÚ
+ 
+of
+ 
+the
+ 
+g¿ph
+ 
+¡ruùu»
+ 
+by
+ 
+edge
+ 
+š£¹iÚ
+‡nd 
+»mov®
+.
+
+20 
+Such
+ 
+modifiÿtiÚs
+ 
+¬e
+ 
+nÙ
+ 
+Ãeded
+ 
+h”e
+ 
+but
+‡» 
+impÜÁ
+ 
+š
+ 
+mªy
+ 
+Ùh”
+ 
+g¿ph
+ 
+®gÜ™hms
+.
+
+21 
+Sšû
+ 
+diùiÚ¬›s
+ 
+obey
+ 
+™”©Ü
+ 
+´ÙocŞ
+, 
+a
+ 
+g¿ph
+ 
+»´e£Áed
+ 
+as
+ 
+desüibed
+ 
+h”e
+ 
+could
+
+
+22 
+be
+ 
+hªded
+ 
+w™hout
+ 
+modifiÿtiÚ
+ 
+to
+ 
+ª
+ 
+®gÜ™hm
+ 
+ex³ùšg
+ 
+Guido
+'s graph„epresentation.
+
+24 
+Of
+ 
+cour£
+, 
+G
+ 
+ªd
+ G[
+v
+] 
+Ãed
+ 
+nÙ
+ 
+be
+ 
+aùu®
+ 
+PythÚ
+ 
+diù
+ 
+objeùs
+, 
+they
+ 
+ÿn
+ b
+ªy
+ 
+Ùh”
+
+
+25 
+ty³
+ 
+of
+ 
+objeù
+ 
+th©
+ 
+obeys
+ 
+diù
+ 
+´ÙocŞ
+, 
+š¡ªû
+ 
+Úe
+ 
+could
+ 
+u£
+ 
+a
+ 
+w¿µ”
+ 
+š
+ 
+which
+ 
+v”tiûs
+
+
+26 
+¬e
+ 
+URLs
+ 
+of
+ 
+web
+ 
+·ges
+ 
+ªd
+ 
+a
+ 
+ÿÎ
+ 
+to
+ 
+G
+[
+v
+] 
+lßds
+ 
+the
+ web 
+·ge
+‡nd 
+fšds
+ 
+™s
+ 
+outgošg
+ 
+lšks
+.
+
+28 
+The
+ 
+ouut
+ 
+is
+ 
+a
+ 
+	$·œ
+ (
+D
+,
+P
+è
+wh”e
+ D[
+v
+] 
+is
+ 
+the
+ 
+di¡ªû
+ 
+äom
+ 
+¡¬t
+ 
+to
+ v 
+ªd
+ P[v] ishe
+
+29 
+´edeûssÜ
+ 
+of
+ 
+v
+ 
+®Úg
+ 
+the
+ 
+shÜ‹¡
+ 
+·th
+ 
+äom
+ 
+s
+ 
+to
+ v.
+
+31 
+Dijk¡¿
+'s‡lgorithm is only guaranteedo work correctly when‡llƒdge†engths‡re…ositive.
+
+32 
+This
+ 
+code
+ 
+dÛs
+ 
+nÙ
+ 
+v”ify
+ 
+this
+ 
+´İ”ty
+ 
+®l
+ 
+	`edges
+ (
+Úly
+ 
+the
+ 
+edges
+ 
+examšed
+ 
+uÁ
+h
+’d
+
+
+33 
+v”‹x
+ 
+is
+ 
+»ached
+), 
+but
+ 
+wl
+ 
+cÜ»ùly
+ 
+compu‹
+ 
+shÜ‹¡
+ 
+·ths
+ 
+ev’
+ 
+some
+ 
+g¿phs
+ 
+w™h
+ 
+Ãg©ive
+
+
+34 
+edges
+, 
+ªd
+ 
+wl
+ 
+¿i£
+ 
+ª
+ 
+exû±iÚ
+ 
+™
+ 
+discov”s
+ 
+th©
+ 
+a
+ 
+Ãg©ive
+ 
+edge
+ 
+has
+ 
+ÿu£d
+ iˆ
+to
+ 
+make
+‡ 
+mi¡ake
+.
+
+37 
+D
+ = {
+	}
+} #diùiÚ¬y 
+of
+ 
+fš®
+ 
+di¡ªûs
+
+
+38 
+P
+ = {} #diùiÚ¬y 
+of
+ 
+´edeûssÜs
+
+
+39 
+Q
+ = 
+	$´iÜ™yDiùiÚ¬y
+(è#e¡im©ed 
+di¡ªûs
+ 
+of
+ 
+nÚ
+-
+fš®
+ 
+v”tiûs
+
+
+40 
+Q
+[
+¡¬t
+] = 0
+
+42 
+v
+ 
+š
+ 
+Q
+:
+
+43 
+D
+[
+v
+] = 
+Q
+[v]
+
+44 
+v
+ =ğ
+’d
+: 
+
+46 
+w
+ 
+š
+ 
+G
+[
+v
+]:
+
+47 
+vwL’gth
+ = 
+D
+[
+v
+] + 
+G
+[v][
+w
+]
+
+48 
+w
+ 
+š
+ 
+D
+:
+
+49 
+vwL’gth
+ < 
+D
+[
+w
+]:
+
+50 
+¿i£
+ 
+V®ueE¼Ü
+, "Dijkstra: found better…atho‡lready-final vertex"
+
+51 
+–if
+ 
+w
+ 
+nÙ
+ 
+š
+ 
+Q
+ 
+Ü
+ 
+vwL’gth
+ < Q[w]:
+
+52 
+Q
+[
+w
+] = 
+vwL’gth
+
+
+53 
+P
+[
+w
+] = 
+v
+
+
+55  (
+D
+,
+P
+)
+
+57 
+def
+ 
+	$shÜ‹¡P©h
+(
+G
+,
+¡¬t
+,
+’d
+):
+
+59 
+Fšd
+ 
+a
+ 
+sšgË
+ 
+shÜ‹¡
+ 
+·th
+ 
+äom
+ 
+the
+ 
+giv’
+ 
+¡¬t
+ 
+v”‹x
+ 
+to
+hgiv’ 
+’d
+ vertex.
+
+60 
+The
+ 
+šput
+ 
+has
+ 
+the
+ 
+§me
+ 
+cÚv’tiÚs
+ 
+as
+ 
+	`Dijk¡¿
+().
+
+61 
+The
+ 
+ouut
+ 
+is
+ 
+a
+ 
+li¡
+ 
+of
+ 
+the
+ 
+v”tiûs
+ 
+š
+ 
+Üd”
+ 
+®Úg
+h
+shÜ‹¡
+ 
+·th
+.
+
+64 
+D
+,
+P
+ = 
+	$Dijk¡¿
+(
+G
+,
+¡¬t
+,
+’d
+)
+
+65 
+P©h
+ = []
+
+67 
+P©h
+.
+	$­³nd
+(
+’d
+)
+
+68 
+’d
+ =ğ
+¡¬t
+: 
+
+69 
+’d
+ = 
+P
+[end]
+
+70 
+P©h
+.
+	$»v”£
+()
+
+71  
+P©h
+
+
+73 #exam¶e, 
+CLR
+ 
+p
+.528
+
+75 #'
+u
+': {'
+v
+':1, '
+x
+':2},
+
+76 #'
+v
+': {'
+y
+':4},
+
+77 #'
+x
+':{'
+u
+':3,'
+v
+':9,'
+y
+':2},
+
+78 #'
+y
+':{'
+s
+':7,'
+v
+':6}}
+
+81 #'
+B
+': {'
+A
+': 5, '
+D
+': 1, '
+G
+': 2},
+
+82 #'
+A
+': {'
+B
+': 5, '
+D
+': 3, '
+E
+': 12, '
+F
+' :5},
+
+83 #'
+D
+': {'
+B
+': 1, '
+G
+': 1, '
+E
+': 1, '
+A
+': 3},
+
+84 #'
+G
+': {'
+B
+': 2, '
+D
+': 1, '
+C
+': 2},
+
+85 #'
+C
+': {'
+G
+': 2, '
+E
+': 1, '
+F
+': 16},
+
+86 #'
+E
+': {'
+A
+': 12, '
+D
+': 1, '
+C
+': 1, '
+F
+': 2},
+
+87 #'
+F
+': {'
+A
+': 5, '
+E
+': 2, '
+C
+': 16}}
+
+89 #´šˆ
+	`Dijk¡¿
+(
+G
+,'A')
+
+90 #´šˆ
+	`shÜ‹¡P©h
+(
+G
+,'A','G')
+
+	@build/lib/iut/iap.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ 
+	glog
+, 
+Ilogg”
+
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+3 
+impÜt
+ 
+»
+
+
+5 
+	g__®l__
+ = ['ExceptionIAP', 'IAP']
+
+7 
+şass
+ 
+	$Exû±iÚIAP
+(
+Exû±iÚ
+):
+
+11 
+şass
+ 
+	$IAP
+(
+Deviû
+):
+
+12 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+ho¡Çme
+=
+NÚe
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+13 
+£lf
+.
+deviû_Çme
+ = device_name
+
+14 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+15 
+£lf
+.
+ho¡Çme
+ = hostname
+
+16 
+£lf
+.
+cu¡omized_mode
+ = customized_mode
+
+18 
+£lf
+.
+suµÜt_·sswÜd
+ = 
+r
+'S1erraOn#'
+
+19 
+£lf
+.
+u£ºame
+ = 
+kw¬gs
+.
+	`g‘
+('username', 'admin')
+
+20 
+£lf
+.
+·sswÜd
+ = 
+kw¬gs
+.
+	`g‘
+('password', 'admin')
+
+23 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+25 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+27 
+nÙ
+ 
+cu¡omized_mode
+:
+
+28 
+£lf
+.
+suµÜt_mode
+ = 'support'
+
+29 
+£lf
+.
+şi_mode
+ = 'cli'
+
+30 
+£lf
+.
+cÚfig_mode
+ = 'config'
+
+31 
+£lf
+.
+cÚfig_d“p_mode
+ = 'config_deep'
+
+32 
+£lf
+.
+­boÙ_mode
+ = 'apboot'
+
+33 
+£lf
+.
+­boÙ_’Œªû_mode
+ = 'apboot_entrance'
+
+34 
+£lf
+.
+suµÜt_·sswÜd_mode
+ = 'support_password'
+
+35 
+£lf
+.
+ty³_u£ºame_mode
+ = 'type_username'
+
+36 
+£lf
+.
+ty³_·sswÜd_mode
+ = 'type_password'
+
+38 
+£lf
+.
+	`add_mode
+(£lf.
+ty³_u£ºame_mode
+, 'User:')
+
+39 
+£lf
+.
+	`add_mode
+(£lf.
+ty³_·sswÜd_mode
+, 'Password:')
+
+40 
+£lf
+.
+	`add_mode
+(£lf.
+suµÜt_mode
+, 
+r
+'~ \#[\s]*$')
+
+41 
+£lf
+.
+	`add_mode
+(£lf.
+şi_mode
+, 
+r
+'%s\#[\s]*$' %
+
+42 (
+ho¡Çme
+ 
+Ü
+ 
+r
+'[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}'))
+
+43 
+£lf
+.
+	`add_mode
+(£lf.
+cÚfig_mode
+, 
+r
+'%s \(config\) \#[\s]*$' %
+
+44 (
+ho¡Çme
+ 
+Ü
+ 
+r
+'[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}'))
+
+45 
+£lf
+.
+	`add_mode
+(£lf.
+cÚfig_d“p_mode
+, 
+r
+'%s \(((?!config).)+\) \#[\s]*$' %
+
+46 (
+ho¡Çme
+ 
+Ü
+ 
+r
+'[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}'))
+
+47 
+£lf
+.
+	`add_mode
+(£lf.
+­boÙ_mode
+,
+r
+'apboot>[\s]*$')
+
+48 
+£lf
+.
+	`add_mode
+(£lf.
+­boÙ_’Œªû_mode
+, 
+r
+'Hit <enter>')
+
+49 
+£lf
+.
+	`add_mode
+(£lf.
+suµÜt_·sswÜd_mode
+, 
+r
+'support\r\nPassword:')
+
+51 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+ty³_u£ºame_mode
+, s–f.
+ty³_·sswÜd_mode
+, s–f.
+u£ºame
+)
+
+52 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+ty³_·sswÜd_mode
+, s–f.
+şi_mode
+, s–f.
+·sswÜd
+)
+
+53 
+£lf
+.
+	`add_·th
+(£lf.
+şi_mode
+, s–f.
+suµÜt_·sswÜd_mode
+, 'support')
+
+54 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+suµÜt_·sswÜd_mode
+, s–f.
+suµÜt_mode
+, s–f.
+suµÜt_·sswÜd
+)
+
+55 
+£lf
+.
+	`add_·th
+(£lf.
+suµÜt_mode
+, s–f.
+şi_mode
+, 'exit')
+
+56 
+£lf
+.
+	`add_·th
+(£lf.
+şi_mode
+, s–f.
+cÚfig_mode
+, 'configureerminal')
+
+57 
+£lf
+.
+	`add_·th
+(£lf.
+cÚfig_mode
+, s–f.
+şi_mode
+, 'exit')
+
+58 
+£lf
+.
+	`add_·th
+(£lf.
+cÚfig_d“p_mode
+, s–f.
+şi_mode
+, 'end')
+
+59 
+£lf
+.
+	`add_·th
+(£lf.
+suµÜt_mode
+, s–f.
+­boÙ_’Œªû_mode
+, '»boÙ', 
+timeout
+=120)
+
+60 
+£lf
+.
+	`add_·th
+(£lf.
+şi_mode
+, s–f.
+­boÙ_’Œªû_mode
+, '»lßd', 
+timeout
+=120)
+
+61 
+£lf
+.
+	`add_·th
+(£lf.
+­boÙ_’Œªû_mode
+, s–f.
+­boÙ_mode
+, '\r')
+
+62 
+£lf
+.
+	`add_·th
+(£lf.
+­boÙ_mode
+, s–f.
+ty³_u£ºame_mode
+, 'reset')
+
+64 
+def
+ 
+	$cfg
+(
+£lf
+, 
+cmds
+, 
+³r_­
+ = 
+F®£
+):
+
+66 
+S’d
+ 
+cÚfigu¿tiÚ
+ 
+to
+ 
+IAP
+,
+
+67 
+³r_­
+ 
+£‰šg
+ 
+is
+ 
+True
+, 
+to
+ 
+şi
+ 
+mode
+ 
+ªd
+ 
+wr™e
+ 
+memÜy
+ 
+©
+ 
+Ï¡
+.
+
+68 
+the
+ 
+cÚfigu¿tiÚ
+ 
+is
+ 
+glob®
+ 
+­
+, 
+to
+ 
+cÚfig
+ 
+mode
+ 
+ªd
+ 
+comm™
+ 
+­¶y
+ 
+©
+ 
+Ï¡
+.
+
+70 
+³r_­
+:
+
+71 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+şi_mode
+)
+
+72 
+£lf
+.
+	$cmd
+(
+cmds
+, 
+timeout
+=5)
+
+73 
+£lf
+.
+	`cmd
+('wr™memÜy', 
+timeout
+=5)
+
+75 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+cÚfig_mode
+)
+
+76 
+£lf
+.
+	$cmd
+(
+cmds
+, 
+timeout
+=5)
+
+77 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+şi_mode
+)
+
+78 
+£lf
+.
+	`cmd
+('comm™‡µly', 
+timeout
+=5)
+
+80 @
+¡©icm‘hod
+
+
+81 
+def
+ 
+	$show_bË_·r£r
+(
+show_log
+):
+
+83 
+P¬£
+ 
+the
+ 
+show
+ 
+bË
+.
+
+85 
+show_lšes
+ = [
+lše
+.
+	$¡r
+(è
+lše
+ 
+š
+ 
+show_log
+.
+	$¥l™lšes
+(è
+	`Ën
+(
+lše
+.
+	`¡r
+()) != 0]
+
+86 
+	`Ën
+(
+show_lšes
+) == 0:
+
+87  
+NÚe
+
+
+88 
+bËs
+ = {
+	}
+}
+
+89 
+š_bË
+ = 
+F®£
+
+
+90 
+·rsšg_f›lds
+ = 
+F®£
+
+
+91 
+bË_rows
+ = []
+
+92 
+bË_Çme
+ = 
+NÚe
+
+
+93 
+Ën
+(
+show_lšes
+) != 0:
+
+94 
+cur
+ = 
+show_lšes
+.
+	$pİ
+(0)
+
+95 
+Ãxt
+ = 
+show_lšes
+[0] 
+	`Ën
+(show_lines) != 0 ''
+
+97 
+š_bË
+:
+
+98 
+·rsšg_f›lds
+:
+
+100 
+row_li¡
+ = 
+IAP
+.
+	$_g‘_f›lds
+(
+cur
+,
+f›lds_Ën
+)
+
+101 #HªdË 
+¡¿nge
+ 
+lšes
+, 
+howev”
+ 
+I
+ 
+thšk
+ 
+™
+ 
+is
+ 
+nÙ
+ 
+—sy
+ 
+to
+ 
+h™
+ 
+this
+ 
+cÚd™iÚ
+
+
+102 
+	`Ën
+(
+row_li¡
+è< 
+	$Ën
+(
+f›lds_t™Ë
+):
+
+103 
+row_li¡
+ =„ow_list + ['',]
+
+104 
+log
+.
+	`debug
+('row†i¡: %r' % 
+row_li¡
+)
+
+105 
+nÙ
+ 
+»
+.
+	`m©ch
+('^-+[\s]+[\s-]+-$', 
+cur
+):
+
+106 
+bË_rows
+.
+	$­³nd
+(
+row_li¡
+)
+
+108 
+	`Ën
+(
+Ãxt
+è< 
+mš_lše_Ën
+:
+
+109 
+log
+.
+	`debug
+('ThÃxˆh™ thi cÚd™iÚ 1: %r' % 
+Ãxt
+)
+
+110 
+log
+.
+	`debug
+('cÚd™iÚ 1, cu¼’ˆlš : %r' % 
+cur
+)
+
+111 
+·rsšg_f›lds
+ = 
+F®£
+
+
+113 
+b
+ = [ 
+a
+ ¨
+š
+ 
+IAP
+.
+	$_g‘_f›lds
+(
+Ãxt
+, 
+f›lds_Ën
+è
+a
+[0] == ' ']
+
+114 
+	`Ën
+(
+b
+) != 0:
+
+115 
+·rsšg_f›lds
+ = 
+F®£
+
+
+116 
+log
+.
+	`debug
+('ThÃxˆh™ thi cÚd™iÚ 2: %r' % 
+Ãxt
+)
+
+117 
+log
+.
+	`debug
+('cÚd™iÚ 2, cu¼’ˆlš : %r' % 
+cur
+)
+
+118 
+nÙ
+ 
+·rsšg_f›lds
+:
+
+119 
+d
+ = {
+	}
+}
+
+120 
+a
+ 
+š
+ 
+	$z
+(*
+bË_rows
+):
+
+121 
+d
+[
+a
+[0]] =‡[1:]
+
+122 
+bËs
+.
+	$has_key
+(
+bË_Çme
+):
+
+123 
+bËs
+[
+bË_Çme
+].
+	$upd©e
+(
+d
+)
+
+125 
+bËs
+[
+bË_Çme
+] = 
+d
+
+
+126 
+š_bË
+ = 
+F®£
+
+
+127 
+bË_Çme
+ = 
+NÚe
+
+
+129 
+–if
+ 
+»
+.
+	`m©ch
+('^-+[\s]+[\s-]+-$', 
+Ãxt
+):
+
+130 
+f›lds_Ën
+ = 
+	`m­
+(
+Ïmbda
+ 
+y
+: 
+	`Ën
+(y), 
+	`f‹r
+Öambd¨
+x
+: x!='', 
+»
+.
+	`¥l™
+('(-+\s+)', 
+Ãxt
+)))
+
+131 #G‘ 
+f›lds
+ 
+t™Ë
+
+
+132 
+f›lds_t™Ë
+ = 
+IAP
+.
+	$_g‘_f›lds
+(
+cur
+, 
+f›lds_Ën
+)
+
+133 
+log
+.
+	`debug
+('f›ld t‹ %r' % 
+f›lds_t™Ë
+)
+
+134 
+bË_rows
+.
+	$­³nd
+(
+f›lds_t™Ë
+)
+
+135 
+·rsšg_f›lds
+ = 
+True
+
+
+136 
+hyph’_lše_Ën
+ = 
+	$Ën
+(
+Ãxt
+)
+
+137 
+mš_lše_Ën
+ = 
+	`Ën
+(
+Ãxt
+è- 
+f›lds_Ën
+[-1]
+
+139 #Fšd 
+out
+ 
+the
+ 
+bË
+ 
+Çme
+:
+
+140 #Ià
+the
+ 
+Ãxt
+ 
+lše
+ 
+of
+ 
+bË
+ 
+is
+ 
+combšed
+ 
+by
+ '-',
+
+141 #I 
+assume
+ 
+th©
+ 
+the
+ 
+cu¼’t
+ 
+lše
+ 
+should
+ 
+be
+h
+bË
+ 
+Çme
+
+
+142 
+–if
+ 
+»
+.
+	`m©ch
+('^-+$', 
+Ãxt
+):
+
+143 
+bË_Çme
+ = 
+cur
+
+
+144 
+š_bË
+ = 
+True
+
+
+145 
+log
+.
+	`debug
+('bË‚am%r' % 
+bË_Çme
+)
+
+146 #cŞÚ 
+fÜm©
+ 
+lše
+, 
+no
+ 
+Ãed
+ 
+to
+ 
+check
+ 
+Ãxt
+†ine
+
+147 
+–if
+ ':' 
+š
+ 
+cur
+:
+
+148 
+cŞÚ_row_li¡
+ = 
+cur
+.
+	`¥l™
+(':', 1)
+
+149 
+bËs
+[
+cŞÚ_row_li¡
+[0]] = colon_row_list[1]
+
+150 
+cur
+ = 
+Ãxt
+
+
+152 
+log
+.
+	`debug
+('bË %r' % 
+bËs
+)
+
+153  
+bËs
+
+
+155 @
+¡©icm‘hod
+
+
+156 
+def
+ 
+	$_g‘_f›lds
+(
+lše
+, 
+f›lds_Ën
+):
+
+157 
+¤c
+ = 0
+
+158 
+f›lds
+ = []
+
+159 
+f
+ 
+š
+ 
+f›lds_Ën
+[:-1]:
+
+160 
+f›lds
+.
+	`­³nd
+(
+lše
+[
+¤c
+: src+
+f
+].
+	$r¡r
+())
+
+161 
+¤c
+ = srø+ 
+f
+
+
+162 
+f›lds
+.
+	`­³nd
+(
+lše
+[
+¤c
+:].
+	$r¡r
+())
+
+163  
+f›lds
+
+
+165 @
+¡©icm‘hod
+
+
+166 
+def
+ 
+	$g‘_ma¡”
+(*
+hªdËs
+):
+
+167 
+hªdË
+ 
+š
+ 
+hªdËs
+:
+
+168 
+»t
+ = 
+hªdË
+.
+	`cmd
+('show summary | inc Master')
+
+169 
+»t_diù
+ = 
+£lf
+.
+a
+.
+	$show_bË_·r£r
+(
+»t
+)
+
+170 '*' 
+š
+ 
+»t_diù
+['Master IP Address']:
+
+171  
+hªdË
+
+
+	@build/lib/iut/ilog.py
+
+1 
+impÜt
+ 
+loggšg
+
+
+2 
+impÜt
+ 
+sys
+
+
+4 
+	g__®l__
+ = ['Ilogger', 'FileAdapter']
+
+6 
+şass
+ 
+	$Ilogg”
+(
+objeù
+):
+
+7 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+Çme
+, 
+logfe
+=
+NÚe
+, 
+logËv–
+=
+loggšg
+.
+INFO
+):
+
+9 
+£lf
+.
+DEVICE
+ = 100
+
+11 
+£lf
+.
+logg”
+ = 
+loggšg
+.
+	$g‘Logg”
+(
+Çme
+)
+
+13 
+£lf
+.
+Çme
+ =‚ame
+
+14 
+£lf
+.
+logfe
+ =†ogfile
+
+15 
+£lf
+.
+logËv–
+ =†oglevel
+
+17 
+£lf
+.
+logg”
+.
+	$£tLev–
+(
+£lf
+.
+logËv–
+)
+
+19 
+fÜm©‹r
+ = 
+loggšg
+.
+	`FÜm©‹r
+('%(asctime)s | %(levelname)8s | %(name)16s : %(message)s')
+
+21 
+£lf
+.
+chªdËr
+ = 
+loggšg
+.
+	$SŒ—mHªdËr
+()
+
+22 
+£lf
+.
+chªdËr
+.
+	$£tFÜm©‹r
+(
+fÜm©‹r
+)
+
+23 
+£lf
+.
+logg”
+.
+	$addHªdËr
+(
+£lf
+.
+chªdËr
+)
+
+25 
+£lf
+.
+logfe
+:
+
+26 
+£lf
+.
+fhªdËr
+ = 
+loggšg
+.
+	$FeHªdËr
+(
+£lf
+.
+logfe
+)
+
+27 
+£lf
+.
+fhªdËr
+.
+	$£tFÜm©‹r
+(
+fÜm©‹r
+)
+
+28 
+£lf
+.
+logg”
+.
+	$addHªdËr
+(
+£lf
+.
+fhªdËr
+)
+
+30 
+loggšg
+.
+	`addLev–Name
+(
+£lf
+.
+DEVICE
+, 'DEVICE')
+
+32 
+def
+ 
+	$debug
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+33 
+£lf
+.
+logg”
+.
+	$debug
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+35 
+def
+ 
+	$šfo
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+36 
+£lf
+.
+logg”
+.
+	$šfo
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+38 
+def
+ 
+	$w¬nšg
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+39 
+£lf
+.
+logg”
+.
+	$w¬nšg
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+41 
+def
+ 
+	$”rÜ
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+42 
+£lf
+.
+logg”
+.
+	$”rÜ
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+44 
+def
+ 
+	$exû±iÚ
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+45 
+kw¬gs
+["exc_info"] = 1
+
+46 
+£lf
+.
+logg”
+.
+	$”rÜ
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+48 
+def
+ 
+	$ü™iÿl
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+49 
+kw¬gs
+["exc_info"] = 1
+
+50 
+£lf
+.
+logg”
+.
+	$ü™iÿl
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+52 
+def
+ 
+	$log
+(
+£lf
+, 
+Ëv–
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+53 
+£lf
+.
+logg”
+.
+	$log
+(
+Ëv–
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+55 
+def
+ 
+	$deviû
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+56 
+£lf
+.
+logg”
+.
+	$log
+(
+£lf
+.
+DEVICE
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+58 '-vv' 
+š
+ 
+sys
+.
+¬gv
+ 
+Ü
+ '-vvv' in sys.argv:
+
+59 
+log
+ = 
+	`Ilogg”
+('IUTF', 
+logËv–
+ = 
+loggšg
+.
+DEBUG
+)
+
+61 
+log
+ = 
+	`Ilogg”
+('IUTF', 
+logËv–
+ = 
+loggšg
+.
+INFO
+)
+
+63 
+şass
+ 
+	$FeAd­‹r
+(
+objeù
+):
+
+64 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+logg”
+):
+
+65 
+£lf
+.
+logg”
+ =†ogger
+
+66 
+def
+ 
+	$wr™e
+(
+£lf
+, 
+d©a
+):
+
+67 #NOTE: 
+d©a
+ 
+ÿn
+ 
+be
+ 
+a
+ 
+·¹Ÿl
+ 
+lše
+, 
+muÉË
+ 
+lšes
+
+
+68 
+d©a
+ = d©a.
+	$¡r
+(è#ignÜ
+Ëadšg
+/
+Œašg
+ 
+wh™e¥aû
+
+
+69 
+d©a
+: #nÚ-
+bÏnk
+
+
+70 
+lšes
+ = 
+d©a
+.
+	`¥l™lšes
+()
+
+71 [
+£lf
+.
+logg”
+.
+	$deviû
+(
+lše
+èlš
+š
+ 
+lšes
+]
+
+72 
+def
+ 
+	$æush
+(
+£lf
+):
+
+73 
+·ss
+ #Ëav
+™
+ 
+to
+ 
+loggšg
+Ø
+æush
+…roperly
+
+	@build/lib/iut/macos.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+4 
+şass
+ 
+	$MacOS
+(
+Deviû
+):
+
+5 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+6 
+£lf
+.
+deviû_Çme
+ = device_name
+
+7 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+10 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+12 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+13 
+nÙ
+ 
+cu¡omized_mode
+:
+
+14 
+£lf
+.
+u£r_mode
+ = 'user_mode'
+
+15 
+£lf
+.
+roÙ_mode
+ = 'root_mode'
+
+16 
+£lf
+.
+su_roÙ_·sswÜd
+ = 'su_root_password'
+
+17 
+£lf
+.
+roÙ_·sswÜd
+ = 
+kw¬gs
+.
+	`g‘
+('root_password', '123456')
+
+18 
+£lf
+.
+	`add_mode
+(£lf.
+u£r_mode
+, 
+r
+'[^\r\n]+[\s]*\$[\s]*$')
+
+19 
+£lf
+.
+	`add_mode
+(£lf.
+roÙ_mode
+, 
+r
+'[^\r\n]+[\s]*\#[\s]*$')
+
+20 
+£lf
+.
+	`add_mode
+(£lf.
+su_roÙ_·sswÜd
+, 
+r
+'su -„oot\r\nPassword:')
+
+21 
+£lf
+.
+	`add_·th
+(£lf.
+u£r_mode
+, s–f.
+su_roÙ_·sswÜd
+, 
+r
+'su -„oot')
+
+22 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+su_roÙ_·sswÜd
+, s–f.
+roÙ_mode
+, s–f.
+roÙ_·sswÜd
+)
+
+23 
+£lf
+.
+	`add_·th
+(£lf.
+roÙ_mode
+, s–f.
+u£r_mode
+, 
+r
+'exit')
+
+25 
+def
+ 
+	$sudo
+(
+£lf
+, 
+cmd
+, *
+¬gs
+, **
+kw¬gs
+):
+
+26 
+£lf
+.
+	`cmd
+('sudØ%s'%
+cmd
+, 
+´om±
+ = ['PasswÜd:', '\$'], 
+aùiÚ
+ = [£lf.
+·sswÜd
+, 
+NÚe
+])
+
+	@build/lib/iut/priodict.py
+
+1 #PriÜ™y 
+diùiÚ¬y
+ 
+usšg
+ 
+bš¬y
+ 
+h—ps
+
+
+2 #David 
+Eµ¡eš
+, 
+UC
+ 
+Irvše
+, 8 
+M¬
+ 2002
+
+4 #Im¶em’t 
+a
+ 
+d©a
+ 
+¡ruùu»
+ 
+th©
+ 
+aùs
+ 
+®mo¡
+ 
+like
+‡ 
+diùiÚ¬y
+, 
+w™h
+ 
+two
+ 
+modifiÿtiÚs
+:
+
+5 #(1è
+D
+.
+sm®Ë¡
+(è
+»tuºs
+ 
+the
+ 
+v®ue
+ 
+x
+ 
+mšimizšg
+ D[x]. 
+FÜ
+ 
+this
+ 
+to
+ 
+wÜk
+ 
+cÜ»ùly
+,
+
+6 #®È
+v®ues
+ 
+D
+[
+x
+] 
+¡Üed
+ 
+š
+ 
+the
+ 
+diùiÚ¬y
+ 
+mu¡
+ 
+be
+ 
+com·¿bË
+.
+
+7 #(2è
+™”©šg
+ "fÜ x iÀD" 
+fšds
+ 
+ªd
+ 
+»moves
+ 
+the
+ 
+™ems
+ 
+äom
+ 
+D
+ 
+š
+ 
+sÜ‹d
+ 
+Üd”
+.
+
+8 #Each 
+™em
+ 
+is
+ 
+nÙ
+ 
+»moved
+ 
+uÁ
+ 
+the
+ 
+Ãxt
+ i‹m i 
+»que¡ed
+, 
+so
+ 
+D
+[
+x
+] 
+wl
+ 
+¡l
+
+
+9 #»tuº 
+a
+ 
+u£ful
+ 
+v®ue
+ 
+uÁ
+ 
+the
+ 
+Ãxt
+ 
+™”©iÚ
+ 
+of
+h-
+loİ
+.
+
+10 #Each 
+İ”©iÚ
+ 
+kes
+ 
+log¬™hmic
+ 
+amÜtized
+ 
+time
+.
+
+12 
+äom
+ 
+__futu»__
+ 
+impÜt
+ 
+g’”©Üs
+
+
+14 
+şass
+ 
+	$´iÜ™yDiùiÚ¬y
+(
+diù
+):
+
+15 
+def
+ 
+	$__š™__
+(
+£lf
+):
+
+17 
+NÙe
+ 
+th©
+ 
+chªgšg
+ 
+Ü
+ 
+»movšg
+ 
+a
+ 
+diù
+ 
+’Œy
+ 
+wl
+ 
+nÙ
+ 
+»move
+ 
+the
+ 
+Şd
+ 
+·œ
+ 
+äom
+h
+h—p
+
+
+18 
+uÁ
+ 
+™
+ 
+is
+ 
+found
+ 
+by
+ 
+	$sm®Ë¡
+(è
+Ü
+ 
+uÁ
+ 
+the
+ 
+h—p
+ 
+is
+ 
+»but
+.'''
+
+19 
+£lf
+.
+__h—p
+ = []
+
+20 
+diù
+.
+	$__š™__
+(
+£lf
+)
+
+22 
+def
+ 
+	$sm®Ë¡
+(
+£lf
+):
+
+24 
+	`Ën
+(
+£lf
+) == 0:
+
+25 
+¿i£
+ 
+IndexE¼Ü
+, "smallest ofƒmpty…riorityDictionary"
+
+26 
+h—p
+ = 
+£lf
+.
+__h—p
+
+
+27 
+h—p
+[0][1] 
+nÙ
+ 
+š
+ 
+£lf
+ 
+Ü
+ self[heap[0][1]] != heap[0][0]:
+
+28 
+Ï¡I‹m
+ = 
+h—p
+.
+	$pİ
+()
+
+29 
+š£¹iÚPošt
+ = 0
+
+31 
+sm®lChd
+ = 2*
+š£¹iÚPošt
++1
+
+32 
+sm®lChd
++1 < 
+	$Ën
+(
+h—p
+è
+ªd
+ h—p[
+sm®lChd
+] > heap[smallChild+1] :
+
+33 
+sm®lChd
+ += 1
+
+34 
+sm®lChd
+ >ğ
+	$Ën
+(
+h—p
+è
+Ü
+ 
+Ï¡I‹m
+ <ğh—p[
+sm®lChd
+]:
+
+35 
+h—p
+[
+š£¹iÚPošt
+] = 
+Ï¡I‹m
+
+
+37 
+h—p
+[
+š£¹iÚPošt
+] = h—p[
+sm®lChd
+]
+
+38 
+š£¹iÚPošt
+ = 
+sm®lChd
+
+
+39  
+h—p
+[0][1]
+
+41 
+def
+ 
+	$__™”__
+(
+£lf
+):
+
+43 
+def
+ 
+	$™”â
+():
+
+44 
+	`Ën
+(
+£lf
+) > 0:
+
+45 
+x
+ = 
+£lf
+.
+	$sm®Ë¡
+()
+
+46 
+y›ld
+ 
+x
+
+
+47 
+d–
+ 
+£lf
+[
+x
+]
+
+48  
+	$™”â
+()
+
+50 
+def
+ 
+	$__£t™em__
+(
+£lf
+,
+key
+,
+v®
+):
+
+52 
+Rebuds
+ 
+the
+ 
+h—p
+ th
+numb”
+ 
+of
+ 
+d–‘ed
+ 
+™ems
+ 
+g‘s
+ 
+Ïrge
+, 
+to
+ 
+avoid
+ 
+memÜy
+ 
+Ëakage
+.'''
+
+53 
+diù
+.
+	$__£t™em__
+(
+£lf
+,
+key
+,
+v®
+)
+
+54 
+h—p
+ = 
+£lf
+.
+__h—p
+
+
+55 
+	`Ën
+(
+h—p
+è> 2 * 
+	$Ën
+(
+£lf
+):
+
+56 
+£lf
+.
+__h—p
+ = [(
+v
+,
+k
+èk,v 
+š
+ s–f.
+	`™”™ems
+()]
+
+57 
+£lf
+.
+__h—p
+.
+	$sÜt
+(è#butš 
+sÜt
+ 
+´obably
+ 
+ç¡”
+ 
+thª
+ 
+	`O
+(
+n
+)-
+time
+ 
+h—pify
+
+
+59 
+ÃwPaœ
+ = (
+v®
+,
+key
+)
+
+60 
+š£¹iÚPošt
+ = 
+	$Ën
+(
+h—p
+)
+
+61 
+h—p
+.
+	$­³nd
+(
+NÚe
+)
+
+62 
+š£¹iÚPošt
+ > 0 
+ªd
+ 
+ÃwPaœ
+ < 
+h—p
+[(insertionPoint-1)
+
+63 
+h—p
+[
+š£¹iÚPošt
+] = heap[(insertionPoint-1)
+
+64 
+š£¹iÚPošt
+ = (insertionPoint-1)
+
+65 
+h—p
+[
+š£¹iÚPošt
+] = 
+ÃwPaœ
+
+
+67 
+def
+ 
+	$£tdeçuÉ
+(
+£lf
+,
+key
+,
+v®
+):
+
+69 
+key
+ 
+nÙ
+ 
+š
+ 
+£lf
+:
+
+70 
+£lf
+[
+key
+] = 
+v®
+
+
+71  
+£lf
+[
+key
+]
+
+	@build/lib/iut/testbed.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 
+impÜt
+ 
+sys
+
+
+4 
+impÜt
+ 
+jsÚ
+
+
+5 
+impÜt
+ 
+os
+
+
+6 
+äom
+ 
+og
+ 
+impÜt
+ 
+	glog
+, 
+Ilogg”
+
+
+8 
+	g_TESTBED
+ = 'testbed1'
+
+9 
+_TESTBED_DIR
+ = "./testbeds"
+
+11 
+glob®
+ 
+TESTBED
+
+
+13 
+TESTBED
+ = {}
+
+15 
+şass
+ 
+	$Exû±iÚTe¡bed
+(
+Exû±iÚ
+):
+
+19 '--‹¡bed-dœ' 
+š
+ 
+sys
+.
+¬gv
+:
+
+20 
+_TESTBED_DIR
+ = 
+sys
+.
+¬gv
+[sys.¬gv.
+	`šdex
+('--testbed-dir')+1]
+
+22 '--‹¡bed' 
+š
+ 
+sys
+.
+¬gv
+:
+
+23 
+_TESTBED
+ = 
+sys
+.
+¬gv
+[sys.¬gv.
+	`šdex
+('--testbed')+1]
+
+25 
+‹¡bed_fe
+ = 
+os
+.
+·th
+.
+	$još
+(
+_TESTBED_DIR
+, 
+_TESTBED
+)
+
+26 
+Œy
+:
+
+27 
+fd
+ = 
+	`İ’
+(
+‹¡bed_fe
+, 'r')
+
+28 
+‹¡bed_ùx
+ = 
+fd
+.
+	$»ad
+()
+
+29 
+log
+.
+	`debug
+("Te¡bed cÚ‹Á: %r" % 
+‹¡bed_ùx
+)
+
+30 
+TESTBED
+ = 
+jsÚ
+.
+	$lßds
+(
+‹¡bed_ùx
+)
+
+31 
+log
+.
+	`debug
+("decoded jsÚ: %r" % 
+TESTBED
+)
+
+32 
+exû±
+:
+
+33 
+log
+.
+	`”rÜ
+("Lßde¡bed % çed" % 
+‹¡bed_fe
+)
+
+34 
+fš®ly
+:
+
+35 
+fd
+.
+	$şo£
+()
+
+37 
+def
+ 
+	$REQUIRED
+(*
+duts
+):
+
+38 
+glob®
+ 
+TESTBED
+
+
+39 
+	`sÜ‹d
+(
+duts
+è!ğ
+TESTBED
+['DUT']:
+
+40 
+log
+.
+	`”rÜ
+("testbed does‚ot haveƒnough devices forhe script.")
+
+41 
+log
+.
+	$debug
+(
+TESTBED
+)
+
+42 
+¿i£
+ 
+	`Exû±iÚTe¡bed
+('Incorrectestbed - script mapping.')
+
+44  [
+TESTBED
+[
+dut
+] duˆ
+š
+ 
+duts
+]
+
+	@build/lib/iut/testbed_noseplugin.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 
+impÜt
+ 
+loggšg
+
+
+4 
+impÜt
+ 
+os
+
+
+5 
+impÜt
+ 
+no£
+
+
+6 
+impÜt
+ 
+jsÚ
+
+
+7 
+äom
+ 
+	gno£
+.
+¶ugšs
+ 
+impÜt
+ 
+Plugš
+
+
+9 
+şass
+ 
+	$Te¡bed
+(
+Plugš
+):
+
+10 
+Çme
+ = 'testbed'
+
+12 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+v”bos™y
+=1):
+
+13 
+	`su³r
+(
+Te¡bed
+, 
+£lf
+).
+	$__š™__
+()
+
+14 
+£lf
+.
+v”bos™y
+ = verbosity
+
+16 
+def
+ 
+	$İtiÚs
+(
+£lf
+, 
+·r£r
+, 
+’v
+=
+os
+.
+’vœÚ
+):
+
+17 
+	`su³r
+(
+Te¡bed
+, 
+£lf
+).
+	$İtiÚs
+(
+·r£r
+, 
+’v
+=env)
+
+18 
+·r£r
+.
+	`add_İtiÚ
+(
+
+19 '--‹¡bed', 
+aùiÚ
+='store',
+
+20 
+de¡
+='‹¡bed', 
+m‘av¬
+="FILE",
+
+21 =
+’v
+.
+	`g‘
+('NOSE_TESTBED_FILE', "testbed1"),
+
+22 
+h–p
+="Pathoestbed json fileo gethe json…arametero‡llests. "
+
+25 
+·r£r
+.
+	`add_İtiÚ
+(
+
+26 '--‹¡bed-dœ', 
+aùiÚ
+='store',
+
+27 
+de¡
+='‹¡bed_dœ', 
+m‘av¬
+="WHERE",
+
+28 =
+’v
+.
+	`g‘
+('NOSE_TESTBED_DIR', "./testbeds"),
+
+29 
+h–p
+="The folder ofestbeds. "
+
+33 
+def
+ 
+	$cÚfigu»
+(
+£lf
+, 
+İtiÚs
+, 
+cÚf
+):
+
+34 
+	`su³r
+(
+Te¡bed
+, 
+£lf
+).
+	$cÚfigu»
+(
+İtiÚs
+, 
+cÚf
+)
+
+36 
+def
+ 
+	$fš®ize
+(
+£lf
+, 
+»suÉ
+):
+
+37 
+·ss
+
+
+	@build/lib/iut/win.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+4 
+şass
+ 
+	$Wš
+(
+Deviû
+):
+
+5 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+6 
+£lf
+.
+deviû_Çme
+ = device_name
+
+7 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+10 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+12 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+13 
+nÙ
+ 
+cu¡omized_mode
+:
+
+14 
+£lf
+.
+cygwš_mode
+ = 'cygwin_mode'
+
+15 
+£lf
+.
+	`add_mode
+(£lf.
+cygwš_mode
+, 
+r
+'[^\r\n]+[\s]*\$[\s]*$')
+
+	@iut/__init__.py
+
+	@iut/cli.py
+
+1 
+äom
+ 
+³x³ù
+ 
+impÜt
+ *
+
+2 
+impÜt
+ 
+time
+
+
+4 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+6 
+	g__®l__
+ = ['ExceptionSSH', 'ExceptionTelnet', 'SSH', 'Telnet']
+
+8 
+şass
+ 
+	$Exû±iÚSSH
+(
+Exû±iÚPex³ù
+):
+
+12 
+şass
+ 
+	$Exû±iÚT–Ãt
+(
+Exû±iÚPex³ù
+):
+
+16 
+şass
+ 
+	$SSH
+(
+¥awn
+):
+
+17 
+def
+ 
+	`__š™__
+ (
+£lf
+, 
+timeout
+=30, 
+max»ad
+=2000, 
+£¬chwšdowsize
+=
+NÚe
+,
+
+18 
+logfe
+=
+NÚe
+, 
+cwd
+=NÚe, 
+’v
+=NÚe, 
+ignÜe_sighup
+=
+True
+, 
+echo
+=True,
+
+19 
+’codšg
+=
+NÚe
+, 
+codec_”rÜs
+='strict',
+
+20 
+ho¡
+='', 
+pÜt
+='22', 
+u£ºame
+='', 
+·sswÜd
+='', 
+İtiÚs
+='', 
+´om±
+='[#$]', 
+logg”
+=
+NÚe
+):
+
+22 #£lf.
+logfe
+ = 
+	`FeAd­‹r
+(
+logg”
+)
+
+24 
+¥awn
+.
+	$__š™__
+(
+£lf
+, 
+NÚe
+, 
+timeout
+ñimeout, 
+max»ad
+=maxread,
+
+25 
+£¬chwšdowsize
+=£¬chwšdowsize, 
+logfe
+=logfile,
+
+26 
+cwd
+=cwd, 
+’v
+ónv, 
+ignÜe_sighup
+=ignÜe_sighup, 
+echo
+=echo,
+
+27 
+’codšg
+óncodšg, 
+codec_”rÜs
+=codec_errors)
+
+28 
+£lf
+.
+logfe_»ad
+ = 
+	$FeAd­‹r
+(
+logg”
+)
+
+29 
+£lf
+.
+ho¡
+ = host
+
+30 
+£lf
+.
+pÜt
+ =…ort
+
+31 
+£lf
+.
+u£ºame
+ = username
+
+32 
+£lf
+.
+·sswÜd
+ =…assword
+
+33 
+£lf
+.
+ssh_İts
+ = 
+İtiÚs
+ 
+Ü
+ "-o 'StrictHostKeyChecking=no' -o 'UserKnownHostsFile /dev/null'"
+
+34 
+£lf
+.
+´om±
+ =…rompt
+
+35 
+£lf
+.
+logg”
+ =†ogger
+
+36 
+£lf
+.
+cÚÃùed
+ = 
+F®£
+
+
+37 
+def
+ 
+	$cÚÃù
+(
+£lf
+):
+
+38 
+cmd
+ = "ssh % -°% %s@%s" % (
+£lf
+.
+ssh_İts
+, s–f.
+pÜt
+, s–f.
+u£ºame
+, s–f.
+ho¡
+)
+
+39 
+¥awn
+.
+	$_¥awn
+(
+£lf
+, 
+cmd
+)
+
+40 
+True
+:
+
+41 
+idx
+ = 
+£lf
+.
+	`ex³ù
+([£lf.
+´om±
+, "No„outeo host", "timed out", "refused", "assword:",
+
+42 "\(yes/no\)", "\(y/n\)", 
+EOF
+, 
+TIMEOUT
+])
+
+43 
+idx
+ == 0:
+
+44 
+£lf
+.
+cÚÃùed
+ = 
+True
+
+
+46 
+–if
+ 
+idx
+ 
+	$š
+ (1, 2, 3):
+
+47 
+£lf
+.
+	$şo£
+()
+
+49 
+–if
+ 
+idx
+ == 4:
+
+50 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+·sswÜd
+)
+
+51 
+–if
+ 
+idx
+ == 5:
+
+52 
+£lf
+.
+	`£ndlše
+('yes')
+
+53 
+–if
+ 
+idx
+ == 6:
+
+54 
+£lf
+.
+	`£ndlše
+('y')
+
+56 
+£lf
+.
+	$şo£
+()
+
+58 
+time
+.
+	$¦“p
+(0.1)
+
+59  
+£lf
+.
+	$i§live
+()
+
+60 
+def
+ 
+	$discÚÃù
+(
+£lf
+):
+
+61 
+£lf
+.
+	$‹rmš©e
+(
+True
+)
+
+62 
+£lf
+.
+	$şo£
+()
+
+63 
+£lf
+.
+cÚÃùed
+ = 0
+
+64 
+def
+ 
+	$is_cÚÃùed
+(
+£lf
+):
+
+65 
+£lf
+.
+cÚÃùed
+ = s–f.
+	$i§live
+()
+
+66  
+£lf
+.
+cÚÃùed
+
+
+68 
+şass
+ 
+	$T–Ãt
+(
+¥awn
+):
+
+69 
+def
+ 
+	`__š™__
+ (
+£lf
+, 
+timeout
+=30, 
+max»ad
+=2000, 
+£¬chwšdowsize
+=
+NÚe
+,
+
+70 
+logfe
+=
+NÚe
+, 
+cwd
+=NÚe, 
+’v
+=NÚe, 
+ignÜe_sighup
+=
+True
+, 
+echo
+=True,
+
+71 
+’codšg
+=
+NÚe
+, 
+codec_”rÜs
+='strict',
+
+72 
+ho¡
+='', 
+pÜt
+='23', 
+u£ºame
+='', 
+·sswÜd
+='', 
+´om±
+='[#$>]', 
+logg”
+=
+NÚe
+, 
+cÚsŞe
+=
+F®£
+):
+
+74 #£lf.
+logfe
+ = 
+	`FeAd­‹r
+(
+logg”
+)
+
+76 
+¥awn
+.
+	$__š™__
+(
+£lf
+, 
+NÚe
+, 
+timeout
+ñimeout, 
+max»ad
+=maxread,
+
+77 
+£¬chwšdowsize
+=£¬chwšdowsize, 
+logfe
+=logfile,
+
+78 
+cwd
+=cwd, 
+’v
+ónv, 
+ignÜe_sighup
+=ignÜe_sighup, 
+echo
+=echo,
+
+79 
+’codšg
+óncodšg, 
+codec_”rÜs
+=codec_errors)
+
+80 
+£lf
+.
+logfe_»ad
+ = 
+	$FeAd­‹r
+(
+logg”
+)
+
+81 
+£lf
+.
+ho¡
+ = host
+
+82 
+£lf
+.
+pÜt
+ =…ort
+
+83 
+£lf
+.
+u£ºame
+ = username
+
+84 
+£lf
+.
+·sswÜd
+ =…assword
+
+85 
+£lf
+.
+´om±
+ =…rompt
+
+86 
+£lf
+.
+logg”
+ =†ogger
+
+87 
+£lf
+.
+cÚÃùed
+ = 
+F®£
+
+
+88 
+£lf
+.
+cÚsŞe
+ = console
+
+89 
+def
+ 
+	$cÚÃù
+(
+£lf
+):
+
+90 
+cmd
+ = "‹Ê‘ % %s" % (
+£lf
+.
+ho¡
+, s–f.
+pÜt
+)
+
+91 
+¥awn
+.
+	$_¥awn
+(
+£lf
+, 
+cmd
+)
+
+92 
+£lf
+.
+cÚsŞe
+:
+
+93 
+£lf
+.
+cÚÃùed
+ = 
+True
+
+
+94  
+£lf
+.
+cÚÃùed
+
+
+95 
+True
+:
+
+96 
+idx
+ = 
+£lf
+.
+	`ex³ù
+([£lf.
+´om±
+, "No„outeo host", "timed out", "closed by foreign host", "assword:",
+
+97 "ogš:", "U£r:", 
+EOF
+, 
+TIMEOUT
+])
+
+98 
+idx
+ == 0:
+
+99 
+£lf
+.
+cÚÃùed
+ = 
+True
+
+
+101 
+–if
+ 
+idx
+ 
+	$š
+ (1, 2, 3):
+
+102 
+£lf
+.
+	$şo£
+()
+
+104 
+–if
+ 
+idx
+ == 4:
+
+105 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+·sswÜd
+)
+
+106 
+–if
+ 
+idx
+ == 5:
+
+107 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+u£ºame
+)
+
+108 
+–if
+ 
+idx
+ == 6:
+
+109 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+u£ºame
+)
+
+111 
+£lf
+.
+	$şo£
+()
+
+113 
+time
+.
+	$¦“p
+(0.1)
+
+114  
+£lf
+.
+	$i§live
+()
+
+115 
+def
+ 
+	$discÚÃù
+(
+£lf
+):
+
+116 
+£lf
+.
+	$‹rmš©e
+(
+True
+)
+
+117 
+£lf
+.
+	$şo£
+()
+
+118 
+£lf
+.
+cÚÃùed
+ = 0
+
+119 
+def
+ 
+	$is_cÚÃùed
+(
+£lf
+):
+
+120 
+£lf
+.
+cÚÃùed
+ = s–f.
+	$i§live
+()
+
+121  
+£lf
+.
+cÚÃùed
+
+
+	@iut/constant.py
+
+2 
+Defše
+ 
+glob®
+ 
+v¬ŸbË
+ 
+š
+ 
+this
+ 
+fe
+ 
+	giutf
+.
+
+5 
+	gWIN_WIRELESS_XML
+ = {}
+
+6 
+WIN_WIRELESS_XML
+['OPEN'] = '''
+
+7 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+8 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+9 <
+Çme
+>
+PROFILE
+</name>
+
+10 <
+SSIDCÚfig
+>
+
+11 <
+SSID
+>
+
+12 <
+Çme
+>
+SSID
+</name>
+
+13 </
+SSID
+>
+
+14 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+15 </
+SSIDCÚfig
+>
+
+16 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+17 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+18 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+19 <
+MSM
+>
+
+20 <
+£cur™y
+>
+
+21 <
+authEnüy±iÚ
+>
+
+22 <
+auth’tiÿtiÚ
+>
+İ’
+</authentication>
+
+23 <
+’üy±iÚ
+>
+nÚe
+</encryption>
+
+24 <
+u£OÃX
+>
+çl£
+</useOneX>
+
+25 </
+authEnüy±iÚ
+>
+
+26 </
+£cur™y
+>
+
+27 </
+MSM
+>
+
+28 </
+WLANProfe
+>
+
+31 
+WIN_WIRELESS_XML
+['WEP-STATIC'] = '''
+
+32 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+33 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+34 <
+Çme
+>
+PROFILE
+</name>
+
+35 <
+SSIDCÚfig
+>
+
+36 <
+SSID
+>
+
+37 <
+Çme
+>
+SSID
+</name>
+
+38 </
+SSID
+>
+
+39 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+40 </
+SSIDCÚfig
+>
+
+41 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+42 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+43 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+44 <
+MSM
+>
+
+45 <
+£cur™y
+>
+
+46 <
+authEnüy±iÚ
+>
+
+47 <
+auth’tiÿtiÚ
+>
+İ’
+</authentication>
+
+48 <
+’üy±iÚ
+>
+WEP
+</encryption>
+
+49 <
+u£OÃX
+>
+çl£
+</useOneX>
+
+50 </
+authEnüy±iÚ
+>
+
+51 <
+sh¬edKey
+>
+
+52 <
+keyTy³
+>
+ÃtwÜkKey
+</keyType>
+
+53 <
+´Ùeùed
+>
+çl£
+</protected>
+
+54 <
+keyM©”Ÿl
+>
+WEP_KEY
+</keyMaterial>
+
+55 </
+sh¬edKey
+>
+
+56 <
+keyIndex
+>
+WEPKEY_INDEX
+</keyIndex>
+
+57 </
+£cur™y
+>
+
+58 </
+MSM
+>
+
+59 </
+WLANProfe
+>
+
+62 
+WIN_WIRELESS_XML
+['WPA-PSK'] = '''
+
+63 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+64 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+65 <
+Çme
+>
+PROFILE
+</name>
+
+66 <
+SSIDCÚfig
+>
+
+67 <
+SSID
+>
+
+68 <
+Çme
+>
+SSID
+</name>
+
+69 </
+SSID
+>
+
+70 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+71 </
+SSIDCÚfig
+>
+
+72 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+73 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+74 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+75 <
+MSM
+>
+
+76 <
+£cur™y
+>
+
+77 <
+authEnüy±iÚ
+>
+
+78 <
+auth’tiÿtiÚ
+>
+WPAPSK
+</authentication>
+
+79 <
+’üy±iÚ
+>
+TKIP
+</encryption>
+
+80 <
+u£OÃX
+>
+çl£
+</useOneX>
+
+81 </
+authEnüy±iÚ
+>
+
+82 <
+sh¬edKey
+>
+
+83 <
+keyTy³
+>
+·ssPh¿£
+</keyType>
+
+84 <
+´Ùeùed
+>
+çl£
+</protected>
+
+85 <
+keyM©”Ÿl
+>
+WPA_PSK
+</keyMaterial>
+
+86 </
+sh¬edKey
+>
+
+87 </
+£cur™y
+>
+
+88 </
+MSM
+>
+
+89 </
+WLANProfe
+>
+
+92 
+WIN_WIRELESS_XML
+['WPA2-PSK'] = '''
+
+93 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+94 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+95 <
+Çme
+>
+PROFILE
+</name>
+
+96 <
+SSIDCÚfig
+>
+
+97 <
+SSID
+>
+
+98 <
+Çme
+>
+SSID
+</name>
+
+99 </
+SSID
+>
+
+100 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+101 </
+SSIDCÚfig
+>
+
+102 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+103 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+104 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+105 <
+MSM
+>
+
+106 <
+£cur™y
+>
+
+107 <
+authEnüy±iÚ
+>
+
+108 <
+auth’tiÿtiÚ
+>
+WPA2PSK
+</authentication>
+
+109 <
+’üy±iÚ
+>
+AES
+</encryption>
+
+110 <
+u£OÃX
+>
+çl£
+</useOneX>
+
+111 </
+authEnüy±iÚ
+>
+
+112 <
+sh¬edKey
+>
+
+113 <
+keyTy³
+>
+·ssPh¿£
+</keyType>
+
+114 <
+´Ùeùed
+>
+çl£
+</protected>
+
+115 <
+keyM©”Ÿl
+>
+WPA2_PSK
+</keyMaterial>
+
+116 </
+sh¬edKey
+>
+
+117 </
+£cur™y
+>
+
+118 </
+MSM
+>
+
+119 </
+WLANProfe
+>
+
+122 
+WIN_WIRELESS_XML
+['PEAP-GTC'] = '''
+
+123 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+124 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+125 <
+Çme
+>
+PROFILE
+</name>
+
+126 <
+SSIDCÚfig
+>
+
+127 <
+SSID
+>
+
+128 <
+Çme
+>
+SSID
+</name>
+
+129 </
+SSID
+>
+
+130 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+131 </
+SSIDCÚfig
+>
+
+132 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+133 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+134 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+135 <
+MSM
+>
+
+136 <
+£cur™y
+>
+
+137 <
+authEnüy±iÚ
+>
+
+138 <
+auth’tiÿtiÚ
+>
+AUTHENTICATION
+</authentication>
+
+139 <
+’üy±iÚ
+>
+ENCRYPTION
+</encryption>
+
+140 <
+u£OÃX
+>
+Œue
+</useOneX>
+
+141 </
+authEnüy±iÚ
+>
+
+142 <
+OÃX
+ 
+xmÊs
+="http://www.microsoft.com/networking/OneX/v1">
+
+143 <
+authMode
+>
+machšeOrU£r
+</authMode>
+
+144 <
+EAPCÚfig
+>
+
+145 <
+E­Ho¡CÚfig
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapHostConfig">
+
+146 <
+E­M‘hod
+>
+
+147 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">25</Type>
+
+148 <
+V’dÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+
+149 <
+V’dÜTy³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+
+150 <
+AuthÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">9</AuthorId>
+
+151 </
+E­M‘hod
+>
+
+152 <
+CÚfig
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapHostConfig">
+
+153 <
+—pP—p
+ 
+xmÊs
+="http://www.cisco.com/CCX">
+
+154 <
+doNÙV®id©eS”v”C”tifiÿ‹
+/>
+
+155 <
+uÅrÙeùedId’t™yP©‹º
+ 
+’üy±CÚ‹Á
+="çl£">
+AUTOMATION
+</unprotectedIdentityPattern>
+
+156 <
+’abËFa¡RecÚÃù
+><
+®waysA‰em±
+/></enableFastReconnect>
+
+157 <
+authM‘hods
+>
+
+158 <
+butšM‘hods
+>
+
+159 <
+auth’tiÿ‹W™hPasswÜd
+>
+
+160 <
+´ÙeùedId’t™yP©‹º
+ 
+’üy±CÚ‹Á
+="çl£">
+USERNAME
+</protectedIdentityPattern>
+
+161 <
+·sswÜdSourû
+>
+
+162 <
+·sswÜdFromProfe
+ 
+’üy±CÚ‹Á
+="çl£">
+PASSWORD
+</passwordFromProfile>
+
+163 </
+·sswÜdSourû
+>
+
+164 <
+m‘hods
+>
+
+165 <
+—pGtc
+/>
+
+166 </
+m‘hods
+>
+
+167 </
+auth’tiÿ‹W™hPasswÜd
+>
+
+168 </
+butšM‘hods
+>
+
+169 </
+authM‘hods
+>
+
+170 </
+—pP—p
+>
+
+171 </
+CÚfig
+>
+
+172 </
+E­Ho¡CÚfig
+>
+
+173 </
+EAPCÚfig
+>
+
+174 </
+OÃX
+>
+
+175 </
+£cur™y
+>
+
+176 </
+MSM
+>
+
+177 </
+WLANProfe
+>
+
+180 
+WIN_WIRELESS_XML
+['PEAP-MSCHAPV2'] = '''
+
+181 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+182 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+183 <
+Çme
+>
+PROFILE
+</name>
+
+184 <
+SSIDCÚfig
+>
+
+185 <
+SSID
+>
+
+186 <
+Çme
+>
+SSID
+</name>
+
+187 </
+SSID
+>
+
+188 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+189 </
+SSIDCÚfig
+>
+
+190 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+191 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+192 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+193 <
+MSM
+>
+
+194 <
+£cur™y
+>
+
+195 <
+authEnüy±iÚ
+>
+
+196 <
+auth’tiÿtiÚ
+>
+AUTHENTICATION
+</authentication>
+
+197 <
+’üy±iÚ
+>
+ENCRYPTION
+</encryption>
+
+198 <
+u£OÃX
+>
+Œue
+</useOneX>
+
+199 </
+authEnüy±iÚ
+>
+
+200 <
+OÃX
+ 
+xmÊs
+="http://www.microsoft.com/networking/OneX/v1">
+
+201 <
+ÿcheU£rD©a
+>
+Œue
+</cacheUserData>
+
+202 <
+authMode
+>
+u£r
+</authMode>
+
+203 <
+EAPCÚfig
+>
+
+204 <
+E­Ho¡CÚfig
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapHostConfig">
+
+205 <
+E­M‘hod
+>
+
+206 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">25</Type>
+
+207 <
+V’dÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+
+208 <
+V’dÜTy³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+
+209 <
+AuthÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+
+210 </
+E­M‘hod
+>
+
+211 <
+CÚfig
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapHostConfig">
+
+212 <
+E­
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+
+213 <
+Ty³
+>25</Type>
+
+214 <
+E­Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/MsPeapConnectionPropertiesV1">
+
+215 <
+S”v”V®id©iÚ
+>
+
+216 <
+Di§bËU£rProm±FÜS”v”V®id©iÚ
+>
+çl£
+</DisableUserPromptForServerValidation>
+
+217 <
+S”v”Names
+></ServerNames>
+
+218 </
+S”v”V®id©iÚ
+>
+
+219 <
+Fa¡RecÚÃù
+>
+Œue
+</FastReconnect>
+
+220 <
+IÂ”E­O±iÚ®
+>
+çl£
+</InnerEapOptional>
+
+221 <
+E­
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+
+222 <
+Ty³
+>26</Type>
+
+223 <
+E­Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/MsChapV2ConnectionPropertiesV1">
+
+224 <
+U£WšLogÚC»d’tŸls
+>
+çl£
+</UseWinLogonCredentials>
+
+225 </
+E­Ty³
+>
+
+226 </
+E­
+>
+
+227 <
+EÇbËQu¬ªtšeChecks
+>
+çl£
+</EnableQuarantineChecks>
+
+228 <
+RequœeCry±oBšdšg
+>
+çl£
+</RequireCryptoBinding>
+
+229 <
+P—pEx‹nsiÚs
+>
+
+230 <
+P”fÜmS”v”V®id©iÚ
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/MsP—pCÚÃùiÚPrİ”t›sV2">
+çl£
+</PerformServerValidation>
+
+231 <
+Acû±S”v”Name
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/MsP—pCÚÃùiÚPrİ”t›sV2">
+çl£
+</AcceptServerName>
+
+232 </
+P—pEx‹nsiÚs
+>
+
+233 </
+E­Ty³
+>
+
+234 </
+E­
+>
+
+235 </
+CÚfig
+>
+
+236 </
+E­Ho¡CÚfig
+>
+
+237 </
+EAPCÚfig
+>
+
+238 </
+OÃX
+>
+
+239 </
+£cur™y
+>
+
+240 </
+MSM
+>
+
+241 </
+WLANProfe
+>
+
+244 
+WIN_WIRELESS_XML
+['MSCHAPV2-USER'] = '''
+
+245 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+246 <
+E­Ho¡U£rC»d’tŸls
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/E­Ho¡U£rC»d’tŸls" xmÊs:
+—pCommÚ
+="h‰p://www.miüosoá.com/´ovisiÚšg/E­CommÚ" xmÊs:
+ba£E­
+="http://www.microsoft.com/provisioning/BaseEapMethodUserCredentials">
+
+247 <
+E­M‘hod
+>
+
+248 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">25</Type>
+
+249 <
+V’dÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+
+250 <
+V’dÜTy³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+
+251 <
+AuthÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+
+252 </
+E­M‘hod
+>
+
+253 <
+C»d’tŸls
+>
+
+254 <
+E­
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1">
+
+255 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1">25</Type>
+
+256 <
+E­Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/MsPeapUserPropertiesV1">
+
+257 <
+E­
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1">
+
+258 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1">26</Type>
+
+259 <
+E­Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/MsChapV2UserPropertiesV1">
+
+260 <
+U£ºame
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/MsCh­V2U£rPrİ”t›sV1">
+USERNAME
+</Username>
+
+261 <
+PasswÜd
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/MsCh­V2U£rPrİ”t›sV1">
+PASSWORD
+</Password>
+
+262 </
+E­Ty³
+>
+
+263 </
+E­
+>
+
+264 </
+E­Ty³
+>
+
+265 </
+E­
+>
+
+266 </
+C»d’tŸls
+>
+
+267 </
+E­Ho¡U£rC»d’tŸls
+>
+
+270 
+WIN_WIRELESS_XML
+['TLS'] = '''
+
+271 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+272 <
+WLANProfe
+ 
+xmÊs
+="http://www.microsoft.com/networking/WLAN/profile/v1">
+
+273 <
+Çme
+>
+PROFILE
+</name>
+
+274 <
+SSIDCÚfig
+>
+
+275 <
+SSID
+>
+
+276 <
+Çme
+>
+SSID
+</name>
+
+277 </
+SSID
+>
+
+278 <
+nÚBrßdÿ¡
+>
+çl£
+</nonBroadcast>
+
+279 </
+SSIDCÚfig
+>
+
+280 <
+cÚÃùiÚTy³
+>
+ESS
+</connectionType>
+
+281 <
+cÚÃùiÚMode
+>
+mªu®
+</connectionMode>
+
+282 <
+autoSw™ch
+>
+çl£
+</autoSwitch>
+
+283 <
+MSM
+>
+
+284 <
+£cur™y
+>
+
+285 <
+authEnüy±iÚ
+>
+
+286 <
+auth’tiÿtiÚ
+>
+AUTHENTICATION
+</authentication>
+
+287 <
+’üy±iÚ
+>
+ENCRYPTION
+</encryption>
+
+288 <
+u£OÃX
+>
+Œue
+</useOneX>
+
+289 </
+authEnüy±iÚ
+>
+
+290 <
+OÃX
+ 
+xmÊs
+="http://www.microsoft.com/networking/OneX/v1">
+
+291 <
+authMode
+>
+u£r
+</authMode>
+
+292 <
+EAPCÚfig
+>
+
+293 <
+E­Ho¡CÚfig
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapHostConfig">
+
+294 <
+E­M‘hod
+>
+
+295 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">13</Type>
+
+296 <
+V’dÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorId>
+
+297 <
+V’dÜTy³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</VendorType>
+
+298 <
+AuthÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+
+299 </
+E­M‘hod
+>
+
+300 <
+CÚfig
+>
+
+301 <
+E­
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapConnectionPropertiesV1">
+
+302 <
+Ty³
+>13</Type>
+
+303 <
+E­Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapTlsConnectionPropertiesV1">
+
+304 <
+C»d’tŸlsSourû
+>
+
+305 <
+C”tifiÿ‹StÜe
+/>
+
+306 </
+C»d’tŸlsSourû
+>
+
+307 <
+Difã»ÁU£ºame
+>
+Œue
+</DifferentUsername>
+
+308 </
+E­Ty³
+>
+
+309 </
+E­
+>
+
+310 </
+CÚfig
+>
+
+311 </
+E­Ho¡CÚfig
+>
+
+312 </
+EAPCÚfig
+>
+
+313 </
+OÃX
+>
+
+314 </
+£cur™y
+>
+
+315 </
+MSM
+>
+
+316 </
+WLANProfe
+>
+
+319 
+WIN_WIRELESS_XML
+['TLS-CERT'] = '''
+
+320 <?
+xml
+ 
+v”siÚ
+="1.0"?>
+
+321 <
+E­Ho¡U£rC»d’tŸls
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/E­Ho¡U£rC»d’tŸls" xmÊs:
+—pCommÚ
+="h‰p://www.miüosoá.com/´ovisiÚšg/E­CommÚ" xmÊs:
+ba£E­
+="http://www.microsoft.com/provisioning/BaseEapMethodUserCredentials">
+
+322 <
+E­M‘hod
+>
+
+323 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">13</Type>
+
+324 <
+AuthÜId
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapCommon">0</AuthorId>
+
+325 </
+E­M‘hod
+>
+
+326 <
+C»d’tŸls
+>
+
+327 <
+E­
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1">
+
+328 <
+Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/BaseEapUserPropertiesV1">13</Type>
+
+329 <
+E­Ty³
+ 
+xmÊs
+="http://www.microsoft.com/provisioning/EapTlsUserPropertiesV1">
+
+330 <
+U£ºame
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/E­TlsU£rPrİ”t›sV1">
+CERTNAME
+</Username>
+
+331 <
+U£rC”t
+ 
+xmÊs
+="h‰p://www.miüosoá.com/´ovisiÚšg/E­TlsU£rPrİ”t›sV1">
+THUMBPRINT
+</UserCert>
+
+332 </
+E­Ty³
+>
+
+333 </
+E­
+>
+
+334 </
+C»d’tŸls
+>
+
+335 </
+E­Ho¡U£rC»d’tŸls
+>
+
+	@iut/dev.py
+
+1 
+äom
+ 
+şi
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+og
+ 
+impÜt
+ 
+	glog
+, 
+Ilogg”
+
+
+3 
+äom
+ 
+dijk¡¿
+ 
+impÜt
+ 
+shÜ‹¡P©h
+
+
+5 
+äom
+ 
+³x³ù
+ 
+impÜt
+ 
+	gEOF
+, 
+	gTIMEOUT
+, 
+¥awn
+
+
+7 
+	g__®l__
+ = ['ExceptionDevice', 'Device']
+
+9 
+şass
+ 
+	$Exû±iÚDeviû
+(
+Exû±iÚ
+):
+
+13 
+şass
+ 
+	$Deviû
+(
+SSH
+, 
+T–Ãt
+):
+
+14 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+):
+
+15 
+£lf
+.
+deviû_Çme
+ = device_name
+
+16 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+18 
+£lf
+.
+modes
+ = {
+	}
+}
+
+20 
+£lf
+.
+g¿ph
+ = {}
+
+21 
+£lf
+.
+·th_cmd
+ = {}
+
+23 
+£lf
+.
+auto_»¥Ú£
+ = {}
+
+25 
+£lf
+.
+max_timeout
+ = 30
+
+27 
+kw¬gs
+['logg”'] = 
+	$Ilogg”
+(
+deviû_Çme
+)
+
+28 
+£lf
+.
+logg”
+ = 
+kw¬gs
+['logger']
+
+30 
+£lf
+.
+´om±
+ = 
+kw¬gs
+.
+	`g‘
+('prompt', '[#$>]')
+
+32 
+nÙ
+ 
+£lf
+.
+deviû_Çme
+:
+
+33 
+¿i£
+ 
+	`Exû±iÚDeviû
+('Unknown device NAME')
+
+34 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'ssh':
+
+35 #SSH.
+	`__š™__
+(
+£lf
+, 
+timeout
+=
+kw¬gs
+.
+	`g‘
+('timeout', 30), 
+max»ad
+=kwargs.get('maxread', 2000),
+
+36 #£¬chwšdowsize=
+kw¬gs
+.
+	`g‘
+('£¬chwšdowsize', 
+NÚe
+), 
+logfe
+=kwargs.get('logfile', None),
+
+37 #cwd=
+kw¬gs
+.
+	`g‘
+('cwd', 
+NÚe
+), 
+’v
+=kw¬gs.g‘('’v', NÚe), 
+ignÜe_sighup
+=kwargs.get('ignore_sighup', None),
+
+38 #echo=
+kw¬gs
+.
+	`g‘
+('echo', 
+NÚe
+), 
+’codšg
+=kwargs.get('encoding', None),
+
+39 #codec_”rÜs=
+kw¬gs
+.
+	`g‘
+('codec_errors', 'strict'),
+
+40 #ho¡=
+kw¬gs
+.
+	`g‘
+('ho¡', ''), 
+pÜt
+=kwargs.get('port', '22'),
+
+41 #u£ºame=
+kw¬gs
+.
+	`g‘
+('u£ºame', ''), 
+·sswÜd
+=kwargs.get('password', ''),
+
+42 #İtiÚs=
+kw¬gs
+.
+	`g‘
+('İtiÚs', ''), 
+´om±
+=kw¬gs.g‘('´om±', '[#$]'), 
+logg”
+=kw¬gs.g‘('logg”', 
+NÚe
+))
+
+43 
+£lf
+.
+logg”
+.
+	`debug
+('Connect via ssh')
+
+44 
+SSH
+.
+	$__š™__
+(
+£lf
+, *
+¬gs
+, **
+kw¬gs
+)
+
+45 
+–if
+ 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'telnet':
+
+46 #T–Ãt.
+	`__š™__
+(
+£lf
+, 
+timeout
+=
+kw¬gs
+.
+	`g‘
+('timeout', 30), 
+max»ad
+=kwargs.get('maxread', 2000),
+
+47 #£¬chwšdowsize=
+kw¬gs
+.
+	`g‘
+('£¬chwšdowsize', 
+NÚe
+), 
+logfe
+=kwargs.get('logfile', None),
+
+48 #cwd=
+kw¬gs
+.
+	`g‘
+('cwd', 
+NÚe
+), 
+’v
+=kw¬gs.g‘('’v', NÚe), 
+ignÜe_sighup
+=kwargs.get('ignore_sighup', None),
+
+49 #echo=
+kw¬gs
+.
+	`g‘
+('echo', 
+NÚe
+), 
+’codšg
+=kwargs.get('encoding', None),
+
+50 #codec_”rÜs=
+kw¬gs
+.
+	`g‘
+('codec_errors', 'strict'),
+
+51 #ho¡=
+kw¬gs
+.
+	`g‘
+('ho¡', ''), 
+pÜt
+=kwargs.get('port', '23'),
+
+52 #u£ºame=
+kw¬gs
+.
+	`g‘
+('u£ºame', ''), 
+·sswÜd
+=kwargs.get('password', ''),
+
+53 #´om±=
+kw¬gs
+.
+	`g‘
+('´om±', '[#$>]'), 
+logg”
+=kw¬gs.g‘('logg”', 
+NÚe
+))
+
+54 
+£lf
+.
+logg”
+.
+	`debug
+('Connect viaelnet')
+
+55 
+T–Ãt
+.
+	$__š™__
+(
+£lf
+, *
+¬gs
+, **
+kw¬gs
+)
+
+57 
+¿i£
+ 
+	`Exû±iÚDeviû
+('UnknowÀMGT-METHOD fÜ %s' % 
+£lf
+.
+deviû_Çme
+)
+
+59 
+def
+ 
+	$cÚÃù
+(
+£lf
+):
+
+60 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'ssh':
+
+61 
+£lf
+.
+logg”
+.
+	`šfo
+('Connect via ssh')
+
+62  
+SSH
+.
+	$cÚÃù
+(
+£lf
+)
+
+63 
+–if
+ 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'telnet':
+
+64 
+£lf
+.
+logg”
+.
+	`šfo
+('Connect viaelnet')
+
+65  
+T–Ãt
+.
+	$cÚÃù
+(
+£lf
+)
+
+67 
+¿i£
+ 
+	`Exû±iÚDeviû
+('UnknowÀMGT-METHOD fÜ %s' % 
+£lf
+.
+deviû_Çme
+)
+
+69 
+def
+ 
+	$discÚÃù
+(
+£lf
+):
+
+70 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'ssh':
+
+71  
+SSH
+.
+	$discÚÃù
+(
+£lf
+)
+
+72 
+–if
+ 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'telnet':
+
+73  
+T–Ãt
+.
+	$discÚÃù
+(
+£lf
+)
+
+75 
+¿i£
+ 
+	`Exû±iÚDeviû
+('UnknowÀMGT-METHOD fÜ %s' % 
+£lf
+.
+deviû_Çme
+)
+
+77 
+def
+ 
+	$is_cÚÃùed
+(
+£lf
+):
+
+78 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'ssh':
+
+79  
+SSH
+.
+	$is_cÚÃùed
+(
+£lf
+)
+
+80 
+–if
+ 
+£lf
+.
+mgt_m‘hod
+.
+	`low”
+() == 'telnet':
+
+81  
+T–Ãt
+.
+	$is_cÚÃùed
+(
+£lf
+)
+
+83 
+¿i£
+ 
+	`Exû±iÚDeviû
+('UnknowÀMGT-METHOD fÜ %s' % 
+£lf
+.
+deviû_Çme
+)
+
+85 
+def
+ 
+	$add_mode
+(
+£lf
+, 
+mode
+, 
+·‰”n
+):
+
+87 
+Add
+ 
+mode
+ 
+deviû
+, 
+·‰”n
+ 
+is
+ 
+the
+ 
+´om±
+ 
+of
+he mode.
+
+89 
+£lf
+.
+modes
+[
+·‰”n
+] = 
+mode
+
+
+91 
+def
+ 
+	$add_·th
+(
+£lf
+, 
+sourû
+, 
+de¡š©iÚ
+, 
+cmd
+,
+timeout
+ = 30):
+
+93 
+Provide
+ 
+the
+ 
+·th
+ 
+äom
+ 
+sourû
+ 
+mode
+ 
+to
+ 
+de¡š©iÚ
+ mode.
+
+94 
+sourû
+: sourû 
+mode
+
+
+95 
+de¡š©iÚ
+: de¡š©iÚ 
+mode
+
+
+96 
+timeout
+: 
+the
+ 
+ex³ù
+imeouˆth
+·th
+
+
+98 
+£lf
+.
+max_timeout
+ = 
+	$max
+(
+£lf
+.
+max_timeout
+, 
+timeout
+)
+
+99 
+£lf
+.
+g¿ph
+.
+	$has_key
+(
+sourû
+):
+
+100 
+£lf
+.
+g¿ph
+[
+sourû
+].
+	`upd©e
+({
+de¡š©iÚ
+: 
+timeout
+})
+
+102 
+£lf
+.
+g¿ph
+[
+sourû
+] = {
+de¡š©iÚ
+: 
+timeout
+}
+
+103 
+£lf
+.
+·th_cmd
+[(
+sourû
+, 
+de¡š©iÚ
+)] = 
+cmd
+
+
+105 
+def
+ 
+	$add_auto_»¥Ú£
+(
+£lf
+, 
+·‰”n
+, 
+cmd
+):
+
+107 
+ex³ù
+ 
+the
+ 
+·‰”n
+, 
+cmd
+ 
+wl
+ 
+be
+ 
+£Á
+ 
+autom©iÿÎy
+.
+
+109 
+£lf
+.
+auto_»¥Ú£
+[
+·‰”n
+] = 
+cmd
+
+
+111 
+def
+ 
+	$cmd
+(
+£lf
+, 
+cmds
+, *
+¬gs
+, **
+kw¬gs
+):
+
+113 
+£nd
+ 
+commªds
+ 
+š
+ 
+this
+ 
+¥awn
+ 
+£ssiÚ
+.
+
+115 
+tmp_cmd_li¡
+ = 
+cmds
+.
+	$¥l™lšes
+()
+
+116 
+w™hout_wa™šg
+ = 
+kw¬gs
+.
+	`g‘
+('w™hout_wa™šg', 
+F®£
+)
+
+117 
+g‘_mode
+ = 
+kw¬gs
+.
+	`g‘
+('g‘_mode', 
+F®£
+)
+
+118 
+´om±
+ = 
+kw¬gs
+.
+	`g‘
+('´om±', 
+NÚe
+)
+
+119 
+aùiÚ
+ = 
+kw¬gs
+.
+	`g‘
+('aùiÚ', 
+NÚe
+)
+
+120 
+p_a_key·œ
+ = 
+	`diù
+(
+	$z
+(
+´om±
+, 
+aùiÚ
+)è´om± 
+NÚe
+
+
+121 
+cur_mode
+ = 
+NÚe
+
+
+122 
+cur_bufãr
+ = ''
+
+123 
+cmd_li¡
+ = [
+cmd
+.
+	$¡r
+(è
+cmd
+ 
+š
+ 
+tmp_cmd_li¡
+ 
+	`Ën
+(cmd.
+	`¡r
+()è!ğ0 
+ªd
+ cmd.¡r()[0] !ğ'#'] 
+nÙ
+ 
+g‘_mode
+ ['',]
+
+124 
+log
+.
+	`debug
+('cmd_li¡ %r' % 
+cmd_li¡
+)
+
+125 
+exps
+ = 
+£lf
+.
+auto_»¥Ú£
+.
+	`keys
+(è+ s–f.
+modes
+.keys(è+ [
+EOF
+, 
+TIMEOUT
+] 
+nÙ
+ 
+´om±
+ self.auto_response.keys() +…rompt + [EOF, TIMEOUT]
+
+126 
+cmd
+ 
+š
+ 
+cmd_li¡
+:
+
+127 
+£lf
+.
+	$£ndlše
+(
+cmd
+)
+
+128 
+True
+:
+
+129 
+idx
+ = 
+£lf
+.
+	`ex³ù
+(
+exps
+, 
+timeout
+ = 
+kw¬gs
+.
+	`g‘
+('timeout', s–f.
+max_timeout
+))
+
+130 
+idx
+ < 
+	$Ën
+(
+£lf
+.
+auto_»¥Ú£
+):
+
+131 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+132 
+£lf
+.
+	$£ndlše
+(
+£lf
+.
+auto_»¥Ú£
+[
+exps
+[
+idx
+]])
+
+133 
+–if
+ 
+´om±
+ 
+ªd
+ 
+idx
+ < 
+	`Ën
+(
+£lf
+.
+auto_»¥Ú£
+è+ 
+	$Ën
+(
+´om±
+):
+
+134 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+135 
+p_a_key·œ
+[
+exps
+[
+idx
+]]:
+
+136 
+£lf
+.
+	$£ndlše
+(
+p_a_key·œ
+[
+exps
+[
+idx
+]])
+
+139 
+–if
+ 
+´om±
+ 
+is
+ 
+NÚe
+ 
+ªd
+ 
+idx
+ < 
+	`Ën
+(
+£lf
+.
+auto_»¥Ú£
+è+ 
+	$Ën
+(
+£lf
+.
+modes
+):
+
+140 
+cur_mode
+ = 
+£lf
+.
+modes
+[
+exps
+[
+idx
+]]
+
+141 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+143 
+–if
+ 
+idx
+ =ğ
+	`Ën
+(
+exps
+) - 1:
+
+144 
+cur_bufãr
+ = cur_bufã¸+ 
+£lf
+.
+befÜe
+
+
+145 
+¿i£
+ 
+	`Exû±iÚDeviû
+('TimeouˆtØh™‡ny…rom±. cu¼’ˆbufãr: \n%s\n' % 
+cur_bufãr
+)
+
+147 
+¿i£
+ 
+	`Exû±iÚDeviû
+('EOF')
+
+148  
+cur_mode
+ 
+g‘_mode
+ 
+cur_bufãr
+
+
+150 
+def
+ 
+	$g‘_cur_mode
+(
+£lf
+):
+
+152 
+R‘uº
+ 
+the
+ 
+cu¼’t
+ 
+mode
+.
+
+154  
+£lf
+.
+	`cmd
+('', 
+g‘_mode
+=
+True
+)
+
+156 
+def
+ 
+	$to_mode
+(
+£lf
+, 
+mode
+):
+
+158 
+G‘
+ 
+to
+ 
+the
+ 
+mode
+ 
+which
+ 
+you
+ 
+wªt
+Ø
+¬ive
+, 
+u£
+h
+dijk¡¿
+ 
+®gÜ™hm
+Ø
+fšd
+
+
+159 
+the
+ 
+shÜ‹¡
+ 
+·th
+.
+
+161 
+cur_mode
+ = 
+£lf
+.
+	$g‘_cur_mode
+()
+
+162 
+·th
+ = 
+	$shÜ‹¡P©h
+(
+£lf
+.
+g¿ph
+, 
+cur_mode
+, 
+mode
+)
+
+163 
+	`Ën
+(
+·th
+) != 1:
+
+164 
+cur
+ = 
+·th
+.
+	$pİ
+(0)
+
+165 
+	`Ën
+(
+·th
+) != 0:
+
+166 
+Ãxt
+ = 
+·th
+.
+	$pİ
+(0)
+
+167 
+£lf
+.
+	`cmd
+(£lf.
+·th_cmd
+[(
+cur
+, 
+Ãxt
+)])
+
+168 
+cur
+ = 
+Ãxt
+
+
+169 
+cur_mode
+ = 
+cur
+
+
+170  
+cur_mode
+
+
+	@iut/dijkstra.py
+
+2 #David 
+Eµ¡eš
+, 
+UC
+ 
+Irvše
+, 4 
+A´
+ 2002
+
+5 
+äom
+ 
+´iodiù
+ 
+impÜt
+ 
+´iÜ™yDiùiÚ¬y
+
+
+7 
+def
+ 
+	$Dijk¡¿
+(
+G
+,
+¡¬t
+,
+’d
+=
+NÚe
+):
+
+9 
+Fšd
+ 
+shÜ‹¡
+ 
+·ths
+ 
+äom
+ 
+the
+ 
+¡¬t
+ 
+v”‹x
+ 
+to
+ 
+®l
+ 
+v”tiûs
+ 
+Ã¬”
+ 
+thª
+ 
+Ü
+ 
+equ®
+Øth
+’d
+.
+
+11 
+The
+ 
+šput
+ 
+g¿ph
+ 
+G
+ 
+is
+ 
+assumed
+ 
+to
+ 
+have
+ 
+the
+ 
+fŞlowšg
+ 
+»´e£Á©iÚ
+:
+
+12 
+A
+ 
+v”‹x
+ 
+ÿn
+ 
+be
+ 
+ªy
+ 
+objeù
+ 
+th©
+ cª b
+u£d
+ 
+as
+ 
+ª
+ 
+šdex
+ 
+što
+ 
+a
+ 
+diùiÚ¬y
+.
+
+13 
+G
+ 
+is
+ 
+a
+ 
+diùiÚ¬y
+, 
+šdexed
+ 
+by
+ 
+v”tiûs
+. 
+FÜ
+ 
+ªy
+ 
+v”‹x
+ 
+v
+, G[v] i 
+™£lf
+‡ dictionary,
+
+14 
+šdexed
+ 
+by
+ 
+the
+ 
+ÃighbÜs
+ 
+of
+ 
+v
+. 
+FÜ
+ 
+ªy
+ 
+edge
+ v->
+w
+, 
+G
+[v][w] 
+is
+h
+Ëngth
+ ofheƒdge.
+
+15 
+This
+ 
+is
+ 
+»Ï‹d
+ 
+to
+ 
+the
+ 
+»´e£Á©iÚ
+ 
+š
+ <
+h‰p
+:
+
+16 
+wh”e
+ 
+Guido
+ 
+vª
+ 
+Rossum
+ 
+sugge¡s
+ 
+»´e£Ášg
+ 
+g¿phs
+ 
+as
+ 
+diùiÚ¬›s
+ 
+m­pšg
+ 
+v”tiûs
+
+
+17 
+to
+ 
+li¡s
+ 
+of
+ 
+outgošg
+ 
+edges
+, 
+howev”
+ 
+diùiÚ¬›s
+ oàedge 
+have
+ 
+mªy
+ 
+advªges
+ 
+ov”
+†ists:
+
+18 
+they
+ 
+ÿn
+ 
+¡Üe
+ 
+exŒa
+ 
+	`šfÜm©iÚ
+ (
+h”e
+, 
+the
+ 
+Ëngths
+),hey 
+suµÜt
+ 
+ç¡
+ 
+exi¡’û
+ 
+‹¡s
+,
+
+19 
+ªd
+ 
+they
+ 
+®low
+ 
+—sy
+ 
+modifiÿtiÚ
+ 
+of
+ 
+the
+ 
+g¿ph
+ 
+¡ruùu»
+ 
+by
+ 
+edge
+ 
+š£¹iÚ
+‡nd 
+»mov®
+.
+
+20 
+Such
+ 
+modifiÿtiÚs
+ 
+¬e
+ 
+nÙ
+ 
+Ãeded
+ 
+h”e
+ 
+but
+‡» 
+impÜÁ
+ 
+š
+ 
+mªy
+ 
+Ùh”
+ 
+g¿ph
+ 
+®gÜ™hms
+.
+
+21 
+Sšû
+ 
+diùiÚ¬›s
+ 
+obey
+ 
+™”©Ü
+ 
+´ÙocŞ
+, 
+a
+ 
+g¿ph
+ 
+»´e£Áed
+ 
+as
+ 
+desüibed
+ 
+h”e
+ 
+could
+
+
+22 
+be
+ 
+hªded
+ 
+w™hout
+ 
+modifiÿtiÚ
+ 
+to
+ 
+ª
+ 
+®gÜ™hm
+ 
+ex³ùšg
+ 
+Guido
+'s graph„epresentation.
+
+24 
+Of
+ 
+cour£
+, 
+G
+ 
+ªd
+ G[
+v
+] 
+Ãed
+ 
+nÙ
+ 
+be
+ 
+aùu®
+ 
+PythÚ
+ 
+diù
+ 
+objeùs
+, 
+they
+ 
+ÿn
+ b
+ªy
+ 
+Ùh”
+
+
+25 
+ty³
+ 
+of
+ 
+objeù
+ 
+th©
+ 
+obeys
+ 
+diù
+ 
+´ÙocŞ
+, 
+š¡ªû
+ 
+Úe
+ 
+could
+ 
+u£
+ 
+a
+ 
+w¿µ”
+ 
+š
+ 
+which
+ 
+v”tiûs
+
+
+26 
+¬e
+ 
+URLs
+ 
+of
+ 
+web
+ 
+·ges
+ 
+ªd
+ 
+a
+ 
+ÿÎ
+ 
+to
+ 
+G
+[
+v
+] 
+lßds
+ 
+the
+ web 
+·ge
+‡nd 
+fšds
+ 
+™s
+ 
+outgošg
+ 
+lšks
+.
+
+28 
+The
+ 
+ouut
+ 
+is
+ 
+a
+ 
+	$·œ
+ (
+D
+,
+P
+è
+wh”e
+ D[
+v
+] 
+is
+ 
+the
+ 
+di¡ªû
+ 
+äom
+ 
+¡¬t
+ 
+to
+ v 
+ªd
+ P[v] ishe
+
+29 
+´edeûssÜ
+ 
+of
+ 
+v
+ 
+®Úg
+ 
+the
+ 
+shÜ‹¡
+ 
+·th
+ 
+äom
+ 
+s
+ 
+to
+ v.
+
+31 
+Dijk¡¿
+'s‡lgorithm is only guaranteedo work correctly when‡llƒdge†engths‡re…ositive.
+
+32 
+This
+ 
+code
+ 
+dÛs
+ 
+nÙ
+ 
+v”ify
+ 
+this
+ 
+´İ”ty
+ 
+®l
+ 
+	`edges
+ (
+Úly
+ 
+the
+ 
+edges
+ 
+examšed
+ 
+uÁ
+h
+’d
+
+
+33 
+v”‹x
+ 
+is
+ 
+»ached
+), 
+but
+ 
+wl
+ 
+cÜ»ùly
+ 
+compu‹
+ 
+shÜ‹¡
+ 
+·ths
+ 
+ev’
+ 
+some
+ 
+g¿phs
+ 
+w™h
+ 
+Ãg©ive
+
+
+34 
+edges
+, 
+ªd
+ 
+wl
+ 
+¿i£
+ 
+ª
+ 
+exû±iÚ
+ 
+™
+ 
+discov”s
+ 
+th©
+ 
+a
+ 
+Ãg©ive
+ 
+edge
+ 
+has
+ 
+ÿu£d
+ iˆ
+to
+ 
+make
+‡ 
+mi¡ake
+.
+
+37 
+D
+ = {
+	}
+} #diùiÚ¬y 
+of
+ 
+fš®
+ 
+di¡ªûs
+
+
+38 
+P
+ = {} #diùiÚ¬y 
+of
+ 
+´edeûssÜs
+
+
+39 
+Q
+ = 
+	$´iÜ™yDiùiÚ¬y
+(è#e¡im©ed 
+di¡ªûs
+ 
+of
+ 
+nÚ
+-
+fš®
+ 
+v”tiûs
+
+
+40 
+Q
+[
+¡¬t
+] = 0
+
+42 
+v
+ 
+š
+ 
+Q
+:
+
+43 
+D
+[
+v
+] = 
+Q
+[v]
+
+44 
+v
+ =ğ
+’d
+: 
+
+46 
+w
+ 
+š
+ 
+G
+[
+v
+]:
+
+47 
+vwL’gth
+ = 
+D
+[
+v
+] + 
+G
+[v][
+w
+]
+
+48 
+w
+ 
+š
+ 
+D
+:
+
+49 
+vwL’gth
+ < 
+D
+[
+w
+]:
+
+50 
+¿i£
+ 
+V®ueE¼Ü
+, "Dijkstra: found better…atho‡lready-final vertex"
+
+51 
+–if
+ 
+w
+ 
+nÙ
+ 
+š
+ 
+Q
+ 
+Ü
+ 
+vwL’gth
+ < Q[w]:
+
+52 
+Q
+[
+w
+] = 
+vwL’gth
+
+
+53 
+P
+[
+w
+] = 
+v
+
+
+55  (
+D
+,
+P
+)
+
+57 
+def
+ 
+	$shÜ‹¡P©h
+(
+G
+,
+¡¬t
+,
+’d
+):
+
+59 
+Fšd
+ 
+a
+ 
+sšgË
+ 
+shÜ‹¡
+ 
+·th
+ 
+äom
+ 
+the
+ 
+giv’
+ 
+¡¬t
+ 
+v”‹x
+ 
+to
+hgiv’ 
+’d
+ vertex.
+
+60 
+The
+ 
+šput
+ 
+has
+ 
+the
+ 
+§me
+ 
+cÚv’tiÚs
+ 
+as
+ 
+	`Dijk¡¿
+().
+
+61 
+The
+ 
+ouut
+ 
+is
+ 
+a
+ 
+li¡
+ 
+of
+ 
+the
+ 
+v”tiûs
+ 
+š
+ 
+Üd”
+ 
+®Úg
+h
+shÜ‹¡
+ 
+·th
+.
+
+64 
+D
+,
+P
+ = 
+	$Dijk¡¿
+(
+G
+,
+¡¬t
+,
+’d
+)
+
+65 
+P©h
+ = []
+
+67 
+P©h
+.
+	$­³nd
+(
+’d
+)
+
+68 
+’d
+ =ğ
+¡¬t
+: 
+
+69 
+’d
+ = 
+P
+[end]
+
+70 
+P©h
+.
+	$»v”£
+()
+
+71  
+P©h
+
+
+73 #exam¶e, 
+CLR
+ 
+p
+.528
+
+75 #'
+u
+': {'
+v
+':1, '
+x
+':2},
+
+76 #'
+v
+': {'
+y
+':4},
+
+77 #'
+x
+':{'
+u
+':3,'
+v
+':9,'
+y
+':2},
+
+78 #'
+y
+':{'
+s
+':7,'
+v
+':6}}
+
+81 #'
+B
+': {'
+A
+': 5, '
+D
+': 1, '
+G
+': 2},
+
+82 #'
+A
+': {'
+B
+': 5, '
+D
+': 3, '
+E
+': 12, '
+F
+' :5},
+
+83 #'
+D
+': {'
+B
+': 1, '
+G
+': 1, '
+E
+': 1, '
+A
+': 3},
+
+84 #'
+G
+': {'
+B
+': 2, '
+D
+': 1, '
+C
+': 2},
+
+85 #'
+C
+': {'
+G
+': 2, '
+E
+': 1, '
+F
+': 16},
+
+86 #'
+E
+': {'
+A
+': 12, '
+D
+': 1, '
+C
+': 1, '
+F
+': 2},
+
+87 #'
+F
+': {'
+A
+': 5, '
+E
+': 2, '
+C
+': 16}}
+
+89 #´šˆ
+	`Dijk¡¿
+(
+G
+,'A')
+
+90 #´šˆ
+	`shÜ‹¡P©h
+(
+G
+,'A','G')
+
+	@iut/iap.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ 
+	glog
+, 
+Ilogg”
+
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+3 
+impÜt
+ 
+»
+
+
+5 
+	g__®l__
+ = ['ExceptionIAP', 'IAP']
+
+7 
+şass
+ 
+	$Exû±iÚIAP
+(
+Exû±iÚ
+):
+
+11 
+şass
+ 
+	$IAP
+(
+Deviû
+):
+
+12 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+ho¡Çme
+=
+NÚe
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+13 
+£lf
+.
+deviû_Çme
+ = device_name
+
+14 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+15 
+£lf
+.
+ho¡Çme
+ = hostname
+
+16 
+£lf
+.
+cu¡omized_mode
+ = customized_mode
+
+18 
+£lf
+.
+suµÜt_·sswÜd
+ = 
+r
+'S1erraOn#'
+
+19 
+£lf
+.
+u£ºame
+ = 
+kw¬gs
+.
+	`g‘
+('username', 'admin')
+
+20 
+£lf
+.
+·sswÜd
+ = 
+kw¬gs
+.
+	`g‘
+('password', 'admin')
+
+23 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+25 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+27 
+nÙ
+ 
+cu¡omized_mode
+:
+
+28 
+£lf
+.
+suµÜt_mode
+ = 'support'
+
+29 
+£lf
+.
+şi_mode
+ = 'cli'
+
+30 
+£lf
+.
+cÚfig_mode
+ = 'config'
+
+31 
+£lf
+.
+cÚfig_d“p_mode
+ = 'config_deep'
+
+32 
+£lf
+.
+­boÙ_mode
+ = 'apboot'
+
+33 
+£lf
+.
+­boÙ_’Œªû_mode
+ = 'apboot_entrance'
+
+34 
+£lf
+.
+suµÜt_·sswÜd_mode
+ = 'support_password'
+
+35 
+£lf
+.
+ty³_u£ºame_mode
+ = 'type_username'
+
+36 
+£lf
+.
+ty³_·sswÜd_mode
+ = 'type_password'
+
+38 
+£lf
+.
+	`add_mode
+(£lf.
+ty³_u£ºame_mode
+, 'User:')
+
+39 
+£lf
+.
+	`add_mode
+(£lf.
+ty³_·sswÜd_mode
+, 'Password:')
+
+40 
+£lf
+.
+	`add_mode
+(£lf.
+suµÜt_mode
+, 
+r
+'~ \#[\s]*$')
+
+41 
+£lf
+.
+	`add_mode
+(£lf.
+şi_mode
+, 
+r
+'%s\#[\s]*$' %
+
+42 (
+ho¡Çme
+ 
+Ü
+ 
+r
+'[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}'))
+
+43 
+£lf
+.
+	`add_mode
+(£lf.
+cÚfig_mode
+, 
+r
+'%s \(config\) \#[\s]*$' %
+
+44 (
+ho¡Çme
+ 
+Ü
+ 
+r
+'[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}'))
+
+45 
+£lf
+.
+	`add_mode
+(£lf.
+cÚfig_d“p_mode
+, 
+r
+'%s \(((?!config).)+\) \#[\s]*$' %
+
+46 (
+ho¡Çme
+ 
+Ü
+ 
+r
+'[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}:[\da-f]{2}'))
+
+47 
+£lf
+.
+	`add_mode
+(£lf.
+­boÙ_mode
+,
+r
+'apboot>[\s]*$')
+
+48 
+£lf
+.
+	`add_mode
+(£lf.
+­boÙ_’Œªû_mode
+, 
+r
+'Hit <enter>')
+
+49 
+£lf
+.
+	`add_mode
+(£lf.
+suµÜt_·sswÜd_mode
+, 
+r
+'support\r\nPassword:')
+
+51 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+ty³_u£ºame_mode
+, s–f.
+ty³_·sswÜd_mode
+, s–f.
+u£ºame
+)
+
+52 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+ty³_·sswÜd_mode
+, s–f.
+şi_mode
+, s–f.
+·sswÜd
+)
+
+53 
+£lf
+.
+	`add_·th
+(£lf.
+şi_mode
+, s–f.
+suµÜt_·sswÜd_mode
+, 'support')
+
+54 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+suµÜt_·sswÜd_mode
+, s–f.
+suµÜt_mode
+, s–f.
+suµÜt_·sswÜd
+)
+
+55 
+£lf
+.
+	`add_·th
+(£lf.
+suµÜt_mode
+, s–f.
+şi_mode
+, 'exit')
+
+56 
+£lf
+.
+	`add_·th
+(£lf.
+şi_mode
+, s–f.
+cÚfig_mode
+, 'configureerminal')
+
+57 
+£lf
+.
+	`add_·th
+(£lf.
+cÚfig_mode
+, s–f.
+şi_mode
+, 'exit')
+
+58 
+£lf
+.
+	`add_·th
+(£lf.
+cÚfig_d“p_mode
+, s–f.
+şi_mode
+, 'end')
+
+59 
+£lf
+.
+	`add_·th
+(£lf.
+suµÜt_mode
+, s–f.
+­boÙ_’Œªû_mode
+, '»boÙ', 
+timeout
+=120)
+
+60 
+£lf
+.
+	`add_·th
+(£lf.
+şi_mode
+, s–f.
+­boÙ_’Œªû_mode
+, '»lßd', 
+timeout
+=120)
+
+61 
+£lf
+.
+	`add_·th
+(£lf.
+­boÙ_’Œªû_mode
+, s–f.
+­boÙ_mode
+, '\r')
+
+62 
+£lf
+.
+	`add_·th
+(£lf.
+­boÙ_mode
+, s–f.
+ty³_u£ºame_mode
+, 'reset')
+
+64 
+def
+ 
+	$__eq__
+(
+£lf
+, 
+obj
+):
+
+65  
+£lf
+.
+deviû_Çme
+ =ğ
+obj
+.device_name
+
+67 
+def
+ 
+	$cfg
+(
+£lf
+, 
+cmds
+, 
+³r_­
+ = 
+F®£
+):
+
+69 
+S’d
+ 
+cÚfigu¿tiÚ
+ 
+to
+ 
+IAP
+,
+
+70 
+³r_­
+ 
+£‰šg
+ 
+is
+ 
+True
+, 
+to
+ 
+şi
+ 
+mode
+ 
+ªd
+ 
+wr™e
+ 
+memÜy
+ 
+©
+ 
+Ï¡
+.
+
+71 
+the
+ 
+cÚfigu¿tiÚ
+ 
+is
+ 
+glob®
+ 
+­
+, 
+to
+ 
+cÚfig
+ 
+mode
+ 
+ªd
+ 
+comm™
+ 
+­¶y
+ 
+©
+ 
+Ï¡
+.
+
+73 
+³r_­
+:
+
+74 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+şi_mode
+)
+
+75 
+£lf
+.
+	$cmd
+(
+cmds
+, 
+timeout
+=30)
+
+76 
+£lf
+.
+	`cmd
+('wr™memÜy', 
+timeout
+=30)
+
+78 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+cÚfig_mode
+)
+
+79 
+£lf
+.
+	$cmd
+(
+cmds
+, 
+timeout
+=30)
+
+80 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+şi_mode
+)
+
+81 
+£lf
+.
+	`cmd
+('comm™‡µly', 
+timeout
+=30)
+
+83 @
+¡©icm‘hod
+
+
+84 
+def
+ 
+	$show_bË_·r£r
+(
+show_log
+):
+
+86 
+P¬£
+ 
+the
+ 
+show
+ 
+bË
+.
+
+88 
+show_lšes
+ = [
+lše
+.
+	$¡r
+(è
+lše
+ 
+š
+ 
+show_log
+.
+	$¥l™lšes
+(è
+	`Ën
+(
+lše
+.
+	`¡r
+()) != 0]
+
+89 
+	`Ën
+(
+show_lšes
+) == 0:
+
+90  
+NÚe
+
+
+91 
+bËs
+ = {
+	}
+}
+
+92 
+š_bË
+ = 
+F®£
+
+
+93 
+·rsšg_f›lds
+ = 
+F®£
+
+
+94 
+bË_rows
+ = []
+
+95 
+bË_Çme
+ = 
+NÚe
+
+
+96 
+Ën
+(
+show_lšes
+) != 0:
+
+97 
+cur
+ = 
+show_lšes
+.
+	$pİ
+(0)
+
+98 
+Ãxt
+ = 
+show_lšes
+[0] 
+	`Ën
+(show_lines) != 0 ''
+
+100 
+š_bË
+:
+
+101 
+·rsšg_f›lds
+:
+
+103 
+row_li¡
+ = 
+IAP
+.
+	$_g‘_f›lds
+(
+cur
+,
+f›lds_Ën
+)
+
+104 #HªdË 
+¡¿nge
+ 
+lšes
+, 
+howev”
+ 
+I
+ 
+thšk
+ 
+™
+ 
+is
+ 
+nÙ
+ 
+—sy
+ 
+to
+ 
+h™
+ 
+this
+ 
+cÚd™iÚ
+
+
+105 
+	`Ën
+(
+row_li¡
+è< 
+	$Ën
+(
+f›lds_t™Ë
+):
+
+106 
+row_li¡
+ =„ow_list + ['',]
+
+107 
+log
+.
+	`debug
+('row†i¡: %r' % 
+row_li¡
+)
+
+108 
+nÙ
+ 
+»
+.
+	`m©ch
+('^-+[\s]+[\s-]+-$', 
+cur
+):
+
+109 
+bË_rows
+.
+	$­³nd
+(
+row_li¡
+)
+
+111 
+	`Ën
+(
+Ãxt
+è< 
+mš_lše_Ën
+:
+
+112 
+log
+.
+	`debug
+('ThÃxˆh™ thi cÚd™iÚ 1: %r' % 
+Ãxt
+)
+
+113 
+log
+.
+	`debug
+('cÚd™iÚ 1, cu¼’ˆlš : %r' % 
+cur
+)
+
+114 
+·rsšg_f›lds
+ = 
+F®£
+
+
+116 
+b
+ = [ 
+a
+ ¨
+š
+ 
+IAP
+.
+	$_g‘_f›lds
+(
+Ãxt
+, 
+f›lds_Ën
+è
+a
+[0] == ' ']
+
+117 
+	`Ën
+(
+b
+) != 0:
+
+118 
+·rsšg_f›lds
+ = 
+F®£
+
+
+119 
+log
+.
+	`debug
+('ThÃxˆh™ thi cÚd™iÚ 2: %r' % 
+Ãxt
+)
+
+120 
+log
+.
+	`debug
+('cÚd™iÚ 2, cu¼’ˆlš : %r' % 
+cur
+)
+
+121 
+nÙ
+ 
+·rsšg_f›lds
+:
+
+122 
+d
+ = {
+	}
+}
+
+123 
+a
+ 
+š
+ 
+	$z
+(*
+bË_rows
+):
+
+124 
+d
+[
+a
+[0]] =‡[1:]
+
+125 
+bËs
+.
+	$has_key
+(
+bË_Çme
+):
+
+126 
+bËs
+[
+bË_Çme
+].
+	$upd©e
+(
+d
+)
+
+128 
+bËs
+[
+bË_Çme
+] = 
+d
+
+
+129 
+š_bË
+ = 
+F®£
+
+
+130 
+bË_Çme
+ = 
+NÚe
+
+
+132 
+–if
+ 
+»
+.
+	`m©ch
+('^-+[\s]+[\s-]+-$', 
+Ãxt
+):
+
+133 
+f›lds_Ën
+ = 
+	`m­
+(
+Ïmbda
+ 
+y
+: 
+	`Ën
+(y), 
+	`f‹r
+Öambd¨
+x
+: x!='', 
+»
+.
+	`¥l™
+('(-+\s+)', 
+Ãxt
+)))
+
+134 #G‘ 
+f›lds
+ 
+t™Ë
+
+
+135 
+f›lds_t™Ë
+ = 
+IAP
+.
+	$_g‘_f›lds
+(
+cur
+, 
+f›lds_Ën
+)
+
+136 
+log
+.
+	`debug
+('f›ld t‹ %r' % 
+f›lds_t™Ë
+)
+
+137 
+bË_rows
+.
+	$­³nd
+(
+f›lds_t™Ë
+)
+
+138 
+·rsšg_f›lds
+ = 
+True
+
+
+139 
+hyph’_lše_Ën
+ = 
+	$Ën
+(
+Ãxt
+)
+
+140 
+mš_lše_Ën
+ = 
+	`Ën
+(
+Ãxt
+è- 
+f›lds_Ën
+[-1]
+
+142 #Fšd 
+out
+ 
+the
+ 
+bË
+ 
+Çme
+:
+
+143 #Ià
+the
+ 
+Ãxt
+ 
+lše
+ 
+of
+ 
+bË
+ 
+is
+ 
+combšed
+ 
+by
+ '-',
+
+144 #I 
+assume
+ 
+th©
+ 
+the
+ 
+cu¼’t
+ 
+lše
+ 
+should
+ 
+be
+h
+bË
+ 
+Çme
+
+
+145 
+–if
+ 
+»
+.
+	`m©ch
+('^-+$', 
+Ãxt
+):
+
+146 
+bË_Çme
+ = 
+cur
+
+
+147 
+š_bË
+ = 
+True
+
+
+148 
+log
+.
+	`debug
+('bË‚am%r' % 
+bË_Çme
+)
+
+149 #cŞÚ 
+fÜm©
+ 
+lše
+, 
+no
+ 
+Ãed
+ 
+to
+ 
+check
+ 
+Ãxt
+†ine
+
+150 
+–if
+ ':' 
+š
+ 
+cur
+:
+
+151 
+cŞÚ_row_li¡
+ = 
+cur
+.
+	`¥l™
+(':', 1)
+
+152 
+bËs
+[
+cŞÚ_row_li¡
+[0].
+	`¡r
+()] = colon_row_list[1]
+
+153 
+cur
+ = 
+Ãxt
+
+
+155 
+log
+.
+	`debug
+('bË %r' % 
+bËs
+)
+
+156  
+bËs
+
+
+158 @
+¡©icm‘hod
+
+
+159 
+def
+ 
+	$_g‘_f›lds
+(
+lše
+, 
+f›lds_Ën
+):
+
+160 
+¤c
+ = 0
+
+161 
+f›lds
+ = []
+
+162 
+f
+ 
+š
+ 
+f›lds_Ën
+[:-1]:
+
+163 
+f›lds
+.
+	`­³nd
+(
+lše
+[
+¤c
+: src+
+f
+].
+	$r¡r
+())
+
+164 
+¤c
+ = srø+ 
+f
+
+
+165 
+f›lds
+.
+	`­³nd
+(
+lše
+[
+¤c
+:].
+	$r¡r
+())
+
+166  
+f›lds
+
+
+168 @
+¡©icm‘hod
+
+
+169 
+def
+ 
+	$g‘_ma¡”
+(*
+hªdËs
+):
+
+171 
+G‘
+ 
+the
+ 
+ma¡”
+ 
+hªdË
+ 
+š
+h
+şu¡”
+
+
+172 
+NÙe
+: 
+Th”e
+ 
+should
+ 
+be
+ 
+Úly
+ 
+Úe
+ 
+ma¡”
+
+
+174 
+ma¡”_couÁ
+ = 0
+
+175 
+ma¡”
+ = 
+NÚe
+
+
+176 
+hªdË
+ 
+š
+ 
+hªdËs
+:
+
+177 
+hªdË
+.
+	$to_mode
+(
+hªdË
+.
+şi_mode
+)
+
+178 
+»t
+ = 
+hªdË
+.
+	`cmd
+('show summary | inc "Master IP"')
+
+179 '*' 
+š
+ 
+»t
+:
+
+180 
+ma¡”_couÁ
+ += 1
+
+181 
+ma¡”
+ = 
+hªdË
+
+
+182 
+ma¡”_couÁ
+ != 1:
+
+183  
+NÚe
+
+
+185  
+ma¡”
+
+
+187 @
+¡©icm‘hod
+
+
+188 
+def
+ 
+	$g‘_cÚf_‹m¶©e
+(
+moduË
+, *
+¬gs
+, **
+kw¬gs
+):
+
+189 
+·ss
+
+
+191 @
+¡©icm‘hod
+
+
+192 
+def
+ 
+	$g‘_cÚf_ssid
+(
+ssid
+, 
+ed™
+=
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+193 
+cmd_h—d
+ = 'wÏÀssid-´of"%s"' % 
+ssid
+
+
+194 
+cmd_’d
+ = 'exit'
+
+195 
+commªd
+ = []
+
+196 
+commªd
+.
+	$­³nd
+(
+cmd_h—d
+)
+
+197 
+deçuÉ_¬g
+ = ['enable']
+
+198 
+deçuÉ_kw¬g
+ = {'type': 'employee',
+
+199 'essid': 
+ssid
+,
+
+207 
+	}
+}
+
+208 
+ed™
+:
+
+209 
+commªd
+.
+	$ex‹nd
+(
+¬gs
+)
+
+210 
+k
+,
+v
+ 
+š
+ 
+kw¬gs
+.
+	$™ems
+():
+
+211 
+commªd
+.
+	`­³nd
+("% %s"%(
+k
+, 
+v
+))
+
+213 
+¬gs
+:
+
+214 
+commªd
+.
+	`ex‹nd
+(
+	`£t
+(
+deçuÉ_¬g
+.
+	$ex‹nd
+(
+¬gs
+)))
+
+216 
+commªd
+.
+	$ex‹nd
+(
+deçuÉ_¬g
+)
+
+217 
+kwp
+ = 
+deçuÉ_kw¬g
+.
+	$cİy
+()
+
+218 
+kwp
+.
+	$upd©e
+(
+kw¬gs
+)
+
+219 
+k
+,
+v
+ 
+š
+ 
+kwp
+.
+	$™ems
+():
+
+220 
+commªd
+.
+	`­³nd
+("% %s"%(
+k
+, 
+v
+))
+
+221 '£t-rŞe' 
+nÙ
+ 
+š
+ 
+¬gs
+ 
+Ü
+ '£t-rŞe'‚Ù iÀ
+kw¬gs
+.
+	$keys
+():
+
+222 
+commªd
+.
+	`­³nd
+("set-role-unrestricted")
+
+223 
+commªd
+.
+	$­³nd
+(
+cmd_’d
+)
+
+225  '\n'.
+	`još
+(
+commªd
+)
+
+227 @
+¡©icm‘hod
+
+
+228 
+def
+ 
+	$g‘_cÚf_auth_£rv”
+(
+£rv”_Çme
+, 
+ed™
+=
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+229 
+cmd_h—d
+ = 'wÏÀauth-£rv” "%s"' % 
+£rv”_Çme
+
+
+230 
+cmd_’d
+ = 'exit'
+
+231 
+commªd
+ = []
+
+232 
+commªd
+.
+	$­³nd
+(
+cmd_h—d
+)
+
+233 
+deçuÉ_¬g
+ = []
+
+234 
+deçuÉ_kw¬g
+ = {
+	}
+}
+
+235 
+ed™
+:
+
+236 
+commªd
+.
+	$ex‹nd
+(
+¬gs
+)
+
+237 
+k
+,
+v
+ 
+š
+ 
+kw¬gs
+.
+	$™ems
+():
+
+238 
+commªd
+.
+	`­³nd
+("% %s"%(
+k
+, 
+v
+))
+
+240 
+¬gs
+:
+
+241 
+commªd
+.
+	`ex‹nd
+(
+	`£t
+(
+deçuÉ_¬g
+.
+	$ex‹nd
+(
+¬gs
+)))
+
+243 
+commªd
+.
+	$ex‹nd
+(
+deçuÉ_¬g
+)
+
+244 
+kwp
+ = 
+deçuÉ_kw¬g
+.
+	$cİy
+()
+
+245 
+kwp
+.
+	$upd©e
+(
+kw¬gs
+)
+
+246 
+k
+,
+v
+ 
+š
+ 
+kwp
+.
+	$™ems
+():
+
+247 
+commªd
+.
+	`­³nd
+("% %s"%(
+k
+, 
+v
+))
+
+248 
+commªd
+.
+	$­³nd
+(
+cmd_’d
+)
+
+250  '\n'.
+	$još
+(
+commªd
+)
+
+252 
+def
+ 
+	`g‘_bssid
+(
+£lf
+, 
+ssid
+, 
+bªd
+='a'):
+
+253 
+£lf
+.
+	$to_mode
+(
+£lf
+.
+şi_mode
+)
+
+254 
+»t
+ = 
+£lf
+.
+	`cmd
+('show‡p bss-table')
+
+255 
+»t_diù
+ = 
+IAP
+.
+	$show_bË_·r£r
+(
+»t
+)
+
+256 
+ssid_idxes
+ = [
+i
+ ˜
+š
+ 
+	`¿nge
+(
+	`Ën
+(
+»t_diù
+['Arub¨AP BSS TabË']['ess'])è»t_diù['Arub¨AP BSS TabË']['ess'][i]==
+ssid
+]
+
+257 
+bssid_idx
+ = [
+i
+ ˜
+š
+ 
+ssid_idxes
+ 
+bªd
+ iÀ
+»t_diù
+['Aruba AP BSS Table']['phy'][i]]
+
+258 
+	`Ën
+(
+bssid_idx
+) != 1:
+
+259 
+£lf
+.
+	`”rÜ
+('Fšd bssid faed fÜ ssid %s' % 
+ssid
+)
+
+260  
+F®£
+
+
+262  
+»t_diù
+['Arub¨AP BSS TabË']['bss'][
+bssid_idx
+[0]]
+
+	@iut/ilog.py
+
+1 
+impÜt
+ 
+loggšg
+
+
+2 
+äom
+ 
+	gloggšg
+.
+hªdËrs
+ 
+impÜt
+ 
+MemÜyHªdËr
+
+
+3 
+impÜt
+ 
+sys
+
+
+4 
+impÜt
+ 
+ty³s
+
+
+6 
+	g__®l__
+ = ['Ilogger', 'FileAdapter']
+
+8 
+def
+ 
+	$cu¡omEm™
+(
+£lf
+, 
+»cÜd
+):
+
+9 #MÚkey 
+·tch
+ 
+Em™
+ 
+funùiÚ
+ 
+to
+ 
+avoid
+ 
+Ãw
+ 
+lšes
+ 
+b‘w“n
+ 
+»cÜds
+
+
+10 
+Œy
+:
+
+11 #´št("Cu¼’ˆhkÃwlš%r\n"% 
+hkÃwlše
+.
+Ãwlše
+)
+
+12 
+£lf
+.
+Ãed_fÜm©
+:
+
+13 
+msg
+ = 
+£lf
+.
+	$fÜm©
+(
+»cÜd
+)
+
+14 
+hkÃwlše
+.
+Ãwlše
+:
+
+15 
+msg
+ = '\n%s'%msg
+
+16 
+hkÃwlše
+.
+Ãwlše
+ = 
+F®£
+
+
+18 
+msg
+ = 
+»cÜd
+.
+	$g‘Mes§ge
+()
+
+19 
+hkÃwlše
+.
+Ãwlše
+ = 
+F®£
+
+
+20 
+nÙ
+ 
+	`ha§‰r
+(
+ty³s
+, "UnicodeTy³"): #ià
+no
+ 
+unicode
+ 
+suµÜt
+...
+
+21 
+£lf
+.
+¡»am
+.
+	$wr™e
+(
+msg
+)
+
+23 
+Œy
+:
+
+24 
+	`g‘©Œ
+(
+£lf
+.
+¡»am
+, '’codšg', 
+NÚe
+è
+is
+ 
+nÙ
+ None:
+
+25 
+£lf
+.
+¡»am
+.
+	`wr™e
+(
+msg
+.
+	$’code
+(
+£lf
+.
+¡»am
+.
+’codšg
+))
+
+27 
+£lf
+.
+¡»am
+.
+	$wr™e
+(
+msg
+)
+
+28 
+exû±
+ 
+UnicodeE¼Ü
+:
+
+29 
+£lf
+.
+¡»am
+.
+	`wr™e
+(
+msg
+.
+	`’code
+("UTF-8"))
+
+30 
+£lf
+.
+	$æush
+()
+
+31 
+	$exû±
+ (
+KeybßrdIÁ”ru±
+, 
+Sy¡emEx™
+):
+
+32 
+¿i£
+
+
+33 
+exû±
+:
+
+34 
+£lf
+.
+	$hªdËE¼Ü
+(
+»cÜd
+)
+
+36 
+şass
+ 
+	$HackNewlšeInTheBegš
+(
+objeù
+):
+
+38 
+To
+ 
+fÜm©
+ 
+the
+ 
+log
+, 
+make
+ 
+this
+ 
+hack
+
+
+40 
+def
+ 
+	$__š™__
+(
+£lf
+):
+
+41 
+£lf
+.
+Ãwlše
+ = 
+F®£
+
+
+43 
+hkÃwlše
+ = 
+	$HackNewlšeInTheBegš
+()
+
+45 
+şass
+ 
+	$Cu¡omizedSŒ—mHªdËr
+(
+loggšg
+.
+SŒ—mHªdËr
+):
+
+46 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+¡»am
+=
+NÚe
+):
+
+47 
+loggšg
+.
+SŒ—mHªdËr
+.
+	$__š™__
+(
+£lf
+, 
+¡»am
+)
+
+48 
+£lf
+.
+Ãed_fÜm©
+ = 
+True
+
+
+49 
+def
+ 
+	$em™
+(
+£lf
+, 
+»cÜd
+):
+
+50 
+	$cu¡omEm™
+(
+£lf
+, 
+»cÜd
+)
+
+52 
+şass
+ 
+	$Cu¡omizedMemÜyHªdËr
+(
+MemÜyHªdËr
+):
+
+53 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+ÿ·c™y
+, 
+æushLev–
+=
+loggšg
+.
+ERROR
+, 
+rg‘
+=
+NÚe
+):
+
+54 
+MemÜyHªdËr
+.
+	$__š™__
+(
+£lf
+, 
+ÿ·c™y
+, 
+æushLev–
+=æushLev–, 
+rg‘
+=target)
+
+55 
+def
+ 
+	$shouldFlush
+(
+£lf
+, 
+»cÜd
+):
+
+56 
+msg
+ = 
+»cÜd
+.
+	$g‘Mes§ge
+()
+
+57 
+msg
+ 
+	`ªd
+ (msg[-1] 
+š
+ '\r\n'):
+
+58  
+True
+
+
+59  
+F®£
+
+
+61 
+şass
+ 
+	$Ilogg”
+(
+objeù
+):
+
+62 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+Çme
+, 
+logfe
+=
+NÚe
+, 
+logËv–
+=
+loggšg
+.
+INFO
+):
+
+64 
+£lf
+.
+DEVICE
+ = 100
+
+66 
+£lf
+.
+logg”
+ = 
+loggšg
+.
+	$g‘Logg”
+(
+Çme
+)
+
+68 
+£lf
+.
+Çme
+ =‚ame
+
+69 
+£lf
+.
+logfe
+ =†ogfile
+
+70 
+£lf
+.
+logËv–
+ =†oglevel
+
+72 
+£lf
+.
+logg”
+.
+	$£tLev–
+(
+£lf
+.
+logËv–
+)
+
+73 
+£lf
+.
+fÜm©‹r
+ = 
+loggšg
+.
+	`FÜm©‹r
+('%(asctime)s | %(levelname)8s | %(name)16s : %(message)s')
+
+75 
+£lf
+.
+chªdËr
+ = 
+	$Cu¡omizedSŒ—mHªdËr
+()
+
+76 #£lf.
+mhªdËr
+ = 
+	`Cu¡omizedMemÜyHªdËr
+(100000, 
+rg‘
+=
+£lf
+.
+chªdËr
+)
+
+77 
+£lf
+.
+chªdËr
+.
+	$£tFÜm©‹r
+(
+£lf
+.
+fÜm©‹r
+)
+
+78 
+£lf
+.
+logg”
+.
+	$addHªdËr
+(
+£lf
+.
+chªdËr
+)
+
+80 
+£lf
+.
+logfe
+:
+
+81 
+£lf
+.
+fhªdËr
+ = 
+loggšg
+.
+	$FeHªdËr
+(
+£lf
+.
+logfe
+)
+
+82 
+£lf
+.
+fhªdËr
+.
+	$£tFÜm©‹r
+(
+£lf
+.
+fÜm©‹r
+)
+
+83 
+£lf
+.
+logg”
+.
+	$addHªdËr
+(
+£lf
+.
+fhªdËr
+)
+
+85 
+loggšg
+.
+	`addLev–Name
+(
+£lf
+.
+DEVICE
+, 'DEVICE')
+
+87 
+def
+ 
+	$£t_Ëv–
+(
+£lf
+, 
+logËv–
+):
+
+88 
+£lf
+.
+logg”
+.
+	$£tLev–
+(
+logËv–
+)
+
+90 
+def
+ 
+	$debug
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+91 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+92 
+msg
+ = '%r\n'%
+	$¡r
+(
+msg
+)
+
+93 
+£lf
+.
+logg”
+.
+	$debug
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+94 #hkÃwlše.
+Ãwlše
+ = 
+F®£
+
+
+96 
+def
+ 
+	$šfo
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+97 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+98 
+msg
+ = '%r\n'%
+	$¡r
+(
+msg
+)
+
+99 
+£lf
+.
+logg”
+.
+	$šfo
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+100 #hkÃwlše.
+Ãwlše
+ = 
+F®£
+
+
+102 
+def
+ 
+	$w¬nšg
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+103 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+104 
+msg
+ = '%r\n'%
+	$¡r
+(
+msg
+)
+
+105 
+£lf
+.
+logg”
+.
+	$w¬nšg
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+106 #hkÃwlše.
+Ãwlše
+ = 
+F®£
+
+
+108 
+def
+ 
+	$”rÜ
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+109 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+110 
+msg
+ = '%r\n'%
+	$¡r
+(
+msg
+)
+
+111 
+£lf
+.
+logg”
+.
+	$”rÜ
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+112 #hkÃwlše.
+Ãwlše
+ = 
+F®£
+
+
+114 
+def
+ 
+	$exû±iÚ
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+115 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+116 
+msg
+ = '%r\n'%
+	$¡r
+(
+msg
+)
+
+117 
+kw¬gs
+["exc_info"] = 1
+
+118 
+£lf
+.
+logg”
+.
+	$”rÜ
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+119 #hkÃwlše.
+Ãwlše
+ = 
+F®£
+
+
+121 
+def
+ 
+	$ü™iÿl
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+122 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+123 
+msg
+ = '%r\n'%
+	$¡r
+(
+msg
+)
+
+124 
+kw¬gs
+["exc_info"] = 1
+
+125 
+£lf
+.
+logg”
+.
+	$ü™iÿl
+(
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+126 #hkÃwlše.
+Ãwlše
+ = 
+F®£
+
+
+128 
+def
+ 
+	$log
+(
+£lf
+, 
+Ëv–
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+129 
+£lf
+.
+logg”
+.
+	$log
+(
+Ëv–
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+131 
+def
+ 
+	$deviû
+(
+£lf
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+):
+
+132 #£lf.
+logg”
+.
+	`log
+(
+£lf
+.
+DEVICE
+, 
+msg
+, *
+¬gs
+, **
+kw¬gs
+)
+
+133 
+msg
+:
+
+134 
+lšes
+ = 
+msg
+.
+	$¥l™lšes
+()
+
+135 
+’dlše
+ = 
+lšes
+.
+	$pİ
+()
+
+136 
+lše
+ 
+š
+ 
+lšes
+:
+
+137 
+£lf
+.
+logg”
+.
+	`log
+(£lf.
+DEVICE
+, '%s\n', 
+lše
+, *
+¬gs
+, **
+kw¬gs
+)
+
+138 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+139 
+msg
+[-1] 
+š
+ '\r\n':
+
+140 
+£lf
+.
+logg”
+.
+	`log
+(£lf.
+DEVICE
+, '%s\n', 
+’dlše
+, *
+¬gs
+, **
+kw¬gs
+)
+
+141 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+True
+
+
+143 
+£lf
+.
+logg”
+.
+	$log
+(
+£lf
+.
+DEVICE
+, 
+’dlše
+, *
+¬gs
+, **
+kw¬gs
+)
+
+144 
+£lf
+.
+chªdËr
+.
+Ãed_fÜm©
+ = 
+F®£
+
+
+146 
+hkÃwlše
+.
+Ãwlše
+ = 
+True
+
+
+148 '-vv' 
+š
+ 
+sys
+.
+¬gv
+ 
+Ü
+ '-vvv' in sys.argv:
+
+149 
+log
+ = 
+	`Ilogg”
+('IUTF', 
+logËv–
+ = 
+loggšg
+.
+DEBUG
+)
+
+151 
+log
+ = 
+	`Ilogg”
+('IUTF', 
+logËv–
+ = 
+loggšg
+.
+INFO
+)
+
+153 
+şass
+ 
+	$FeAd­‹r
+(
+objeù
+):
+
+154 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+logg”
+):
+
+155 
+£lf
+.
+logg”
+ =†ogger
+
+156 
+def
+ 
+	$wr™e
+(
+£lf
+, 
+d©a
+):
+
+157 
+d©a
+.
+	`¡r
+('\r\n'):
+
+158 
+£lf
+.
+logg”
+.
+	$deviû
+(
+d©a
+)
+
+159 
+def
+ 
+	$æush
+(
+£lf
+):
+
+160 
+·ss
+ #Ëav
+™
+ 
+to
+ 
+loggšg
+Ø
+æush
+…roperly
+
+	@iut/linux.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+4 
+şass
+ 
+	$Lšux
+(
+Deviû
+):
+
+5 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+6 
+£lf
+.
+deviû_Çme
+ = device_name
+
+7 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+10 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+12 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+13 
+nÙ
+ 
+cu¡omized_mode
+:
+
+14 
+£lf
+.
+u£r_mode
+ = 'user_mode'
+
+15 
+£lf
+.
+roÙ_mode
+ = 'root_mode'
+
+16 
+£lf
+.
+su_roÙ_·sswÜd
+ = 'su_root_password'
+
+17 
+£lf
+.
+roÙ_·sswÜd
+ = 
+kw¬gs
+.
+	`g‘
+('root_password', '123456')
+
+18 
+£lf
+.
+	`add_mode
+(£lf.
+u£r_mode
+, 
+r
+'[^\r\n]+[\s]*\$[\s]*$')
+
+19 
+£lf
+.
+	`add_mode
+(£lf.
+roÙ_mode
+, 
+r
+'[^\r\n]+[\s]*\#[\s]*$')
+
+20 
+£lf
+.
+	`add_mode
+(£lf.
+su_roÙ_·sswÜd
+, 
+r
+'su -„oot\r\nPassword:')
+
+21 
+£lf
+.
+	`add_·th
+(£lf.
+u£r_mode
+, s–f.
+su_roÙ_·sswÜd
+, 
+r
+'su -„oot')
+
+22 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+su_roÙ_·sswÜd
+, s–f.
+roÙ_mode
+, s–f.
+roÙ_·sswÜd
+)
+
+23 
+£lf
+.
+	`add_·th
+(£lf.
+roÙ_mode
+, s–f.
+u£r_mode
+, 
+r
+'exit')
+
+25 
+def
+ 
+	$sudo
+(
+£lf
+, 
+cmd
+, *
+¬gs
+, **
+kw¬gs
+):
+
+26 
+£lf
+.
+	`cmd
+('sudØ%s'%
+cmd
+, 
+´om±
+ = ['PasswÜd:', '\$'], 
+aùiÚ
+ = [£lf.
+·sswÜd
+, 
+NÚe
+])
+
+	@iut/macos.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+4 
+şass
+ 
+	$MacOS
+(
+Deviû
+):
+
+5 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+6 
+£lf
+.
+deviû_Çme
+ = device_name
+
+7 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+10 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+12 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+13 
+nÙ
+ 
+cu¡omized_mode
+:
+
+14 
+£lf
+.
+u£r_mode
+ = 'user_mode'
+
+15 
+£lf
+.
+roÙ_mode
+ = 'root_mode'
+
+16 
+£lf
+.
+su_roÙ_·sswÜd
+ = 'su_root_password'
+
+17 
+£lf
+.
+roÙ_·sswÜd
+ = 
+kw¬gs
+.
+	`g‘
+('root_password', '123456')
+
+18 
+£lf
+.
+	`add_mode
+(£lf.
+u£r_mode
+, 
+r
+'[^\r\n]+[\s]*\$[\s]*$')
+
+19 
+£lf
+.
+	`add_mode
+(£lf.
+roÙ_mode
+, 
+r
+'[^\r\n]+[\s]*\#[\s]*$')
+
+20 
+£lf
+.
+	`add_mode
+(£lf.
+su_roÙ_·sswÜd
+, 
+r
+'su -„oot\r\nPassword:')
+
+21 
+£lf
+.
+	`add_·th
+(£lf.
+u£r_mode
+, s–f.
+su_roÙ_·sswÜd
+, 
+r
+'su -„oot')
+
+22 
+£lf
+.
+	$add_·th
+(
+£lf
+.
+su_roÙ_·sswÜd
+, s–f.
+roÙ_mode
+, s–f.
+roÙ_·sswÜd
+)
+
+23 
+£lf
+.
+	`add_·th
+(£lf.
+roÙ_mode
+, s–f.
+u£r_mode
+, 
+r
+'exit')
+
+25 
+def
+ 
+	$sudo
+(
+£lf
+, 
+cmd
+, *
+¬gs
+, **
+kw¬gs
+):
+
+26 
+£lf
+.
+	`cmd
+('sudØ%s'%
+cmd
+, 
+´om±
+ = ['PasswÜd:', '\$'], 
+aùiÚ
+ = [£lf.
+·sswÜd
+, 
+NÚe
+])
+
+	@iut/priodict.py
+
+1 #PriÜ™y 
+diùiÚ¬y
+ 
+usšg
+ 
+bš¬y
+ 
+h—ps
+
+
+2 #David 
+Eµ¡eš
+, 
+UC
+ 
+Irvše
+, 8 
+M¬
+ 2002
+
+4 #Im¶em’t 
+a
+ 
+d©a
+ 
+¡ruùu»
+ 
+th©
+ 
+aùs
+ 
+®mo¡
+ 
+like
+‡ 
+diùiÚ¬y
+, 
+w™h
+ 
+two
+ 
+modifiÿtiÚs
+:
+
+5 #(1è
+D
+.
+sm®Ë¡
+(è
+»tuºs
+ 
+the
+ 
+v®ue
+ 
+x
+ 
+mšimizšg
+ D[x]. 
+FÜ
+ 
+this
+ 
+to
+ 
+wÜk
+ 
+cÜ»ùly
+,
+
+6 #®È
+v®ues
+ 
+D
+[
+x
+] 
+¡Üed
+ 
+š
+ 
+the
+ 
+diùiÚ¬y
+ 
+mu¡
+ 
+be
+ 
+com·¿bË
+.
+
+7 #(2è
+™”©šg
+ "fÜ x iÀD" 
+fšds
+ 
+ªd
+ 
+»moves
+ 
+the
+ 
+™ems
+ 
+äom
+ 
+D
+ 
+š
+ 
+sÜ‹d
+ 
+Üd”
+.
+
+8 #Each 
+™em
+ 
+is
+ 
+nÙ
+ 
+»moved
+ 
+uÁ
+ 
+the
+ 
+Ãxt
+ i‹m i 
+»que¡ed
+, 
+so
+ 
+D
+[
+x
+] 
+wl
+ 
+¡l
+
+
+9 #»tuº 
+a
+ 
+u£ful
+ 
+v®ue
+ 
+uÁ
+ 
+the
+ 
+Ãxt
+ 
+™”©iÚ
+ 
+of
+h-
+loİ
+.
+
+10 #Each 
+İ”©iÚ
+ 
+kes
+ 
+log¬™hmic
+ 
+amÜtized
+ 
+time
+.
+
+12 
+äom
+ 
+__futu»__
+ 
+impÜt
+ 
+g’”©Üs
+
+
+14 
+şass
+ 
+	$´iÜ™yDiùiÚ¬y
+(
+diù
+):
+
+15 
+def
+ 
+	$__š™__
+(
+£lf
+):
+
+17 
+NÙe
+ 
+th©
+ 
+chªgšg
+ 
+Ü
+ 
+»movšg
+ 
+a
+ 
+diù
+ 
+’Œy
+ 
+wl
+ 
+nÙ
+ 
+»move
+ 
+the
+ 
+Şd
+ 
+·œ
+ 
+äom
+h
+h—p
+
+
+18 
+uÁ
+ 
+™
+ 
+is
+ 
+found
+ 
+by
+ 
+	$sm®Ë¡
+(è
+Ü
+ 
+uÁ
+ 
+the
+ 
+h—p
+ 
+is
+ 
+»but
+.'''
+
+19 
+£lf
+.
+__h—p
+ = []
+
+20 
+diù
+.
+	$__š™__
+(
+£lf
+)
+
+22 
+def
+ 
+	$sm®Ë¡
+(
+£lf
+):
+
+24 
+	`Ën
+(
+£lf
+) == 0:
+
+25 
+¿i£
+ 
+IndexE¼Ü
+, "smallest ofƒmpty…riorityDictionary"
+
+26 
+h—p
+ = 
+£lf
+.
+__h—p
+
+
+27 
+h—p
+[0][1] 
+nÙ
+ 
+š
+ 
+£lf
+ 
+Ü
+ self[heap[0][1]] != heap[0][0]:
+
+28 
+Ï¡I‹m
+ = 
+h—p
+.
+	$pİ
+()
+
+29 
+š£¹iÚPošt
+ = 0
+
+31 
+sm®lChd
+ = 2*
+š£¹iÚPošt
++1
+
+32 
+sm®lChd
++1 < 
+	$Ën
+(
+h—p
+è
+ªd
+ h—p[
+sm®lChd
+] > heap[smallChild+1] :
+
+33 
+sm®lChd
+ += 1
+
+34 
+sm®lChd
+ >ğ
+	$Ën
+(
+h—p
+è
+Ü
+ 
+Ï¡I‹m
+ <ğh—p[
+sm®lChd
+]:
+
+35 
+h—p
+[
+š£¹iÚPošt
+] = 
+Ï¡I‹m
+
+
+37 
+h—p
+[
+š£¹iÚPošt
+] = h—p[
+sm®lChd
+]
+
+38 
+š£¹iÚPošt
+ = 
+sm®lChd
+
+
+39  
+h—p
+[0][1]
+
+41 
+def
+ 
+	$__™”__
+(
+£lf
+):
+
+43 
+def
+ 
+	$™”â
+():
+
+44 
+	`Ën
+(
+£lf
+) > 0:
+
+45 
+x
+ = 
+£lf
+.
+	$sm®Ë¡
+()
+
+46 
+y›ld
+ 
+x
+
+
+47 
+d–
+ 
+£lf
+[
+x
+]
+
+48  
+	$™”â
+()
+
+50 
+def
+ 
+	$__£t™em__
+(
+£lf
+,
+key
+,
+v®
+):
+
+52 
+Rebuds
+ 
+the
+ 
+h—p
+ th
+numb”
+ 
+of
+ 
+d–‘ed
+ 
+™ems
+ 
+g‘s
+ 
+Ïrge
+, 
+to
+ 
+avoid
+ 
+memÜy
+ 
+Ëakage
+.'''
+
+53 
+diù
+.
+	$__£t™em__
+(
+£lf
+,
+key
+,
+v®
+)
+
+54 
+h—p
+ = 
+£lf
+.
+__h—p
+
+
+55 
+	`Ën
+(
+h—p
+è> 2 * 
+	$Ën
+(
+£lf
+):
+
+56 
+£lf
+.
+__h—p
+ = [(
+v
+,
+k
+èk,v 
+š
+ s–f.
+	`™”™ems
+()]
+
+57 
+£lf
+.
+__h—p
+.
+	$sÜt
+(è#butš 
+sÜt
+ 
+´obably
+ 
+ç¡”
+ 
+thª
+ 
+	`O
+(
+n
+)-
+time
+ 
+h—pify
+
+
+59 
+ÃwPaœ
+ = (
+v®
+,
+key
+)
+
+60 
+š£¹iÚPošt
+ = 
+	$Ën
+(
+h—p
+)
+
+61 
+h—p
+.
+	$­³nd
+(
+NÚe
+)
+
+62 
+š£¹iÚPošt
+ > 0 
+ªd
+ 
+ÃwPaœ
+ < 
+h—p
+[(insertionPoint-1)
+
+63 
+h—p
+[
+š£¹iÚPošt
+] = heap[(insertionPoint-1)
+
+64 
+š£¹iÚPošt
+ = (insertionPoint-1)
+
+65 
+h—p
+[
+š£¹iÚPošt
+] = 
+ÃwPaœ
+
+
+67 
+def
+ 
+	$£tdeçuÉ
+(
+£lf
+,
+key
+,
+v®
+):
+
+69 
+key
+ 
+nÙ
+ 
+š
+ 
+£lf
+:
+
+70 
+£lf
+[
+key
+] = 
+v®
+
+
+71  
+£lf
+[
+key
+]
+
+	@iut/testbed.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 
+impÜt
+ 
+sys
+
+
+4 
+impÜt
+ 
+jsÚ
+
+
+5 
+impÜt
+ 
+os
+
+
+6 
+äom
+ 
+og
+ 
+impÜt
+ 
+	glog
+, 
+Ilogg”
+
+
+8 
+	g_TESTBED
+ = 'iap_225'
+
+9 
+_TESTBED_DIR
+ = "./testbeds"
+
+11 
+glob®
+ 
+TESTBED
+
+
+13 
+TESTBED
+ = {}
+
+15 
+şass
+ 
+	$Exû±iÚTe¡bed
+(
+Exû±iÚ
+):
+
+19 '--‹¡bed-dœ' 
+š
+ 
+sys
+.
+¬gv
+:
+
+20 
+_TESTBED_DIR
+ = 
+sys
+.
+¬gv
+[sys.¬gv.
+	`šdex
+('--testbed-dir')+1]
+
+22 '--‹¡bed' 
+š
+ 
+sys
+.
+¬gv
+:
+
+23 
+_TESTBED
+ = 
+sys
+.
+¬gv
+[sys.¬gv.
+	`šdex
+('--testbed')+1]
+
+25 
+‹¡bed_fe
+ = 
+os
+.
+·th
+.
+	$još
+(
+_TESTBED_DIR
+, 
+_TESTBED
+)
+
+26 
+Œy
+:
+
+27 
+fd
+ = 
+	`İ’
+(
+‹¡bed_fe
+, 'r')
+
+28 
+‹¡bed_ùx
+ = 
+fd
+.
+	$»ad
+()
+
+29 
+log
+.
+	`debug
+("Te¡bed cÚ‹Á: %r" % 
+‹¡bed_ùx
+)
+
+30 
+TESTBED
+ = 
+jsÚ
+.
+	$lßds
+(
+‹¡bed_ùx
+)
+
+31 
+log
+.
+	`debug
+("decoded jsÚ: %r" % 
+TESTBED
+)
+
+32 
+exû±
+:
+
+33 
+log
+.
+	`”rÜ
+("Lßde¡bed % çed" % 
+‹¡bed_fe
+)
+
+34 
+fš®ly
+:
+
+35 
+fd
+.
+	$şo£
+()
+
+37 
+def
+ 
+	$REQUIRED
+(*
+duts
+):
+
+38 
+glob®
+ 
+TESTBED
+
+
+39 
+	`sÜ‹d
+(
+duts
+è!ğsÜ‹d(
+TESTBED
+['DUT']):
+
+40 
+log
+.
+	`”rÜ
+("testbed does‚ot haveƒnough devices forhe script.")
+
+41 
+log
+.
+	$debug
+(
+TESTBED
+)
+
+42 
+¿i£
+ 
+	`Exû±iÚTe¡bed
+('Incorrectestbed - script mapping.')
+
+44  [
+TESTBED
+[
+dut
+] duˆ
+š
+ 
+duts
+]
+
+	@iut/testbed_noseplugin.py
+
+1 #!/
+u¤
+/
+bš
+/
+’v
+ 
+pythÚ
+
+
+2 #-*- 
+codšg
+: 
+utf
+-8 -*-
+
+3 
+impÜt
+ 
+loggšg
+
+
+4 
+impÜt
+ 
+os
+
+
+5 
+impÜt
+ 
+no£
+
+
+6 
+impÜt
+ 
+jsÚ
+
+
+7 
+äom
+ 
+	gno£
+.
+¶ugšs
+ 
+impÜt
+ 
+Plugš
+
+
+9 
+şass
+ 
+	$Te¡bed
+(
+Plugš
+):
+
+10 
+Çme
+ = 'testbed'
+
+12 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+v”bos™y
+=1):
+
+13 
+	`su³r
+(
+Te¡bed
+, 
+£lf
+).
+	$__š™__
+()
+
+14 
+£lf
+.
+v”bos™y
+ = verbosity
+
+16 
+def
+ 
+	$İtiÚs
+(
+£lf
+, 
+·r£r
+, 
+’v
+=
+os
+.
+’vœÚ
+):
+
+17 
+	`su³r
+(
+Te¡bed
+, 
+£lf
+).
+	$İtiÚs
+(
+·r£r
+, 
+’v
+=env)
+
+18 
+·r£r
+.
+	`add_İtiÚ
+(
+
+19 '--‹¡bed', 
+aùiÚ
+='store',
+
+20 
+de¡
+='‹¡bed', 
+m‘av¬
+="FILE",
+
+21 =
+’v
+.
+	`g‘
+('NOSE_TESTBED_FILE', "testbed1"),
+
+22 
+h–p
+="Pathoestbed json fileo gethe json…arametero‡llests. "
+
+25 
+·r£r
+.
+	`add_İtiÚ
+(
+
+26 '--‹¡bed-dœ', 
+aùiÚ
+='store',
+
+27 
+de¡
+='‹¡bed_dœ', 
+m‘av¬
+="WHERE",
+
+28 =
+’v
+.
+	`g‘
+('NOSE_TESTBED_DIR', "./testbeds"),
+
+29 
+h–p
+="The folder ofestbeds. "
+
+33 
+def
+ 
+	$cÚfigu»
+(
+£lf
+, 
+İtiÚs
+, 
+cÚf
+):
+
+34 
+	`su³r
+(
+Te¡bed
+, 
+£lf
+).
+	$cÚfigu»
+(
+İtiÚs
+, 
+cÚf
+)
+
+36 
+def
+ 
+	$fš®ize
+(
+£lf
+, 
+»suÉ
+):
+
+37 
+·ss
+
+
+	@iut/win.py
+
+1 
+äom
+ 
+og
+ 
+impÜt
+ *
+
+2 
+äom
+ 
+dev
+ 
+impÜt
+ *
+
+3 
+äom
+ 
+cÚ¡ªt
+ 
+impÜt
+ 
+WIN_WIRELESS_XML
+
+
+4 
+äom
+ 
+	gos
+.
+·th
+ 
+impÜt
+ 
+još
+
+
+6 
+şass
+ 
+	$Exû±iÚWš
+(
+Exû±iÚ
+):
+
+10 
+şass
+ 
+	$Wš
+(
+Deviû
+):
+
+11 
+def
+ 
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, 
+cu¡omized_mode
+ = 
+F®£
+, *
+¬gs
+, **
+kw¬gs
+):
+
+12 
+£lf
+.
+deviû_Çme
+ = device_name
+
+13 
+£lf
+.
+mgt_m‘hod
+ = mgt_method
+
+16 
+In™Ÿlize
+ 
+the
+ 
+Deviû
+
+
+18 
+Deviû
+.
+	$__š™__
+(
+£lf
+, 
+deviû_Çme
+, 
+mgt_m‘hod
+, *
+¬gs
+, **
+kw¬gs
+)
+
+19 
+nÙ
+ 
+cu¡omized_mode
+:
+
+20 
+£lf
+.
+logš_mode
+ = 'login_mode'
+
+21 
+£lf
+.
+	`add_mode
+(£lf.
+logš_mode
+, 
+r
+'[^\r\n]+[\s]*[\$\>][\s]*$')
+
+23 
+def
+ 
+	$g‘_cÚfig_®l
+(
+£lf
+):
+
+25 
+It
+ 
+wl
+ 
+push
+ 
+commªd
+ 
+cÚfig
+ /
+®l
+, 
+ªd
+  
+diù
+ 
+this
+ command.
+
+26 
+e
+.
+g
+:
+
+27 
+a
+ = 
+	$Wš
+(...)
+
+28 
+»t
+ = 
+a
+.
+	$g‘_cÚfig_®l
+():
+
+29 
+»t
+ = {'Ethernet‡dapter Local Area Connection': {
+
+41 
+	}
+}
+
+44 
+»t
+ = 
+£lf
+.
+cmd
+('ipconfig /all')
+
+45 
+cÚfig
+ = {}
+
+46 
+lšes
+ = [
+lše
+.
+	$r¡r
+(è
+lše
+ 
+š
+ 
+»t
+.
+	$¥l™lšes
+(è
+lše
+.
+	`r¡r
+() != '']
+
+47 
+lše
+ 
+š
+ 
+lšes
+:
+
+48 
+lše
+[0] != " ":
+
+49 
+bË_h—d”
+ = 
+lše
+
+
+50 
+cÚfig
+[
+bË_h—d”
+] = {
+	}
+}
+
+52 
+bË_ùx
+ = 
+lše
+.
+¡r
+().
+¥l™
+(':', 1)
+
+53 
+	gcÚfig
+[
+bË_h—d”
+].
+upd©e
+({
+bË_ùx
+[0].
+r¡r
+('.'):able_ctx[1]})
+
+54  
+cÚfig
+
+
+56 
+def
+ 
+g‘_cÚfig
+(
+£lf
+, 
+š‹rçû
+='Wireless Network Connection'):
+
+58 
+G‘
+ 
+cÚfig
+ 
+¥ecific
+ 
+š‹rçû
+,  
+	gis
+ 'Wireless Network Connection'
+
+59 
+If
+  
+	gNÚe
+, 
+™
+ 
+m—ns
+ 
+g‘tšg
+ 
+	gçed
+.
+
+61 
+	g»t
+ = 
+£lf
+.
+	$g‘_cÚfig_®l
+()
+
+62 
+k
+ 
+š
+ 
+»t
+.
+	$keys
+():
+
+63 
+š‹rçû
+ 
+š
+ 
+k
+:
+
+64  
+»t
+[
+k
+]
+
+65  
+NÚe
+
+
+67 
+def
+ 
+	`pšg
+(
+£lf
+, 
+ho¡
+, 
+couÁ
+=5, 
+timeout
+=120, 
+·ss_¿‹
+=80, 
+exŒa
+=""):
+
+69 
+ho¡
+: 
+the
+ 
+de¡š©iÚ
+ 
+pšg
+
+
+70 
+couÁ
+: 
+the
+ couÁ 
+of
+ 
+pšg
+ 
+·ck‘s
+
+
+71 
+timeout
+: 
+the
+imeouˆ
+this
+ 
+´oûss
+
+
+72 
+·ss_¿‹
+: 
+the
+ 
+·ss
+ 
+¿‹
+ 
+pšg
+
+
+73 
+exŒa
+:ƒxŒ¨
+·¿m‘”s
+ 
+which
+ 
+wl
+ 
+be
+ 
+·s£d
+ 
+to
+ 
+pšg
+ 
+dœeùly
+
+
+75 
+couÁ
+ <=0:
+
+76 
+¿i£
+ 
+	`Exû±iÚWš
+("count for…ing should be greaterhan 0")
+
+77 
+commªd
+ = "pšg % -À%d %s" % (
+ho¡
+, 
+couÁ
+, 
+exŒa
+)
+
+78 
+»t
+ = 
+£lf
+.
+	$cmd
+(
+commªd
+, 
+timeout
+=timeout)
+
+79  
+»t
+.
+	`couÁ
+("by‹s=")*100/
+couÁ
+ >ğ
+·ss_¿‹
+
+
+81 #FÜ 
+the
+ 
+b–ow
+ 
+­i
+, 
+we
+ 
+have
+hb–ow 
+»quœm’ts
+:
+
+82 #* 
+The
+ 
+toŞ
+ 
+ş›Á
+.
+exe
+, 
+ªd
+ , 
+we
+ 
+put
+ 
+™
+ 
+što
+ 
+the
+ 
+·th
+ 
+c
+:/
+ş›Á1
+
+
+83 #* 
+Cygwš
+
+
+85 
+def
+ 
+	$g’_xml_fe
+(
+£lf
+, **
+kw¬gs
+):
+
+87 
+It
+ 
+u£s
+ 
+to
+ 
+g’”©e
+ 
+the
+ 
+xml
+ 
+fe
+ 
+Ãtsh
+ 
+wÏn
+ 
+Ü
+h
+toŞ
+ 
+ş›Á
+.
+exe
+ 
+which
+ 
+could
+ 
+be
+
+
+88 
+u£d
+ 
+to
+ 
+cÚÃù
+Ø
+WIFI
+.
+
+89 
+It
+ 
+has
+ 
+the
+ 
+b–ow
+ 
+·¿m‘”
+, * 
+is
+ 
+mªd©Üy
+, 
+Ùh”
+ i 
+İtiÚ®
+:
+
+90 * 
+ssid
+: ssid 
+Çme
+
+
+91 
+´of’ame
+: 
+Profe
+ 
+Çme
+ 
+š
+ 
+the
+ 
+xml
+ 
+fe
+,  
+v®ue
+ 
+equ®
+ 
+to
+ 
+ssid
+
+
+92 
+auth’tiÿtiÚ
+: 
+the
+‡uth’tiÿtiÚ 
+m‘hod
+. 
+The
+ 
+v®ue
+ 
+should
+ 
+be
+ 
+Úe
+ 
+of
+h
+b–ow
+.  
+is
+ 
+İ’
+
+
+93 
+İ’
+: İ’ 
+ssid
+.
+
+94 -
+w•
+: wep
+
+95 
+dyÇmic
+-
+w•
+: w• 
+w™h
+ 
+dÙ1x
+
+
+96 
+w·
+-
+psk
+: wpa…sk
+
+97 
+w·2
+-
+psk
+: wpa2…sk
+
+98 
+w·
+: w· 
+’‹½ri£
+
+
+99 
+w·2
+: w·2 
+’‹½ri£
+
+
+100 
+—p
+: 
+the
+ƒ­ 
+m‘hod
+ 
+dÙ1x
+ 
+auth’tiÿtiÚ
+:
+
+101 
+³­
+-
+gtc
+:…eap gtc
+
+102 
+³­
+-
+msch­v2
+:…eap mschapv2
+
+103 
+s
+:ls
+
+105 * 
+NÙe
+: 
+Beÿu£
+ 
+wšdows
+ 
+ş›Ás
+ dØ
+nÙ
+ 
+suµÜt
+ 
+‰ls
+ 
+as
+  
+no
+ 
+add™iÚ®
+ 
+driv”
+, 
+so
+ 
+we
+ do‚ot
+
+106 
+´ovide
+ 
+the
+ 
+­i
+ 
+™
+.
+
+108 
+w•_key
+: 
+U£
+ -
+w•
+
+
+109 
+w•_key_šdex
+: 
+U£
+ -
+w•
+
+
+111 
+u£ºame
+: u£ºam
+dÙ1x
+ 
+auth’tiÿtiÚ
+, 
+this
+ 
+is
+ 
+»quœed
+ 
+³­
+‡uthentication
+
+112 
+·sswÜd
+:…asswÜd 
+dÙ1x
+ 
+auth’tiÿtiÚ
+ 
+Ü
+ 
+psk
+
+
+113 * 
+NÙe
+: 
+If
+ 
+we
+ 
+ju¡
+ 
+´ovide
+ 
+the
+ 
+·sswÜd
+ 
+w™hout
+ 
+u£ºame
+, w
+would
+ 
+u£
+ 
+™
+ 
+as
+ 
+psk
+
+
+115 
+û¹Çme
+: 
+the
+ 
+û¹ifiÿ‹
+ 
+Çme
+ 
+your
+ 
+s
+ 
+auth’tiÿtiÚ
+, 
+you
+ 
+mu¡
+ 
+š¡®l
+ 
+this
+ c”tifiÿ‹ 
+to
+h
+ş›Á
+ 
+fœ¡
+
+
+116 
+thumb´št
+: 
+the
+ 
+sha1
+ 
+fšg”´št
+/thumb´šˆ
+your
+ 
+û¹ifiÿ‹
+
+
+118 
+de¡
+: 
+the
+ 
+de¡š©iÚ
+ 
+·th
+ 
+this
+ 
+xml
+ 
+fe
+, 
+beÿu£
+h 
+toŞ
+ 
+ş›Á
+.
+exe
+ 
+wl
+ 
+be
+ 
+put
+ 
+što
+ 
+c
+:/
+ş›Á1
+, 
+so
+
+
+119 
+the
+ 
+de¡
+  
+v®ue
+ 
+is
+ 
+c
+:/
+ş›Á
+
+
+121 
+nÙ
+ 
+kw¬gs
+.
+	`g‘
+('ssid'):
+
+122 
+¿i£
+ 
+	`Exû±iÚWš
+('You must…rovide ssid…arameter forhis function')
+
+123 
+ssid
+ = 
+kw¬gs
+['ssid']
+
+124 
+´of’ame
+ = 
+kw¬gs
+.
+	`g‘
+('profilename', kwargs['ssid'])
+
+125 
+xml_fe_Çme
+ = '%s.xml' % 
+´of’ame
+
+
+126 
+u£r_xml_fe_Çme
+ = 'u£r_%s.xml' % 
+´of’ame
+
+
+127 
+de¡_·th
+ = 
+kw¬gs
+.
+	`g‘
+('dest', 'c:/client')
+
+128 
+auth’tiÿtiÚ
+ = 
+kw¬gs
+.
+	`g‘
+('authentication', 'open')
+
+129 
+—p
+ = 
+kw¬gs
+.
+	`g‘
+('eap', 'peap-mschapv2')
+
+130 
+u£ºame
+ = 
+kw¬gs
+.
+	`g‘
+('username')
+
+131 
+·sswÜd
+ = 
+kw¬gs
+.
+	`g‘
+('password')
+
+132 
+û¹Çme
+ = 
+kw¬gs
+.
+	`g‘
+('certname')
+
+133 
+thumb´št
+ = 
+kw¬gs
+.
+	`g‘
+('thumbprint')
+
+134 
+w•_key
+ = 
+kw¬gs
+.
+	`g‘
+('wep_key')
+
+135 
+w•_key_šdex
+ = 
+kw¬gs
+.
+	`g‘
+('wep_key_index')
+
+137 #mak
+su»
+ 
+the
+ 
+xml
+ 
+fe
+ 
+should
+ 
+be
+ 
+d–‘ed
+ 
+fœ¡
+
+
+138 
+£lf
+.
+	`cmd
+('rm -rà%s' % 
+	$još
+(
+de¡_·th
+, 
+xml_fe_Çme
+))
+
+139 
+£lf
+.
+	`cmd
+('rm -rà%s' % 
+	$još
+(
+de¡_·th
+, 
+u£r_xml_fe_Çme
+))
+
+141 
+u£d_xml
+ = ''
+
+142 
+u£d_u£r_xml
+ = ''
+
+143 
+auth’tiÿtiÚ
+ == 'open':
+
+144 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['OPEN']
+
+145 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'open')
+
+146 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'none')
+
+147 
+–if
+ 
+auth’tiÿtiÚ
+ == 'static-wep':
+
+148 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['WEP-STATIC']
+
+149 
+nÙ
+ 
+w•_key_šdex
+ 
+Ü
+‚Ù 
+w•_key
+:
+
+150 
+¿i£
+ 
+	`Exû±iÚWš
+('wep_key‡nd wep_key_index‡re„equired for static-wep')
+
+151 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('WEPKEY_INDEX', 
+w•_key_šdex
+)
+
+152 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('WEP-KEY', 
+w•_key
+)
+
+153 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'open')
+
+154 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'WEP')
+
+155 
+–if
+ 
+auth’tiÿtiÚ
+ == 'wpa-psk':
+
+156 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['WPA-PSK']
+
+157 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('WPA_PSK', 
+·sswÜd
+)
+
+158 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'WPA')
+
+159 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'TKIP')
+
+160 
+–if
+ 
+auth’tiÿtiÚ
+ == 'wpa2-psk':
+
+161 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['WPA2-PSK']
+
+162 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('WPA2_PSK', 
+·sswÜd
+)
+
+163 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'WPA2')
+
+164 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'AES')
+
+165 
+–if
+ 
+—p
+:
+
+166 
+auth’tiÿtiÚ
+ == 'wpa':
+
+167 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'WPA')
+
+168 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'TKIP')
+
+169 
+–if
+ 
+auth’tiÿtiÚ
+ == 'wpa2':
+
+170 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'WPA2')
+
+171 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'AES')
+
+172 
+–if
+ 
+auth’tiÿtiÚ
+ == 'dynamic-wep':
+
+173 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('AUTHENTICATION', 'OPEN')
+
+174 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('ENCRYPTION', 'WEP')
+
+175 
+—p
+ == 'peap-mschapv2':
+
+176 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['PEAP-MSCHAPV2']
+
+177 
+u£d_u£r_xml
+ = 
+WIN_WIRELESS_XML
+['MSCHAPV2-USER']
+
+178 
+nÙ
+ 
+u£ºame
+ 
+Ü
+‚Ù 
+·sswÜd
+:
+
+179 
+¿i£
+ 
+	`Exû±iÚWš
+('username‡nd…assword‡re„equired for…eap-mschapv2')
+
+180 
+u£d_u£r_xml
+ = u£d_u£r_xml.
+	`»¶aû
+('USERNAME', 
+u£ºame
+)
+
+181 
+u£d_u£r_xml
+ = u£d_u£r_xml.
+	`»¶aû
+('PASSWORD', 
+·sswÜd
+)
+
+182 
+–if
+ 
+—p
+ == 'peap-gtc':
+
+183 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['PEAP-GTC']
+
+184 
+nÙ
+ 
+u£ºame
+ 
+Ü
+‚Ù 
+·sswÜd
+:
+
+185 
+¿i£
+ 
+	`Exû±iÚWš
+('username‡nd…assword‡re„equired for…eap-gtc')
+
+186 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('USERNAME', 
+u£ºame
+)
+
+187 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('PASSWORD', 
+·sswÜd
+)
+
+188 
+–if
+ 
+—p
+ == 'tls':
+
+189 
+u£d_xml
+ = 
+WIN_WIRELESS_XML
+['TLS']
+
+190 
+u£d_u£r_xml
+ = 
+WIN_WIRELESS_XML
+['TLS-CERT']
+
+191 
+nÙ
+ 
+û¹Çme
+ 
+Ü
+‚Ù 
+thumb´št
+:
+
+192 
+¿i£
+ 
+	`Exû±iÚWš
+('certname‡ndhumbprint‡re„equired forls')
+
+193 
+u£d_u£r_xml
+ = u£d_u£r_xml.
+	`»¶aû
+('CERTNAME', 
+û¹Çme
+)
+
+194 
+u£d_u£r_xml
+ = u£d_u£r_xml.
+	`»¶aû
+('THUMBPRINT', 
+thumb´št
+)
+
+195 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('PROFILE', 
+´of’ame
+)
+
+196 
+u£d_xml
+ = u£d_xml.
+	`»¶aû
+('<Çme>SSID</Çme>', '<Çme>%s</Çme>'%
+ssid
+)
+
+197 
+u£d_xml
+ = u£d_xml.
+	$¡r
+()
+
+198 
+u£d_u£r_xml
+ = u£d_u£r_xml.
+	$¡r
+()
+
+200 
+ascii_u£d_xml
+ = ''.
+	`još
+(['\\\\%o'%(
+	$Üd
+(
+x
+)èx 
+š
+ 
+u£d_xml
+])
+
+202 
+£lf
+.
+	`cmd
+('´štà"%s" > "%s"' % (
+ascii_u£d_xml
+, 
+	`još
+(
+de¡_·th
+, 
+xml_fe_Çme
+)), 
+timeout
+=120)
+
+203 
+£lf
+.
+	`cmd
+('ÿˆ"%s"' % 
+	$još
+(
+de¡_·th
+, 
+xml_fe_Çme
+))
+
+205 
+u£d_u£r_xml
+:
+
+206 
+ascii_u£d_u£r_xml
+ = ''.
+	`još
+(['\\\\%o'%(
+	$Üd
+(
+x
+)èx 
+š
+ 
+u£d_u£r_xml
+])
+
+207 
+£lf
+.
+	`cmd
+('´štà"%s" > "%s"' % (
+ascii_u£d_u£r_xml
+, 
+	`još
+(
+de¡_·th
+, 
+u£r_xml_fe_Çme
+)), 
+timeout
+=120)
+
+208 
+£lf
+.
+	`cmd
+('ÿˆ"%s"' % 
+	$još
+(
+de¡_·th
+, 
+u£r_xml_fe_Çme
+))
+
+210 
+def
+ 
+	`d–_xml_fe
+(
+£lf
+, 
+´of’ame
+, 
+de¡
+='c:/client'):
+
+211 
+xml_fe_Çme
+ = '%s.xml' % 
+´of’ame
+
+
+212 
+u£r_xml_fe_Çme
+ = 'u£r_%s.xml' % 
+´of’ame
+
+
+213 
+£lf
+.
+	`cmd
+('rm -rà%s' % 
+	$još
+(
+de¡
+, 
+xml_fe_Çme
+))
+
+214 
+£lf
+.
+	`cmd
+('rm -rà%s' % 
+	$još
+(
+de¡
+, 
+u£r_xml_fe_Çme
+))
+
+216 
+def
+ 
+	$ş›Á_do_cÚÃù
+(
+£lf
+, **
+kw¬gs
+):
+
+217 
+š‹rçû
+ = 
+kw¬gs
+.
+	`g‘
+('interface', 'Wireless Network Connection')
+
+218 
+ssid
+ = 
+kw¬gs
+.
+	`g‘
+('ssid')
+
+219 
+nÙ
+ 
+ssid
+:
+
+220 
+¿i£
+ 
+	`Exû±iÚWš
+('You must…rovide ssid…arameter forhis function')
+
+221 
+´of’ame
+ = 
+kw¬gs
+.
+	`g‘
+('´of’ame', 
+ssid
+)
+
+222 
+bssid
+ = 
+kw¬gs
+.
+	`g‘
+('bssid', '000000000000')
+
+223 
+bssid
+ = bssid.
+	`»¶aû
+(':', '')
+
+224 
+—p
+ = 
+kw¬gs
+.
+	`g‘
+('eap')
+
+225 
+·th
+ = 
+kw¬gs
+.
+	`g‘
+('·th', 'c:/ş›Á'è#Th·th 
+of
+ 
+the
+ 
+toŞ
+ 
+ş›Á
+.
+exe
+
+
+226 
+ş›Á_exe
+ = 
+	`još
+(
+·th
+, 'client.exe')
+
+227 
+xml_fe
+ = 
+	`još
+(
+·th
+, '%s.xml'%
+´of’ame
+)
+
+229 
+—p
+:
+
+230 
+u£r_xml_fe
+ = 
+	`još
+(
+·th
+, 'u£r_%s.xml'%
+´of’ame
+)
+
+231 
+commªd
+ = '% cÚÀ"%s" "%s" % % %s' % (
+ş›Á_exe
+, 
+ssid
+, 
+´of’ame
+ ,
+xml_fe
+, 
+bssid
+, 
+u£r_xml_fe
+)
+
+233 
+commªd
+ = '% cÚÀ"%s" "%s" % %s' % (
+ş›Á_exe
+, 
+ssid
+, 
+´of’ame
+, 
+xml_fe
+, 
+bssid
+)
+
+235 
+»t
+ = 
+£lf
+.
+	$cmd
+(
+commªd
+)
+
+236 'com¶‘ed sucûssfuÎy' 
+š
+ 
+»t
+:
+
+237  
+True
+
+
+239  
+F®£
+
+
+241 
+def
+ 
+	$cÚÃù_wifi
+(
+£lf
+, **
+kw¬gs
+):
+
+243 
+Combše
+ 
+g’_xml_fe
+ 
+ªd
+ 
+ş›Á_do_cÚÃù
+
+
+245 
+£lf
+.
+	$g’_xml_fe
+(**
+kw¬gs
+)
+
+246  
+£lf
+.
+	$ş›Á_do_cÚÃù
+(**
+kw¬gs
+)
+
+248 
+def
+ 
+	`is_wifi_cÚÃùed
+(
+£lf
+, 
+·th
+='c:/client'):
+
+249 
+ş›Á_exe
+ = 
+	`još
+(
+·th
+, 'client.exe')
+
+250 
+»t
+ = 
+£lf
+.
+	`cmd
+("% gs" % 
+ş›Á_exe
+)
+
+251 '"cÚÃùed"' 
+š
+ 
+»t
+:
+
+252  
+True
+
+
+254  
+F®£
+
+
+	@setup.py
+
+1 
+impÜt
+ 
+glob
+
+
+2 
+impÜt
+ 
+io
+
+
+3 
+äom
+ 
+	gos
+.
+·th
+ 
+impÜt
+ 
+ba£Çme
+
+
+4 
+äom
+ 
+	gos
+.
+·th
+ 
+impÜt
+ 
+dœÇme
+
+
+5 
+äom
+ 
+	gos
+.
+·th
+ 
+impÜt
+ 
+još
+
+
+6 
+äom
+ 
+	gos
+.
+·th
+ 
+impÜt
+ 
+¥l™ext
+
+
+8 
+	gŒy
+:
+
+9 
+äom
+ 
+£tu±oŞs
+ 
+impÜt
+ 
+£tup
+
+
+10 
+exû±
+ 
+ImpÜtE¼Ü
+:
+
+11 
+äom
+ 
+di¡uts
+.
+cÜe
+ 
+impÜt
+ 
+£tup
+
+
+13 
+lÚg_desütiÚ
+ = '''
+
+14 
+iUTF
+ 
+is
+ 
+a
+ 
+Un™
+ 
+Te¡
+ 
+äamewÜk
+ 
+ÃtwÜkšg
+ 
+deviûs
+ 
+like
+ , 
+	grou‹r
+, 
+	gcÚŒŞËr
+, 
+	g­
+.
+
+15 
+And
+ 
+®so
+ 
+™
+ 
+ÿn
+ 
+»mÙe
+ 
+cÚŒŞ
+ 
+lšux
+ 
+ªd
+ 
+mac
+ 
+vŸ
+ 
+‹Ê‘
+ 
+Ü
+ 
+	gssh
+.
+
+17 
+It
+ 
+cÚv”ts
+ 
+the
+ 
+´om±
+ 
+of
+ 
+deviûs
+ 
+to
+ 
+nodes
+ 
+ªd
+ 
+combšes
+hnode tØ
+a
+ 
+	gg¿ph
+, 
+th’
+ 
+u£
+he
+
+18 
+shÜ‹¡
+ 
+·th
+ 
+®gÜ™hm
+ 
+to
+ 
+fšd
+ 
+the
+…©h 
+sw™chšg
+ 
+b‘w“n
+ 
+	gnodes
+.
+
+20 
+iUTF
+ 
+»quœes
+ 
+	g³x³ù
+, 
+	gno£
+, 
+	gloggšg
+.
+
+23 
+£tup
+(
+
+24 
+desütiÚ
+='iUTF‡llowsƒasy control of‚etworking devices',
+
+25 
+authÜ
+='Feng Ding',
+
+26 
+lÚg_desütiÚ
+=long_description,
+
+27 
+u¾
+='',
+
+28 
+authÜ_ema
+='feng.ding2@hpe.com',
+
+29 
+v”siÚ
+='0.1',
+
+30 
+š¡®l_»quœes
+=['nose-html-reporting', 'pexpect', 'logging'],
+
+31 
+·ckages
+=['iut'],
+
+32 
+Çme
+='iutf',
+
+33 
+d©a_fes
+=[
+
+37 
+’Œy_pošts
+={
+
+	@tests/__init__.py
+
+1 
+äom
+ 
+iut
+ 
+impÜt
+ 
+Ÿp
+
+
+2 
+äom
+ 
+	giut
+.
+Ÿp
+ 
+impÜt
+ 
+IAP
+
+
+3 
+äom
+ 
+	giut
+.
+og
+ 
+impÜt
+ 
+log
+
+
+4 
+äom
+ 
+	giut
+.
+macos
+ 
+impÜt
+ 
+MacOS
+
+
+5 
+äom
+ 
+	giut
+.
+wš
+ 
+impÜt
+ 
+Wš
+
+
+6 
+äom
+ 
+	giut
+.
+lšux
+ 
+impÜt
+ 
+Lšux
+
+
+7 
+äom
+ 
+time
+ 
+impÜt
+ 
+¦“p
+
+
+8 
+äom
+ 
+¿ndom
+ 
+impÜt
+ 
+choiû
+
+
+9 
+äom
+ 
+	gno£
+.
+toŞs
+ 
+impÜt
+ 
+	gw™h_£tup
+, 
+nÙ‹¡
+
+
+10 
+äom
+ 
+	giut
+.
+‹¡bed
+ 
+impÜt
+ 
+	gTESTBED
+, REQUIRED
+
+	@tests/test_captivePortal.py
+
+2 
+	gTe¡C©egÜy
+: 
+Auth’tiÿtiÚ
+
+
+3 
+Te¡Ca£
+: 
+C­tive
+ 
+PÜl
+ 
+¡©emachše
+ 
+Te¡šg
+
+
+4 
+S‹
+ 
+Machše
+:
+
+5 
+Cl›Á
+ 
+vis™s
+ 
+a
+ 
+u¾
+
+
+7 
+YES
+ ----- 
+URL
+ 
+is
+ 
+FQDN
+ ?------ 
+No
+
+
+9 
+Cl›Á
+ 
+£nds
+ 
+DNS
+ 
+»que¡
+ |
+
+11 
+NO
+ ---- 
+DNS
+ 
+»sŞved
+ ? --- 
+Yes
+ ------ 
+is
+ 
+scheme
+ 
+h‰p
+ --- 
+No
+ --- 
+H™tšg
+ 
+aş
+ "any‡ny 6 0-65535 443-443 PSD4"
+
+13 
+S¶ash
+ 
+·ge
+ 
+çed
+ 
+YES
+ 
+DNAT
+: 
+x
+.x.x.x:443 -> 172.31.98.1:4343
+
+14 | 
+SNAT
+: 
+y
+.y.y.y -> 172.31.98.2
+
+15 
+H™tšg
+ 
+aş
+ "any‡ny 6 0-65535 80 80 PSD4" |
+
+16 | 
+mših‰pd
+ 
+wl
+ 
+hªdË
+ 
+™
+ 
+ªd
+ 
+»¶y
+ 
+back
+ 
+a
+ 
+h‰p
+ 
+»dœeù
+ 
+to
+ 
+ş›Á
+
+
+17 
+DNAT
+: 
+x
+.x.x.x:80 -> 172.31.98.1:8080
+
+18 
+SNAT
+: 
+y
+.y.y.y -> 172.31.98.2
+
+20 
+tšy
+ 
+´oxy
+ 
+wl
+ 
+hªdË
+ 
+™
+ 
+ªd
+ 
+»¶y
+ 
+back
+ 
+a
+ 
+h‰p
+ 
+»dœeù
+ 
+to
+ 
+ş›Á
+
+
+22 
+ICP
+ ---------------------------------------- 
+ECP
+
+
+24 
+S¶ash
+ 
+·ge
+ 
+š
+ 
+Cl›Á
+ S¶ash…agš Cl›Á ------------- 
+Pİ
+ 
+up
+ 
+ECP
+…age in Client
+
+26 
+YES
+ ------------- 
+Has
+ 
+In¡®Ëd
+ 
+û¹ifiÿ‹
+? 
+Cl›Á
+ 
+po¡
+ 
+u£ºame
+ 
+ªd
+ 
+·sswÜd
+ 
+to
+ 
+the
+ 
+u¾
+ 
+IAP
+
+
+28 | 
+NO
+ 
+Has
+ 
+In¡®Ëd
+ 
+û¹
+ ? ---------------- 
+No
+
+
+30 | 
+URL
+: 
+h‰ps
+:
+
+32 
+URL
+: 
+h‰ps
+:
+
+36 
+Pİ
+ 
+up
+ --------- 
+No
+ -------- 
+Is
+ 
+this
+ 
+u¾
+ 
+»sŞved
+ 
+to
+ 172.31.98.1 
+š
+ 
+ş›Á
+ ? --------------------------------------------------------------
+
+37 
+pÜl
+ 
+·ge
+ 
+çed
+ |
+
+38 
+Yes
+
+
+40 
+Pİ
+ 
+up
+ 
+š‹º®
+ 
+pÜl
+ 
+·ge
+
+
+42 
+ş›Á
+ 
+po¡
+ 
+u£ºame
+ 
+ªd
+ 
+·sswÜd
+ 
+to
+ 172.31.98.1
+
+44 
+IAP
+ 
+check
+ 
+the
+ 
+u£ºame
+ 
+ªd
+ 
+·sswÜd
+ 
+äom
+ 
+¿dius
+ 
+£rv”
+ 
+by
+ 
+	$PAP
+ (
+IÁ”Çl
+ 
+£rv”
+ 
+should
+ 
+be
+ 
+the
+ 
+šÃr
+ 
+DB
+)
+
+46 
+Te¡
+ 
+TİŞogy
+:
+
+47 -------------------------------------- 
+Mªag”
+ 
+Sw™ch
+ -------------------------
+
+49 | | 
+Radius
+ ------------ 
+Te¡”
+ 
+Sw™ch
+ -------------- |
+
+50 | | | | | 
+CÚsŞe
+ 
+£rv”
+
+
+51 | | 
+IAP1
+ IAP1 IAP1 ****************** * *
+
+54 
+Wš
+ 7 Win 7
+
+55 
+L­tİ
+ Laptop
+
+56 - : 
+Eth
+ 
+cÚÃùiÚ
+
+
+57 * : 
+CÚsŞe
+ 
+cÚÃùiÚ
+
+
+59 
+Te¡S‹ps
+:
+
+60 
+‹¡_š‹º®C­tivePÜlAck
+:
+
+61 1 > 
+C»©e
+ 1 
+ssid
+ 
+äom
+ 
+Ma¡”
+ 
+	`IAP
+ (
+W™h
+ 
+š‹º®
+ 
+ÿ±ive
+ 
+pÜl
+)
+
+62 * 
+The
+ 
+ssid
+ 
+cÚfigu¿tiÚ
+ 
+should
+ 
+be
+ 
+push
+ 
+suûssfuÎy
+ 
+š
+ 
+bÙh
+ 
+Ma¡”
+ 
+ªd
+ 
+SÏves
+
+
+63 2 > 
+Make
+ 
+the
+ 
+two
+ 
+Ï±İs
+ 
+cÚÃù
+ 
+to
+ 
+Ma¡”
+ 
+ªd
+ 
+Úe
+ 
+of
+ 
+SÏves
+ 
+»¥eùiv–y
+
+
+64 
+Assume
+ 
+Cl›Á1
+ 
+cÚÃù
+ 
+to
+ 
+Ma¡”
+
+
+65 
+Assume
+ 
+Cl›Á2
+ 
+cÚÃù
+ 
+to
+ 
+SÏve
+
+
+66 * 
+Should
+ 
+cÚÃù
+ 
+suûssfuÎy
+
+
+67 3 > 
+U£
+ 
+wg‘
+ 
+to
+ 
+vis™
+ 
+Úe
+ 
+h‰p
+ 
+u¾
+ 
+š
+ 
+Cl›Á
+, 
+h”e
+, 
+we
+ 
+u£
+ "http://www.baidu.com"
+
+69 * 
+The
+ 
+ÿ±ive
+ 
+pÜl
+ 
+html
+ 
+code
+ 
+should
+ 
+be
+ 
+found
+ 
+š
+ 
+ouut
+.html
+
+70 4 > 
+U£
+ 
+wg‘
+ 
+to
+ 
+po¡
+ 
+auth
+ 
+»que¡
+Ø
+£cu»logš
+.
+¬ubª‘wÜks
+.
+com
+
+
+74 * 
+Cl›Á
+ 
+should
+ 
+be
+ 
+abË
+ 
+to
+ 
+·¡
+ 
+auth
+ 
+ªd
+ 
+a
+ 
+»dœeù
+Ø
+baidu
+ 
+html
+ 
+code
+ should b
+found
+ 
+š
+ 
+ouut
+.html
+
+75 5 > 
+Check
+ 
+the
+ 
+aş
+ 
+this
+ 
+ş›Á
+
+
+76 * 
+this
+ 
+aş
+ 
+should
+ 
+be
+ 
+³rm™
+ 
+®l
+
+
+77 6 > 
+pšg
+ 
+äom
+ 
+ş›Á
+ 
+to
+ 
+baidu
+.
+com
+
+
+78 * 
+pšg
+ 
+should
+ 
+·ss
+
+
+81 
+äom
+ 
+‹¡s
+ 
+impÜt
+ *
+
+83 
+IAP1
+, 
+IAP2
+, 
+IAP3
+, 
+CLIENT1
+, 
+CLIENT2
+ = 
+	`REQUIRED
+('IAP1', 'IAP2', 'IAP3', 'CLIENT1', 'CLIENT2')
+
+85 
+Ÿp1
+ = 
+	`IAP
+('IAP1', 
+IAP1
+['MGT-METHOD'], 
+ho¡
+=IAP1['MGT-IP'], 
+pÜt
+=IAP1['MGT-PORT'], 
+u£ºame
+=IAP1['USERNAME'], 
+·sswÜd
+=IAP1['PASSWORD'], 
+cÚsŞe
+=
+True
+)
+
+86 
+Ÿp2
+ = 
+	`IAP
+('IAP2', 
+IAP2
+['MGT-METHOD'], 
+ho¡
+=IAP2['MGT-IP'], 
+pÜt
+=IAP2['MGT-PORT'], 
+u£ºame
+=IAP2['USERNAME'], 
+·sswÜd
+=IAP2['PASSWORD'], 
+cÚsŞe
+=
+True
+)
+
+87 
+Ÿp3
+ = 
+	`IAP
+('IAP3', 
+IAP3
+['MGT-METHOD'], 
+ho¡
+=IAP3['MGT-IP'], 
+pÜt
+=IAP3['MGT-PORT'], 
+u£ºame
+=IAP3['USERNAME'], 
+·sswÜd
+=IAP3['PASSWORD'], 
+cÚsŞe
+=
+True
+)
+
+89 
+ş›Á1
+ = 
+	`Wš
+('CLIENT1', 
+CLIENT1
+['MGT-METHOD'], 
+ho¡
+=CLIENT1['MGT-IP'], 
+u£ºame
+=CLIENT1['USERNAME'], 
+·sswÜd
+=CLIENT1['PASSWORD'], 
+timeout
+=60)
+
+90 
+ş›Á2
+ = 
+	`Wš
+('CLIENT2', 
+CLIENT2
+['MGT-METHOD'], 
+ho¡
+=CLIENT2['MGT-IP'], 
+u£ºame
+=CLIENT2['USERNAME'], 
+·sswÜd
+=CLIENT2['PASSWORD'], 
+timeout
+=60)
+
+91 
+ma¡”
+ = 
+NÚe
+
+
+92 
+¦ave
+ = 
+NÚe
+
+
+94 
+ssid
+ = 'iutf-cp'
+
+95 
+ssid_cÚfigu¿tiÚ
+ = 
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, **{'opmode':'wpa2-psk-aes', 'wpa-passphrase':'12345678',
+
+97 'ÿ±ive-pÜl':'š‹º®'
+	}
+})
+
+98 
+no_ssid_cÚfigu¿tiÚ
+ = 'nØwÏÀssid-´of"%s"' % 
+ssid
+
+
+100 
+def
+ 
+	$£tup_moduË
+():
+
+102 
+£tup
+ 
+this
+ 
+‹¡
+ 
+süt
+, 
+wl
+ 
+be
+ 
+execu‹d
+ 
+befÜe
+ 
+®l
+ 
+‹¡ÿ£s
+ 
+š
+ 
+the
+ script.
+
+104 
+glob®
+ 
+ma¡”
+, 
+¦ave
+
+
+105 
+as£¹
+ 
+Ÿp1
+.
+	$cÚÃù
+()
+
+106 
+as£¹
+ 
+Ÿp2
+.
+	$cÚÃù
+()
+
+107 
+as£¹
+ 
+Ÿp3
+.
+	$cÚÃù
+()
+
+108 
+as£¹
+ 
+ş›Á1
+.
+	$cÚÃù
+()
+
+109 
+as£¹
+ 
+ş›Á2
+.
+	$cÚÃù
+()
+
+110 
+ma¡”
+ = 
+IAP
+.
+	$g‘_ma¡”
+(
+Ÿp1
+, 
+Ÿp2
+, 
+Ÿp3
+)
+
+111 
+as£¹
+ 
+ma¡”
+ 
+is
+ 
+nÙ
+ 
+NÚe
+, "We did‚ot find master inhe cluster or found morehan one master"
+
+112 
+¦aves
+ = [
+Ÿp
+ Ÿ°
+š
+ [
+Ÿp1
+, 
+Ÿp2
+, 
+Ÿp3
+] Ÿ°!ğ
+ma¡”
+]
+
+113 
+¦ave
+ = 
+	$choiû
+(
+¦aves
+)
+
+115 
+def
+ 
+	$‹¬down_moduË
+():
+
+117 
+‹¬down
+ 
+äo
+ 
+the
+ 
+‹¡
+ 
+süt
+, 
+wl
+ 
+be
+ 
+execu‹d
+ 
+aá”
+ 
+®l
+ 
+‹¡ÿ£s
+ 
+š
+he script.
+
+119 
+Ÿp1
+.
+	$discÚÃù
+()
+
+120 
+Ÿp2
+.
+	$discÚÃù
+()
+
+121 
+Ÿp3
+.
+	$discÚÃù
+()
+
+123 
+def
+ 
+	$£tup_š‹º®C­tivePÜlAck
+():
+
+124 
+log
+.
+	`šfo
+('setup forest case internalCaptivePortalAck')
+
+126 
+def
+ 
+	$‹¬down_š‹º®C­tivePÜlAck
+():
+
+127 
+log
+.
+	`šfo
+('teardown forest case internalCaptivePortalAck')
+
+128 
+ma¡”
+.
+	$cfg
+(
+no_ssid_cÚfigu¿tiÚ
+)
+
+129 
+ş›Á1
+.
+	$d–_xml_fe
+(
+ssid
+)
+
+130 
+ş›Á2
+.
+	`d–_xml_fe
+(
+ssid
+)
+
+132 @
+	$w™h_£tup
+(
+£tup_š‹º®C­tivePÜlAck
+, 
+‹¬down_š‹º®C­tivePÜlAck
+)
+
+133 
+def
+ 
+	$‹¡_š‹º®C­tivePÜlAck
+():
+
+135 
+Te¡
+ 
+süt
+ 
+‹¡šg
+ 
+š‹º®C­tivePÜlAck
+
+
+137 
+log
+.
+	`šfo
+('1. Create ssid from Master')
+
+138 
+ma¡”
+.
+	$cfg
+(
+ssid_cÚfigu¿tiÚ
+)
+
+139 
+log
+.
+	`šfo
+('1.‡. Waiting 10 seconds here')
+
+140 
+	$¦“p
+(10)
+
+141 
+Ÿp
+ 
+š
+ [
+Ÿp1
+, 
+Ÿp2
+, 
+Ÿp3
+]:
+
+142 
+»t
+ = 
+Ÿp
+.
+	`cmd
+('show‚etwork')
+
+143 
+»t_diù
+ = 
+Ÿp
+.
+	$show_bË_·r£r
+(
+»t
+)
+
+144 
+ssidli¡
+ = 
+»t_diù
+['N‘wÜks'].
+	`g‘
+('Key'è
+Ü
+„et_dict['Networks'].get('ESSID')
+
+145 
+as£¹
+ 
+ssidli¡
+, 'ssid†ist should‚ot be None,…lease check script orhe†atest show‚etwork format'
+
+146 
+as£¹
+ 'iutf-ı' 
+š
+ 
+ssidli¡
+, 'thssid wa nÙ…ushedØ%s'%
+Ÿp
+.
+deviû_Çme
+
+
+148 
+log
+.
+	`šfo
+("2. Makehewo†aptops connecto Master‡nd one of Slaves„espectively")
+
+150 
+log
+.
+	`šfo
+("2.‡. Get band‡ bssid from Master")
+
+151 
+ma¡”_bssid
+ = 
+ma¡”
+.
+	`g‘_bssid
+(
+ssid
+, 'a')
+
+152 
+as£¹
+ 
+ma¡”_bssid
+, 'Got Master bssid failed'
+
+153 
+log
+.
+	`šfo
+("2. b. Make client1 connecto Master")
+
+154 
+ş›Á1
+.
+	`cÚÃù_wifi
+(
+ssid
+=ssid, 
+auth’tiÿtiÚ
+='w·2-psk', 
+·sswÜd
+='12345678', 
+bssid
+=
+ma¡”_bssid
+)
+
+155 
+	$¦“p
+(10)
+
+156 
+nÙ
+ 
+ş›Á1
+.
+	$is_wifi_cÚÃùed
+():
+
+157 
+log
+.
+	`šfo
+("Try‡gain...")
+
+158 
+ş›Á1
+.
+	$ş›Á_do_cÚÃù
+(
+ssid
+=ssid, 
+bssid
+=
+ma¡”_bssid
+)
+
+159 
+	$¦“p
+(10)
+
+160 
+as£¹
+ 
+ş›Á1
+.
+	`is_wifi_cÚÃùed
+(), 'Client1 connectedo Master failed'
+
+162 
+log
+.
+	`šfo
+("2. c. Get band‡ bssid from Slave")
+
+163 
+¦ave_bssid
+ = 
+¦ave
+.
+	`g‘_bssid
+(
+ssid
+, 'a')
+
+164 
+as£¹
+ 
+¦ave_bssid
+, 'Got Slave bssid failed'
+
+165 
+log
+.
+	`šfo
+("2. d. Make client2 connecto Slave")
+
+166 
+ş›Á2
+.
+	`cÚÃù_wifi
+(
+ssid
+=ssid, 
+auth’tiÿtiÚ
+='w·2-psk', 
+·sswÜd
+='12345678', 
+bssid
+=
+¦ave_bssid
+)
+
+167 
+	$¦“p
+(10)
+
+168 
+nÙ
+ 
+ş›Á2
+.
+	$is_wifi_cÚÃùed
+():
+
+169 
+log
+.
+	`šfo
+("Try‡gain...")
+
+170 
+ş›Á2
+.
+	$ş›Á_do_cÚÃù
+(
+ssid
+=ssid, 
+bssid
+=
+¦ave_bssid
+)
+
+171 
+	$¦“p
+(10)
+
+172 
+as£¹
+ 
+ş›Á2
+.
+	`is_wifi_cÚÃùed
+(), 'Client2 connectedo Slave failed'
+
+174 
+log
+.
+	`šfo
+("3.‡. visit url in Client1 which connectedo Master")
+
+175 
+ş›Á1
+.
+	`cmd
+("wget --secure-protocal=TLSv1 --no-check-certificate -t 1 -o debug.log -O output.html http://www.baidu.com")
+
+176 
+»t
+ = 
+ş›Á1
+.
+	`cmd
+("cat ./output.html")
+
+	@tests/test_cusCalledStationID.py
+
+2 
+	gTe¡C©egÜy
+: 
+Auth’tiÿtiÚ
+
+
+3 
+Te¡Ca£
+: 
+RT
+-1789 
+SuµÜt
+ 
+difã»Á
+ 
+fÜm©
+ 
+ÿÎšg
+-
+¡©iÚ
+-
+id
+ 
+ªd
+ 
+ÿÎed
+-station-id
+
+5 
+Requœem’t
+:
+
+6 1. 
+ssid
+-
+´ofe
+ 
+cÚfigu¿tiÚ
+ 
+š
+ 
+şi
+
+
+7 
+wÏn
+ 
+ssid
+-
+´ofe
+ <ssid-´ofe-
+Çme
+>
+
+8 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+
+
+9 
+no
+ 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+
+
+11 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ {
+­
+-
+group
+ |‡p-
+mac
+ |‡p-
+Çme
+ | 
+addr
+ | 
+maÿddr
+ | 
+vÏn
+-id}
+
+12 
+no
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+
+
+14 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+šşude
+-
+ssid
+ [
+d–im™”
+ <delimiter>]
+
+15 
+no
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+šşude
+-
+ssid
+
+
+17 2. 
+Should
+ 
+wÜk
+ 
+auth
+ 
+ªd
+ 
+acù
+
+
+18 
+should
+ 
+wÜk
+ 
+Ú
+ 
+dÙ1x
+, 
+	gmac
+, 
+	gı
+
+
+20 3. 
+no
+ 
+v®id
+ 
+
+ 
+	gş›Á
+, 
+fÜû
+ 
+to
+ 
+	gmaÿddr
+
+
+22 4. 
+	gvÏn
+-
+id
+ 
+should
+ 
+be
+ 
+ş›Á
+ 
+vÏn
+
+
+23 
+bridge
+ 
+is
+ 
+	gvÏn
+ 1 ??
+
+24 
+magic
+ 
+vÏn
+ 
+	gis
+ 3333 ???
+
+26 5. 
+K“p
+ 
+cu¼’t
+ 
+	gmac
+-
+auth’tiÿtiÚ
+ 
+ªd
+ 
+	gauth
+-
+	gpkt
+-mac-
+fÜm©
+ 
+	glogiÿl
+
+
+28 6. dØ
+nÙ
+ 
+im·ù
+ 
+¯a
+ 
+	g‹¡
+-
+	g£rv”
+
+
+30 7. dØ
+we
+ 
+Ãed
+ 
+to
+ 
+add
+Ø
+wœed
+ 
+	g´ofe
+ ??
+
+32 8. 
+	gÿÎed
+-
+	g¡©iÚ
+-
+id
+ 
+ty³
+ 
+is
+ , dØ
+we
+ 
+Ãed
+ 
+to
+ 
+show
+ 
+™
+ 
+š
+ 
+	gşi
+ ??
+
+34 9. 
+	gÿÎed
+-
+	g¡©iÚ
+-
+	gid
+ ,
+wh©
+ dØ
+we
+ 
+defše
+ 
+maÿddr
+ 
+ªd
+ 
+	g­
+-
+	gmac
+ ??
+
+36 10. dØ
+we
+ 
+Ãed
+ 
+to
+ 
+hªdË
+ 
+	gv6
+ ??
+
+38 
+Mšd
+ 
+	gM­
+:
+
+39 |--- 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+ / 
+no
+ use-ip--calling-station
+
+40 |--- 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ <
+STRING
+:
+csid_ty³
+:
+C®lšg_StiÚ_ID_Ty³
+> / 
+no
+ ...
+
+41 |--- 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+šşude
+-
+ssid
+ { 
+d–im™”
+ <
+STRING
+:
+d–im
+:
+D–im™”
+> } / 
+no
+ ...
+
+42 | |--- 
+h–p
+: 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+
+
+43 | |--- 
+h–p
+: 
+ÿÎed
+-
+¡©iÚ
+-
+id
+
+
+44 |---- 
+ı¬£r
+ --> 
+­
+-
+wÏn
+.
+şi
+ --- | |--- 
+boŞ—n
+ 
+wl_u£__fÜ_ÿÎšg_¡©iÚ
+
+
+45 |---- 
+şi_h–p
+.
+c
+ ------------------- |--- ?? <
+authcmn£rv”
+.
+h
+> 
+¿d_ÿÎed_¡©iÚ_id
+ 
+wl_ÿÎed_¡©iÚ_id
+ 
+Ü
+ 
+boŞ—n
+/
+__u8
+/
+__8
+ 
+ÿÎed_¡©iÚ_id_t
+
+
+46 |---- 
+şi_cÚfig
+.
+h
+ --> 
+wÏn_ssid_´ofe_t
+ -- |--- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_u£__fÜ_ÿÎšg_¡©iÚ
+
+
+47 |---- 
+şi_wÏn
+.
+c
+ ----------------------------------- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_no_u£__fÜ_ÿÎšg_¡©iÚ
+
+
+48 | |--- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_ÿÎed_¡©iÚ_id_ty³_csid_ty³
+
+
+49 | |--- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_no_ÿÎed_¡©iÚ_id_ty³
+
+
+50 | |--- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_ÿÎed_¡©iÚ_id_šşude_ssid_d–im™”_d–im
+
+
+51 
+şi
+ |--- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_no_ÿÎed_¡©iÚ_id_šşude_ssid
+
+
+52 | |--- 
+Im¶em’t
+: 
+ı¬£r_cmd_wÏn_´ofe_no_ÿÎed_¡©iÚ_id
+
+
+53 | |--- 
+add
+ 
+them
+ 
+to
+ 
+£nd_ssid_cÚfigu¿tiÚ_mes§ge
+
+
+54 | |--- 
+add
+ 
+them
+ 
+što
+ 
+şi_wÏn_§ved
+
+
+55 |---- 
+şi_sw¬m
+.
+c
+ --------------- 
+add
+ 
+them
+ 
+što
+ 
+»cv_show_sw¬m_ÃtwÜk
+
+
+56 
+RT
+-1789 |--------
+
+57 | |-- 
+wifi_mgmt
+.
+h
+ -- 
+_ssid_cÚfig_šfo
+ -- 
+u£__fÜ_ÿÎšg_¡©iÚ
+
+
+58 | | |- 
+ÿÎed_¡©iÚ_id_ty³
+
+
+59 | | |- 
+ÿÎed_¡©iÚ_id_šşude_ssid
+
+
+60 | | |- 
+ÿÎed_¡©iÚ_id_d–im™”
+
+
+61 
+¡m
+ - |
+
+62 | |-- 
+¡m_štf
+.
+c
+ -- 
+hªdË_ssid_cÚfigu¿tiÚ_mes§ge
+
+
+64 | |-- 
+¿dhdÌ
+.
+c
+ -- 
+ü—‹_vps_ex¶iù
+
+
+65 
+auth
+
+
+66 |------ 
+rc_¯l
+.
+c
+ --- 
+defš™iÚ
+ - 
+Ÿp_fmt_ÿÎed_¡©iÚ_id
+
+
+67 |------ 
+rc_­i
+.
+c
+ --- 
+£t_commÚ_©Œ
+
+
+68 |------ 
+rc_acù_š¡ªt
+.
+c
+ --- 
+rc_acù_commÚ_v¶i¡
+
+
+70 
+äom
+ 
+‹¡s
+ 
+impÜt
+ *
+
+72 
+IAP1
+, 
+	gIAP2
+, 
+	gIAP3
+, 
+	gCLIENT1
+, 
+	gCLIENT2
+, 
+	gRADIUS
+ = 
+REQUIRED
+('IAP1', 'IAP2', 'IAP3', 'CLIENT1', 'CLIENT2', 'RADIUS')
+
+74 
+	gŸp1
+ = 
+IAP
+('IAP1', 
+IAP1
+['MGT-METHOD'], 
+ho¡
+=IAP1['MGT-IP'], 
+pÜt
+=IAP1['MGT-PORT'], 
+u£ºame
+=IAP1['USERNAME'], 
+·sswÜd
+=IAP1['PASSWORD'], 
+cÚsŞe
+=
+True
+)
+
+75 
+Ÿp2
+ = 
+IAP
+('IAP2', 
+IAP2
+['MGT-METHOD'], 
+ho¡
+=IAP2['MGT-IP'], 
+pÜt
+=IAP2['MGT-PORT'], 
+u£ºame
+=IAP2['USERNAME'], 
+·sswÜd
+=IAP2['PASSWORD'], 
+cÚsŞe
+=
+True
+)
+
+76 
+Ÿp3
+ = 
+IAP
+('IAP3', 
+IAP3
+['MGT-METHOD'], 
+ho¡
+=IAP3['MGT-IP'], 
+pÜt
+=IAP3['MGT-PORT'], 
+u£ºame
+=IAP3['USERNAME'], 
+·sswÜd
+=IAP3['PASSWORD'], 
+cÚsŞe
+=
+True
+)
+
+78 
+ş›Á1
+ = 
+Wš
+('CLIENT1', 
+CLIENT1
+['MGT-METHOD'], 
+ho¡
+=CLIENT1['MGT-IP'], 
+u£ºame
+=CLIENT1['USERNAME'], 
+·sswÜd
+=CLIENT1['PASSWORD'], 
+timeout
+=60)
+
+79 
+ş›Á2
+ = 
+Wš
+('CLIENT2', 
+CLIENT2
+['MGT-METHOD'], 
+ho¡
+=CLIENT2['MGT-IP'], 
+u£ºame
+=CLIENT2['USERNAME'], 
+·sswÜd
+=CLIENT2['PASSWORD'], 
+timeout
+=60)
+
+81 
+¿dius
+ = 
+Lšux
+('RADIUS', 
+RADIUS
+['MGT-METHOD'], 
+ho¡
+=RADIUS['MGT-IP'], 
+u£ºame
+=RADIUS['USERNAME'], 
+·sswÜd
+=RADIUS['PASSWORD'], 
+timeout
+=60)
+
+83 
+ma¡”
+ = 
+NÚe
+
+
+84 
+¦ave
+ = 
+NÚe
+
+
+86 
+auth_£rv”_Çme
+ = 'fd1'
+
+87 
+auth_£rv”
+ = 
+IAP
+.
+g‘_cÚf_auth_£rv”
+(
+auth_£rv”_Çme
+, **{'ip':'10.65.10.59', 'port':'1812',
+
+89 
+csid_ty³s
+ = ['macaddr', 'ipaddr', 'ap-macaddr', 'ap-group', 'ap-name', 'vlan-id']
+
+91 
+	gu£ºame
+, 
+	g·sswÜd
+ = 'fengding', 'fengding'
+
+93 
+	gssid_1x
+, 
+	gssid_ı
+, 
+	gssid_mac
+ = 'iutf-1x', 'iutf-cp', 'iutf-mac'
+
+94 
+	gssid_cÚfigu¿tiÚ
+ = {}
+
+95 
+no_ssid_cÚfigu¿tiÚ
+ = {}
+
+96 
+ssid_cÚfigu¿tiÚ
+[
+ssid_1x
+] = 
+IAP
+.
+g‘_cÚf_ssid
+(ssid_1x, 'auth-pkt-mac-format upper-case delimiter -',
+
+97 **{'İmode':'w·2-«s', 'auth-£rv”':
+auth_£rv”_Çme
+})
+
+98 
+no_ssid_cÚfigu¿tiÚ
+[
+ssid_1x
+] = 'no wlan ssid-profile "%s"' % ssid_1x
+
+99 
+ssid_cÚfigu¿tiÚ
+[
+ssid_ı
+] = 
+IAP
+.
+g‘_cÚf_ssid
+(ssid_cp, 'auth-pkt-mac-format upper-case delimiter -',
+
+100 **{'İmode':'İ’sy¡em', 'auth-£rv”':
+auth_£rv”_Çme
+, 'captive-portal': 'captive-portal',
+
+102 
+no_ssid_cÚfigu¿tiÚ
+[
+ssid_ı
+] = 'no wlan ssid-profile "%s"' % ssid_cp
+
+103 
+ssid_cÚfigu¿tiÚ
+[
+ssid_mac
+] = 
+IAP
+.
+g‘_cÚf_ssid
+(ssid_mac, 'mac-authentication-upper-case', 'mac-authentication',
+
+104 **{'İmode':'İ’sy¡em', 'auth-£rv”':
+auth_£rv”_Çme
+, 'mac-authentication-delimiter': '-',
+
+106 
+no_ssid_cÚfigu¿tiÚ
+[
+ssid_mac
+] = 'no wlan ssid-profile "%s"' % ssid_mac
+
+108 
+def
+ 
+	$£tup_moduË
+():
+
+110 
+£tup
+ 
+this
+ 
+‹¡
+ 
+süt
+, 
+wl
+ 
+be
+ 
+execu‹d
+ 
+befÜe
+ 
+®l
+ 
+‹¡ÿ£s
+ 
+š
+ 
+the
+ script.
+
+112 
+glob®
+ 
+ma¡”
+, 
+¦ave
+
+
+113 
+as£¹
+ 
+Ÿp1
+.
+	$cÚÃù
+()
+
+114 
+as£¹
+ 
+Ÿp2
+.
+	$cÚÃù
+()
+
+115 
+as£¹
+ 
+Ÿp3
+.
+	$cÚÃù
+()
+
+116 
+as£¹
+ 
+ş›Á1
+.
+	$cÚÃù
+()
+
+117 
+as£¹
+ 
+ş›Á2
+.
+	$cÚÃù
+()
+
+118 
+as£¹
+ 
+¿dius
+.
+	$cÚÃù
+()
+
+119 
+ma¡”
+ = 
+IAP
+.
+	$g‘_ma¡”
+(
+Ÿp1
+, 
+Ÿp2
+, 
+Ÿp3
+)
+
+120 
+as£¹
+ 
+ma¡”
+ 
+is
+ 
+nÙ
+ 
+NÚe
+, "We did‚ot find master inhe cluster or found morehan one master"
+
+121 
+¦aves
+ = [
+Ÿp
+ Ÿ°
+š
+ [
+Ÿp1
+, 
+Ÿp2
+, 
+Ÿp3
+] Ÿ°!ğ
+ma¡”
+]
+
+122 
+¦ave
+ = 
+	$choiû
+(
+¦aves
+)
+
+124 
+log
+.
+	`šfo
+('Configure‡uth server‡nd SSID in setup')
+
+125 
+ma¡”
+.
+	$cfg
+(
+auth_£rv”
+)
+
+126 
+ma¡”
+.
+	$cfg
+(
+ssid_cÚfigu¿tiÚ
+[
+ssid_1x
+])
+
+127 
+ma¡”
+.
+	$cfg
+(
+ssid_cÚfigu¿tiÚ
+[
+ssid_ı
+])
+
+128 
+ma¡”
+.
+	$cfg
+(
+ssid_cÚfigu¿tiÚ
+[
+ssid_mac
+])
+
+130 
+def
+ 
+	$‹¬down_moduË
+():
+
+132 
+‹¬down
+ 
+äo
+ 
+the
+ 
+‹¡
+ 
+süt
+, 
+wl
+ 
+be
+ 
+execu‹d
+ 
+aá”
+ 
+®l
+ 
+‹¡ÿ£s
+ 
+š
+he script.
+
+134 
+ma¡”2
+ = 
+IAP
+.
+	$g‘_ma¡”
+(
+Ÿp1
+, 
+Ÿp2
+, 
+Ÿp3
+)
+
+135 
+ma¡”2
+.
+	`cfg
+('nØwÏÀauth s”v” "%s"' % 
+auth_£rv”_Çme
+)
+
+136 
+ma¡”2
+.
+	$cfg
+(
+no_ssid_cÚfigu¿tiÚ
+[
+ssid_1x
+])
+
+137 
+ma¡”2
+.
+	$cfg
+(
+no_ssid_cÚfigu¿tiÚ
+[
+ssid_ı
+])
+
+138 
+ma¡”2
+.
+	$cfg
+(
+no_ssid_cÚfigu¿tiÚ
+[
+ssid_mac
+])
+
+139 
+as£¹
+ 
+ma¡”
+ =ğ
+ma¡”2
+, 'Master failover duringesting,…lease check'
+
+140 
+Ÿp1
+.
+	$discÚÃù
+()
+
+141 
+Ÿp2
+.
+	$discÚÃù
+()
+
+142 
+Ÿp3
+.
+	`discÚÃù
+()
+
+143 @
+nÙ‹¡
+
+
+144 
+def
+ 
+	$cÚfigu»_u£__fÜ_ÿÎšg_¡©iÚ
+(
+ssid
+):
+
+145 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'use-ip-for-calling-station'))
+
+146 
+	$¦“p
+(10)
+
+147 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show„unning')
+
+148 
+as£¹
+ 'u£--fÜ-ÿÎšg-¡©iÚ' 
+š
+ 
+»t
+, 'use-ip-for-calling-station is‚ot in configuration'
+
+149 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+150 
+as£¹
+ 'U£ IP fÜ C®lšg-StiÚ-ID :EÇbËd' 
+š
+ 
+»t
+, 'use-ip-for-calling-station is‚otƒnabled in show‚etwork'
+
+152 @
+nÙ‹¡
+
+
+153 
+def
+ 
+	$cÚfigu»_no_u£__fÜ_ÿÎšg_¡©iÚ
+(
+ssid
+):
+
+154 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'no use-ip-for-calling-station'))
+
+155 
+	$¦“p
+(10)
+
+156 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show„unning')
+
+157 
+as£¹
+ 'u£--fÜ-ÿÎšg-¡©iÚ' 
+nÙ
+ 
+š
+ 
+»t
+, 'use-ip-for-calling-station is‚ot deleted'
+
+158 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+159 
+as£¹
+ 'U£ IP fÜ C®lšg-StiÚ-ID :Di§bËd' 
+š
+ 
+»t
+, 'use-ip-for-calling-station is‚ot disabled in show‚etwork'
+
+161 @
+nÙ‹¡
+
+
+162 
+def
+ 
+	$cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid
+, 
+csid_ty³
+):
+
+163 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'ÿÎed-¡©iÚ-idy³ %s'%
+csid_ty³
+))
+
+164 
+	$¦“p
+(10)
+
+165 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+166 
+csid_ty³
+ 
+nÙ
+ 
+š
+ 
+csid_ty³s
+:
+
+167 
+csid_ty³
+ = 
+csid_ty³s
+[0]
+
+168 
+as£¹
+ 'C®Ëd-StiÚ-ID Ty³ :%s'%
+csid_ty³
+ 
+š
+ 
+»t
+
+
+170 @
+nÙ‹¡
+
+
+171 
+def
+ 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id_ty³
+(
+ssid
+):
+
+172 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'no called-station-idype'))
+
+173 
+	$¦“p
+(10)
+
+174 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+175 
+as£¹
+ 'C®Ëd-StiÚ-ID Ty³ :maÿddr' 
+š
+ 
+»t
+
+
+177 @
+nÙ‹¡
+
+
+178 
+def
+ 
+	$cÚfigu»_ÿÎed_¡©iÚ_id_šşude_ssid
+(
+ssid
+, 
+d–im™”
+=
+NÚe
+):
+
+179 
+d–im™”
+ 
+ªd
+ 
+	`Ën
+(delimiter)==1:
+
+180 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'ÿÎed-¡©iÚ-id inşude-ssid d–im™” %s'%
+d–im™”
+))
+
+182 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'called-station-id include-ssid'))
+
+183 
+	$¦“p
+(10)
+
+184 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+185 
+as£¹
+ 'C®Ëd-StiÚ-ID InşudSSID :EÇbËd' 
+š
+ 
+»t
+
+
+186 
+d–im™”
+ 
+ªd
+ 
+	`Ën
+(delimiter)==1:
+
+187 
+as£¹
+ 'C®Ëd-StiÚ-ID InşudSSID D–im™” :%s'%
+d–im™”
+ 
+š
+ 
+»t
+
+
+189 @
+nÙ‹¡
+
+
+190 
+def
+ 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id_šşude_ssid
+(
+ssid
+):
+
+191 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'no called-station-id include-ssid'))
+
+192 
+	$¦“p
+(10)
+
+193 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+194 
+as£¹
+ 'C®Ëd-StiÚ-ID InşudSSID :Di§bËd' 
+š
+ 
+»t
+
+
+196 @
+nÙ‹¡
+
+
+197 
+def
+ 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id
+(
+ssid
+):
+
+198 
+ma¡”
+.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid
+, 
+True
+, 'no called-station-id'))
+
+199 
+	$¦“p
+(10)
+
+200 
+»t
+ = 
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid
+)
+
+201 
+as£¹
+ 'C®Ëd-StiÚ-ID InşudSSID :Di§bËd' 
+š
+ 
+»t
+
+
+202 
+as£¹
+ 'C®Ëd-StiÚ-ID Ty³ :maÿddr' 
+š
+ 
+»t
+
+
+204 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_u£__fÜ_ÿÎšg_¡©iÚ
+():
+
+206 
+Te¡
+ 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+ 
+š
+ 
+show
+ 
+ruÂšg
+
+
+207 
+U£
+ 
+IP
+ 
+C®lšg
+-
+StiÚ
+-
+ID
+: 
+EÇbËd
+ 
+š
+ 
+show
+ 
+ÃtwÜk
+
+
+209 
+	$cÚfigu»_u£__fÜ_ÿÎšg_¡©iÚ
+(
+ssid_1x
+)
+
+211 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_no_u£__fÜ_ÿÎšg_¡©iÚ
+():
+
+213 
+Te¡
+ 
+no
+ 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+
+
+214 
+This
+ 
+shoud
+ 
+be
+ 
+v®id
+ 
+to
+ 
+»move
+ 
+the
+ 
+cÚfigu¿tiÚ
+ 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+.
+
+216 
+	$cÚfigu»_no_u£__fÜ_ÿÎšg_¡©iÚ
+(
+ssid_1x
+)
+
+218 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_ty³_maÿddr_as_deçuÉ
+():
+
+220 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ 
+maÿddr
+, 
+the
+  
+v®ue
+ 
+should
+ 
+be
+ macaddr
+
+222 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+, 'macaddr')
+
+223 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+)
+
+225 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_ty³_addr
+():
+
+227 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ 
+addr
+
+
+229 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+, 'ipaddr')
+
+231 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_no_ÿÎed_¡©iÚ_id_ty³
+():
+
+233 
+Te¡
+ 
+no
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+
+
+235 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+)
+
+237 #deà
+	`‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_ty³_­_addr
+():
+
+239 #Te¡ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ 
+­
+-
+maÿddr
+
+
+241 #ma¡”.
+	`cfg
+(
+IAP
+.
+	`g‘_cÚf_ssid
+(
+ssid_1x_mac
+, 
+ed™
+=
+True
+, 'called-station-idype‡p-macaddr'))
+
+243 #»ˆğ
+ma¡”
+.
+	`cmd
+('show‚‘wÜk %s'%
+ssid_1x_mac
+)
+
+244 #as£¹ 'C®Ëd-StiÚ-ID Ty³ :­-maÿddr' 
+š
+ 
+»t
+
+
+246 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_ty³_­_group
+():
+
+248 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ 
+­
+-
+group
+
+
+250 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+, 'ap-group')
+
+252 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_ty³_­_Çme
+():
+
+254 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ 
+­
+-
+Çme
+
+
+256 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+, 'ap-name')
+
+258 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_ty³_vÏn_id
+():
+
+260 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+ty³
+ 
+vÏn
+-id
+
+262 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+, 'vlan-id')
+
+264 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_šşude_ssid
+():
+
+266 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+šşude
+-
+ssid
+
+
+268 
+	$cÚfigu»_ÿÎed_¡©iÚ_id_šşude_ssid
+(
+ssid_1x
+)
+
+270 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_ÿÎed_¡©iÚ_id_šşude_ssid_d–im™”
+():
+
+272 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+šşude
+-
+ssid
+
+
+274 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_šşude_ssid
+(
+ssid_1x
+, '-')
+
+276 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_no_ÿÎed_¡©iÚ_id_šşude_ssid
+():
+
+278 
+Te¡
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+ 
+šşude
+-
+ssid
+
+
+280 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id_šşude_ssid
+(
+ssid_1x
+)
+
+282 
+def
+ 
+	$‹¡_v”ify_cÚfigu¿tiÚ_no_ÿÎed_¡©iÚ_id
+():
+
+284 
+Te¡
+ 
+no
+ 
+ÿÎed
+-
+¡©iÚ
+-
+id
+
+
+286 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_ty³
+(
+ssid_1x
+, 'vlan-id')
+
+287 
+	`cÚfigu»_ÿÎed_¡©iÚ_id_šşude_ssid
+(
+ssid_1x
+, '-')
+
+288 
+	$cÚfigu»_no_ÿÎed_¡©iÚ_id
+(
+ssid_1x
+)
+
+290 
+def
+ 
+	$‹¡_v”ify_funùiÚ_u£__fÜ_ÿÎšg_¡©iÚ_š_1x
+():
+
+292 
+Te¡
+ 
+u£
+-
+
+--
+ÿÎšg
+-
+¡©iÚ
+ 
+ÿn
+ 
+wÜk
+ 
+´İ”ly
+ 
+š
+ 802.1x 
+auth’tiÿtiÚ
+
+
+294 
+	$cÚfigu»_u£__fÜ_ÿÎšg_¡©iÚ
+(
+ssid_1x
+)
+
+297 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_u£__fÜ_ÿÎšg_¡©iÚ_š_1x
+():
+
+298 
+·ss
+
+
+300 
+def
+ 
+	$‹¡_v”ify_funùiÚ_u£__fÜ_ÿÎšg_¡©iÚ_š_ı
+():
+
+301 
+·ss
+
+
+303 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_u£__fÜ_ÿÎšg_¡©iÚ_š_ı
+():
+
+304 
+·ss
+
+
+306 
+def
+ 
+	$‹¡_v”ify_funùiÚ_u£__fÜ_ÿÎšg_¡©iÚ_š_mac
+():
+
+307 
+·ss
+
+
+309 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_u£__fÜ_ÿÎšg_¡©iÚ_š_mac
+():
+
+310 
+·ss
+
+
+312 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_maÿddr_š_mac_1x
+():
+
+313 
+·ss
+
+
+315 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_maÿddr_š_ı_mac
+():
+
+316 
+·ss
+
+
+318 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_addr_š_mac_1x
+():
+
+319 
+·ss
+
+
+321 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_addr_š_ı_mac
+():
+
+322 
+·ss
+
+
+324 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_­_maÿddr_š_mac_1x
+():
+
+325 
+·ss
+
+
+327 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_­_maÿddr_š_ı_mac
+():
+
+328 
+·ss
+
+
+330 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_­_group_š_mac_1x
+():
+
+331 
+·ss
+
+
+333 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_­_group_š_ı_mac
+():
+
+334 
+·ss
+
+
+336 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_­_Çme_š_mac_1x
+():
+
+337 
+·ss
+
+
+339 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_­_Çme_š_ı_mac
+():
+
+340 
+·ss
+
+
+342 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_vÏn_id_š_mac_1x
+():
+
+343 
+·ss
+
+
+345 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_ty³_vÏn_id_š_ı_mac
+():
+
+346 
+·ss
+
+
+348 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_ÿÎed_¡©iÚ_id_ty³_š_mac_1x
+():
+
+349 
+·ss
+
+
+351 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_ÿÎed_¡©iÚ_id_ty³_š_ı_mac
+():
+
+352 
+·ss
+
+
+354 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_šşude_ssid_š_mac_1x
+():
+
+355 
+·ss
+
+
+357 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_šşude_ssid_š_ı_mac
+():
+
+358 
+·ss
+
+
+360 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_šşude_ssid_d–im™”_š_mac_1x
+():
+
+361 
+·ss
+
+
+363 
+def
+ 
+	$‹¡_v”ify_funùiÚ_ÿÎed_¡©iÚ_id_šşude_ssid_d–im™”_š_ı_mac
+():
+
+364 
+·ss
+
+
+366 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_ÿÎed_¡©iÚ_id_šşude_ssid_š_mac_1x
+():
+
+367 
+·ss
+
+
+369 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_ÿÎed_¡©iÚ_id_šşude_ssid_š_ı_mac
+():
+
+370 
+·ss
+
+
+372 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_ÿÎed_¡©iÚ_id_š_mac_1x
+():
+
+373 
+·ss
+
+
+375 
+def
+ 
+	$‹¡_v”ify_funùiÚ_no_ÿÎed_¡©iÚ_id_š_ı_mac
+():
+
+376 
+·ss
+
+
+	@
+1
+.
+1
+/usr/include
+28
+543
+build/lib/iut/__init__.py
+build/lib/iut/cli.py
+build/lib/iut/dev.py
+build/lib/iut/dijkstra.py
+build/lib/iut/iap.py
+build/lib/iut/ilog.py
+build/lib/iut/macos.py
+build/lib/iut/priodict.py
+build/lib/iut/testbed.py
+build/lib/iut/testbed_noseplugin.py
+build/lib/iut/win.py
+iut/__init__.py
+iut/cli.py
+iut/constant.py
+iut/dev.py
+iut/dijkstra.py
+iut/iap.py
+iut/ilog.py
+iut/linux.py
+iut/macos.py
+iut/priodict.py
+iut/testbed.py
+iut/testbed_noseplugin.py
+iut/win.py
+setup.py
+tests/__init__.py
+tests/test_captivePortal.py
+tests/test_cusCalledStationID.py

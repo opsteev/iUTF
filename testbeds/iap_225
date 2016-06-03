@@ -1,0 +1,46 @@
+{
+    "DUT": ["IAP1", "IAP2", "IAP3", "CLIENT1", "CLIENT2", "RADIUS"],
+    "IAP1": {
+        "USERNAME": "admin",
+        "PASSWORD": "admin",
+        "MGT-METHOD": "telnet",
+        "MGT-IP": "10.65.10.231",
+        "MGT-PORT": "4004"
+    },
+    "IAP2": {
+        "USERNAME": "admin",
+        "PASSWORD": "admin",
+        "MGT-METHOD": "telnet",
+        "MGT-IP": "10.65.10.231",
+        "MGT-PORT": "4005"
+    },
+    "IAP3": {
+        "USERNAME": "admin",
+        "PASSWORD": "admin",
+        "MGT-METHOD": "telnet",
+        "MGT-IP": "10.65.10.231",
+        "MGT-PORT": "4006"
+    },
+    "CLIENT1": {
+        "USERNAME": "root",
+        "PASSWORD": "123456",
+        "MGT-METHOD": "telnet",
+        "MGT-IP": "10.65.10.173"
+    },
+    "CLIENT2": {
+        "USERNAME": "root",
+        "PASSWORD": "123456",
+        "MGT-METHOD": "telnet",
+        "MGT-IP": "10.65.10.194"
+    },
+    "RADIUS": {
+        "USERNAME": "root",
+        "PASSWORD": "123456",
+        "MGT-METHOD": "ssh",
+        "MGT-IP": "10.65.10.59",
+        "RADIUSD": "radiusd-fding",
+        "RADIUSD-RADDB": "/usr/local/etc/raddb-fding",
+        "RADIUSD-PORT": "9527",
+        "RADIUSD-ACCTPORT": "9528"
+    }
+}
